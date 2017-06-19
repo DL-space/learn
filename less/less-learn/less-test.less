@@ -1,0 +1,12 @@
+@color: green;
+h1{
+    color: @color;
+}
+.text{
+    color: @color;
+    .border-red(1px);
+}
+/*声明一个Mixin叫作“border-red”*/
+.border-red(@borderWidth:2px){
+    border:@borderWidth solid #f00;
+}
