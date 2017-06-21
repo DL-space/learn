@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Echars柱状图、折线图、饼状图Demo</title>
+    <script src="echarts.js"></script>
+    <style>
+        .div1{
+            width: 600px;
+            height:400px;
+            text-align: center;
+            float: left;
+
+        }
+        .div2{
+            width: 600px;
+            height:400px;
+            text-align: center;
+            float: left;
+
+        }
+        .div3{
+            width: 600px;
+            height:400px;
+            text-align: center;
+            margin-top: 50px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+<div id="zhu" class="div1">
+
+</div>
+<div id="xian" class="div2">
+
+</div>
+<div id="bing" class="div3">
+
+</div>
+
+<script type="text/javascript">
+
+    // 基于准备好的dom，初始化echarts实例
+    var myChartZhu = echarts.init(document.getElementById('zhu'));
+    var myChartXian = echarts.init(document.getElementById('xian'));
+    var myChartBing = echarts.init(document.getElementById('bing'));
+
+    // 指定图表的配置项和数据
+    var optionZhu = {                                        //柱状图相关配置信息
+        title: {                                             //设置图标名称
+            text: '柱状图'
+        },
+        tooltip: {},                                         //鼠标悬浮是否显示相关信息
+        legend: {                                            //图例
+            data:['销量','销售额']
+        },
+        toolbox: {                                           //小功能
+            show: true,
+            feature: {
+                dataZoom: {},
+                dataView: {readOnly: false},                 //数据视图
+                magicType: {type: ['line', 'bar']},          //图形转换
+                restore: {},                                 //还原
+                saveAsImage: {}                              //保存图片
+            }
+        },
+        xAxis: {                                              //x轴内容
+            data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+        },
+        yAxis: {},
+        series: [{                                            //系列列表
+            name: '销量',                                      //代表什么
+            type: 'bar',                                      //类型
+            data: [10, 20, 59, 65, 10, 20],
+            markPoint : {                                     //标识点
+                data : [
+                    {type : 'max', name: '最大值'},
+                    {type : 'min', name: '最小值'}
+                ]
+            },
+            markLine : {                                       //标识线
+                data : [
+                    {type : 'average', name: '平均值'}
+                ]
+            }
+        },
+            {
+                name: '销售额',
+                type: 'bar',
+                data: [122, 20, 59, 69, 90, 80]
+            }
+        ]
+    };
+    var optionXian = {                                       //折线图相关配置信息
+        title : {
+            text : '折线图',
+            textStyle: {
+                color: 'red'
+            },
+            subtext: '副标题'
+        },
+        tooltip: {},
+        legend:{
+            data : ['销量','销售额'],
+            orient: 'horizontal'                             //图例的显示方式（水平/垂直）
+        },
+        toolbox: {                                           //小功能
+            show: true,
+            feature: {
+                dataZoom: {},
+                dataView: {readOnly: false},
+                magicType: {type: ['line', 'bar','pie','stack', 'tiled']},
+                restore: {},
+                saveAsImage: {}
+            }
+        },
+        xAxis:{
+            type: 'category',
+            boundaryGap: false,
+            data: [
+                {
+                    value: '衬衫',
+                    // 突出衬衫
+                    textStyle: {
+                        fontSize: 20,
+                        color: 'red'
+                    }
+                },
+                "羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+        },
+        yAxis:{},
+        series: [{                                            //系列列表
+            name: '销量',
+            type: 'line',
+            smooth: 'true',
+            areaStyle: {normal: {}},
+            data: [10, 20, 59, 65, 10, 20],
+            markPoint : {                                     //标识点
+                data : [
+                    {type : 'max', name: '最大值'},
+                    {type : 'min', name: '最小值'}
+                ]
+            },
+            markLine : {                                       //标识线
+                data : [
+                    {type : 'average', name: '平均值'}
+                ]
+            }
+        },
+            {
+                name: '销售额',
+                type: 'line',
+                smooth: 'true',
+                areaStyle: {normal: {}},
+                data: [22, 26, 15, 18, 33, 39]
+            }
+        ]
+    };
+    var optionBing = {                                       //饼状图相关配置信息
+        backgroundColor: '#2c343c',
+        title: {
+            text: '饼状图',
+            left: 'center',
+            top: 20,
+            textStyle: {
+                color: '#ccc'
+            }
+        },
+
+        tooltip : {                                          //鼠标悬浮提示信息
+            trigger: 'item',
+            formatter: "{a} <br/>{b} : {c} ({d}%)"
+        },
+
+        visualMap: {                                         //小图例
+            show: false,
+            min: 80,
+            max: 600,
+            inRange: {
+                colorLightness: [0, 1]
+            }
+        },
+        series : [
+            {
+                name:'访问来源',
+                type:'pie',
+                radius : '55%',
+                center: ['50%', '50%'],
+                data:[
+                    {value:335, name:'直接访问'},
+                    {value:310, name:'邮件营销'},
+                    {value:274, name:'联盟广告'},
+                    {value:235, name:'视频广告'},
+                    {value:400, name:'搜索引擎'}
+                ].sort(function (a, b) { return a.value - b.value}),
+                roseType: 'angle',                                      //饼的类型
+                label: {                                                //标签类型
+                    normal: {
+                        textStyle: {
+                            color: 'rgba(255, 255, 255, 0.3)'
+                        }
+                    }
+                },
+                labelLine: {                                             //指示线类型
+                    normal: {
+                        lineStyle: {
+                            color: 'rgba(255, 255, 255, 0.3)'
+                        },
+                        smooth: 0.2,
+                        length: 10,
+                        length2: 20
+                    }
+                },
+                itemStyle: {                                             //饼的每一块类型
+                    normal: {
+                        color: '#c23531',
+                        shadowBlur: 200,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                }
+            }
+        ]
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChartZhu.setOption(optionZhu);
+    myChartXian.setOption(optionXian);
+    myChartBing.setOption(optionBing);
+</script>
+</body>
+</html>
