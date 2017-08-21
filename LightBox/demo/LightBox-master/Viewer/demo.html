@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>图片展示插件</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+
+<body>
+    <h1>图片展示</h1>
+    <div class="pic-little">
+        <ul class="imglist">
+            <li><img src="images/1.jpg" alt="1" data-id="0" /></li>
+            <li><img src="images/2.jpg" alt="2" data-id="1" /></li>
+            <li><img src="images/3.jpg" alt="3" data-id="2" /></li>
+            <li><img src="images/4.jpg" alt="4" data-id="3" /></li>
+        </ul>
+    </div>
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/PicShow.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('.imgList').picShow();
+    });
+    </script>
+</body>
+
+</html>

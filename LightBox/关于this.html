@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关于this</title>
+</head>
+<body>
+<!--<div id="ckepop">
+    <span class="jiathis_txt">分享到：</span>
+    <a class="jiathis_button_weixin">微信</a>
+    <a href="http://www.jiathis.com/share"  class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+    <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1" charset="utf-8"></script>-->
+<button onclick="a()">a</button>
+<button id="b">b</button>
+<button id="c">c</button>
+<script>
+    console.log(".........调用方式影响this...........");
+    function a(){
+        var user = "a";
+        console.log(this.user); //undefined
+        console.log(this); //Window
+    }
+    //a();//window.a()这样调用方法相当于全局调用
+    var b = {
+        user:"b",
+        fn:function(){
+            console.log(this.user);
+            console.log(this);
+        }
+    };
+    //b.fn();//b调用了fn
+    //window.b.fn();//dl  this指向上一级调用对象（b）
+
+
+    var c = b.fn;//这里并没有执行（没有调用fn）
+    //c();//undefined
+
+    var bb = document.getElementById("b");
+    bb.addEventListener("click",function () {
+        console.log(this);
+    });
+    var cc = document.getElementById("c");
+    cc.addEventListener("click",function () {
+        c();
+    });
+
+    console.log(".....函数中有return时候.......");
+
+    function fn1()
+    {
+        this.user = 'dl';
+        return {};
+    }
+    var a1 = new fn1;
+    console.log("return {}:"+a1.user); //undefined
+
+    function fn2()
+    {
+        this.user = 'dl';
+        return function(){};
+    }
+    var a2 = new fn2;
+    console.log("return function(){}:"+a2.user); //undefined
+
+    function fn3()
+    {
+        this.user = 'dl';
+        return 0;
+    }
+    var a3 = new fn3;
+    console.log("return 0:"+a3.user); //dl
+
+    /*如果返回值是一个对象，那么this指向的就是那个返回的对象，如果返回值不是一个对象那么this还是指向函数的实例。*/
+</script>
+</body>
+</html>

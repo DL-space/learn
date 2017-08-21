@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/unit.js"></script>
+</head>
+<body>
+<button id="btn">点击</button>
+<script>
+    var unit = new Unit();
+    document.getElementById("btn").addEventListener("click",function () {
+        unit.ceshi();//ceshi()是通过Unit的扩展函数，只能由Unit调起，所以是不是this总会指向原型函数
+    })
+</script>
+</body>
+</html>

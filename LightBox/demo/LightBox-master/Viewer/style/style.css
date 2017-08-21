@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.imgList li img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+    border: 3px solid #ddd;
+    border-radius: 5px;
+}
+
+.imgList li img:hover {
+    box-shadow: 0 0 3px #00FFFF;
+}
+
+.mask {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../icon/opacity.png) repeat left top;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.current-pic {
+    position: relative;
+    top: 40%;
+    transform: translate(0, -50%);
+}
+
+.current-pic img {
+    position: relative;
+    cursor: pointer;
+    border: 3px solid #fff;
+    border-radius: 7px;
+}
+
+.pic-container {
+    position: absolute;
+    width: 400px;
+    height: 82px;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    // background: yellow;
+    overflow: hidden;
+}
+
+.pic-list {
+    float: left;
+    position: relative;
+    left: 0;
+    width: 4000px; // 每个图100
+    height: 80px;
+}
+
+.pic-container img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin: 0 9px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.pic-container .active {
+    border-color: #00FFFF;
+    box-shadow: 0 0 2px #00FFFF;
+}
+
+.pic-container img:hover {
+    border-color: #00FFFF;
+    box-shadow: 0 0 2px #00FFFF;
+}
+
+.arrow {
+    display: block;
+    width: 46px;
+    height: 80px;
+    line-height: 80px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: top;
+    background-color: RGBA(0, 0, 0, .3);
+    color: #fff;
+}
+
+.arrow:hover {
+    background-color: RGBA(0, 0, 0, .7);
+}
+
+#prev,
+#next {
+    position: absolute;
+    bottom: 10%;
+}
+
+#prev {
+    left: 30%;
+}
+
+#next {
+    right: 30%;
+}
+
+#close {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    display: block;
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+    background: url(../icon/close.png) no-repeat;
+}
