@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .modal{
+            position:fixed;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            background-color:rgba(0,0,0,0.5);
+            display:none;
+            z-index:1050;
+            opacity:0;
+            transition: all .5s ease-out 0s;
+        }
+        .dialog{
+            width:500px;
+            height:300px;
+            position:relative;
+            box-shadow:0 5px 15px rgba(0,0,0,.5);
+            border-radius:10px;
+            background-color:#fff;
+            margin:30px auto;
+            transform: translate(0,-40%);
+            -webkit-transform: translate(0,-40%);
+            transition: all .5s ease-out 0s;
+        }
+        .dialog-header{
+            box-sizing:border-box;
+            border-bottom:1px solid #ccc;
+        }
+        .dialog-header h3,.dialog-header span{
+            display:inline-block;
+        }
+        .dialog-header span{
+            float:right;
+            margin-right:10px;
+            overflow: hidden;
+            line-height:58px;
+            cursor:default;
+            font-size:18px;
+        }
+        .in{
+            opacity: 1;
+        }
+        .in .dialog{
+            transform: translate(0,0);
+            -webkit-transform: translate(0,0);
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="click" id="btn">
+<div class="modal" id="modal">
+    <div class="dialog">
+        <header class="dialog-header">
+            <h3>this is dialog title</h3>
+            <span id="close">&times;</span>
+        </header>
+        <div class="dialog-content">
+            this is dialog content
+        </div>
+    </div>
+</div>
+
+<script>
+    var oBtn = document.getElementById("btn");
+    var oModal = document.getElementById("modal");
+    var oClose = document.getElementById("close");
+    oBtn.addEventListener("click", function(){
+        oModal.style.display = "block";
+        var timer = setTimeout(function(){
+            oModal.className = "modal in";
+            clearTimeout(timer);
+        },0);
+    });
+    oClose.addEventListener("click", function(){
+        oModal.className = "modal";
+        var timer = setTimeout(function(){
+            oModal.style.display = "none";
+            clearTimeout(timer);
+        },200);
+    });
+
+
+    //封装=>说明一点，这里用了jquery选择器，也可以替换掉。
+    /*
+    * 封装之后可以创建Dialog对象，并且可以配置其位置和大小，在项目中可以在任何地方创建使用，不必每个弹窗都写一遍。
+    * */
+    //默认配置
+    var defaultConfig = {
+        width:600,
+        height:300,
+        top:30
+    }
+    function Dialog(config){
+        this.config = {
+            id:config.id || 'modal',
+            width:config.width || 600,
+            height:config.height || 400,
+            top:config.top || 30
+        };
+        $($('#'+config.id).children()[0]).css({
+            'width': config.width+"px",
+            'height': config.height+"px",
+            'margin-top': config.top+"px"
+        });
+    }
+    Dialog.prototype = {
+        show: function(){
+            $('#'+this.config.id).show();
+            var that = this;
+            var timer = setTimeout(function(){
+                $('#'+that.config.id).addClass("in");
+                clearTimeout(timer);
+            });
+        },
+        hide: function(){
+            $('#'+this.config.id).removeClass('in');
+            var that = this;
+            var timer = setTimeout(function(){
+                $('#'+that.config.id).hide();
+                clearTimeout(timer);
+            }, 200);
+        }
+    }
+</script>
+</body>
+</html>

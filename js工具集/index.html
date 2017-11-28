@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var aa = undefined;
+    var ph = {};
+    var ph1 = 18310963456;
+    var getDataType = Object.prototype.toString;
+    /*工具集*/
+    var utility={
+        /*检验数据类型*/
+        dataType:function (o) {
+            return getDataType.call(o).replace("object ","");
+        },
+        isObject:function(o){
+            return  getDataType.call(o)=="[object Object]";
+        },
+        isArray:function(o){
+            return  getDataType.call(o)=="[object Array]";
+        },
+        isNull:function(o){
+            return  getDataType.call(o)=="[object Null]";
+        },
+        isDocument:function(o){
+            return  getDataType.call(o)=="[object Document]"|| "[object HTMLDocument]";
+        },
+        isString:function(o){
+            return  getDataType.call(o)=="[object String]";
+        },
+        isNumber:function (o) {
+            return  getDataType.call(o)=="[object Number]";
+        },
+        isBoolean:function (o) {
+            return  getDataType.call(o)=="[object Boolean]";
+        },
+        isUndefined:function (o) {
+            return  getDataType.call(o)=="[object Undefined]";
+        },
+        /*判断手机号*/
+        isPhone:function(phoneNo) {
+            var bValidate = RegExp(/^(0|86|17951)?(13[0-9]|15[012356789]|17[0678]|18[0-9]|14[57])[0-9]{8}$/).test(phoneNo);
+            if (bValidate) {
+                return true;
+            }else{
+                return false;
+            }
+        },
+        /*判断邮箱号*/
+        isEmail:function(email) {
+            var bValidate = RegExp(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/).test(email);
+            if (bValidate) {
+                return true;
+            }else{
+                return false;
+            }
+        },
+    };
+    console.log(utility.isNull(aa));
+    console.log(utility.isObject(aa));
+    console.log(utility.dataType(ph));
+    console.log(utility.isPhone(ph1));
+    console.log("yes")
+</script>
+</body>
+</html>

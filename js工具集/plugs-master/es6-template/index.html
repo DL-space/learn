@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			padding:0;
+			marign:0;
+		}
+		ul, li{
+			list-style: none;
+		}
+	</style>
+</head>
+<body>
+<div id="app">
+	<p>your name is ${name}</p>
+	<p>your age is ${age}</p>
+	<p>your height is ${info.height}</p>
+	<p>your weight is ${info.weight}</p>
+	<p z-show="false">this is hide</p>
+	<ul>
+		<li z-repeat="item in list">
+			name:${item.name};age:${item.age};
+		</li>
+	</ul>
+</div>
+<script>
+	let obj = {
+		name:"javascript",
+		age:"22",
+		info:{
+			height:180,
+			weight:70
+		},
+		list:[{
+			name:"xiaoming",
+			age:12
+		},{
+			name:"xiaohong",
+			age:13
+		}]
+	}
+
+	const root = document.querySelector('#app');
+	const templateReg = /\${([^{}])+}/g;
+
+	class Compile{
+		constructor(node,data){
+			this.compileNode(node);
+			this.data = data;
+			node.hasChildNodes() ? this.compileNodeList(node.childNodes) : null;
+		}
+		compileNodeList(nodeList){
+			let childListFn, node;
+			for(node of nodeList){
+				if(node.nodeType == 1 && node.hasAttribute("z-repeat")){
+					this.compileElement(node);
+				}else{
+					this.compileNode(node);
+					node.hasChildNodes ? this.compileNodeList(node.childNodes) : null;
+				}
+			}
+		}
+		compileNode(node){
+			if(node.nodeType == 1){
+				this.compileElement(node);
+			}else if(node.nodeType == 3){
+				this.compileText(node, this.data);
+			}
+		}
+		compileElement(node){
+			//解析指令
+			var dirs = node.attributes;
+			if(node.hasAttribute("z-repeat")){
+				this.dealDir("z-repeat",node,dirs);
+			}
+
+			if(node.getAttribute("z-show")){
+				console.log(1);
+				this.dealDir("z-show", node, dirs);
+			}
+
+
+		}
+		compileText(node, data){
+			//解析模板
+			if(!node.data){
+				return;
+			}
+			node.data = this.compileTemplate(node.data)(data);
+
+		}
+		compileTemplate(textFragment){
+			let res = null;
+			let keyArray = [];
+			while(res = templateReg.exec(textFragment)){
+				let key = res[0].slice(2,res[0].length-1);
+				keyArray.push(key);
+			}
+			for(let item of keyArray){
+				let nReg = new RegExp("\\${"+item+"}","g");
+				let dataStr = this.dealText(item);
+				dataStr = dataStr.replace(/\\/g, "");
+				textFragment = textFragment.replace(/\\/g, "");
+				textFragment = textFragment.replace(nReg, dataStr);
+			}
+			return new Function("data","return `"+textFragment+"`");
+		}
+		dealText(text){
+			let dataStrStart = "${data.";
+			let dataStrEnd = "}";
+			if(!text){
+				return "";
+			}
+			return dataStrStart+text+dataStrEnd;
+
+		}
+		createDocFragment(){
+			let docFragment = null;
+			return docFragment = document.createDocumentFragment();
+
+		}
+		dealDir(type,node,dirs){
+			switch(type){
+				case "z-repeat":((node,dirs)=>{
+						let dirArr = node.getAttribute("z-repeat").split(" ");
+						node.removeAttribute("z-repeat")
+						let parentNode = node.parentNode;
+						let docFragment = this.createDocFragment();
+						let len = this.data[dirArr[2]].length;
+						let i = 0;
+						while(len){
+							let cloneNode = node.cloneNode(true);
+							cloneNode.setAttribute("index", i);
+							let nodeText = cloneNode.childNodes[0].data;
+							let res = null;
+							let keyArray = [];
+							while(res = templateReg.exec(nodeText)){
+								let key = res[0].slice(3+dirArr[0].length,res[0].length-1);
+								keyArray.push(key);
+							}
+							for(let item of keyArray){
+								let nReg = new RegExp("\\${"+dirArr[0]+"."+item+"}","g");
+								cloneNode.innerHTML = cloneNode.innerHTML.replace(nReg, "${"+dirArr[2]+"\\["+i+"\\]\\."+item+"}");
+							}
+							docFragment.appendChild(cloneNode);
+							len--;
+							i++;
+						}
+						parentNode.appendChild(docFragment);
+						parentNode.removeChild(node);
+					})(node,dirs);
+					break;
+				case "z-show":((node,dirs)=>{
+						let flag = node.getAttribute("z-show");
+						if(flag=="false"){
+							node.style.display = "none";
+						}
+					})(node,dirs)
+
+			}
+		}
+	}
+	new Compile(root, obj);
+
+</script>
+</body>
+</html>
