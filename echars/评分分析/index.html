@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>评分分析</title>
+    <script src="echarts.js"></script>
+    <script src="jquery-3.2.0.js"></script>
+    <style>
+        #pf-chart{
+            width: 100%;
+            height: 430px;
+        }
+        .pf-analysis{
+            width: 750px;
+        }
+        .pf-analysis .action{
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .pf-analysis .action button{
+            width: 130px;
+            height: 24px;
+            line-height: 24px;
+            margin: 0 auto;
+            cursor: pointer;
+            border-radius: 5px;
+            border: solid 1px #999;
+            background: none;
+        }
+    </style>
+</head>
+<body>
+<div class="pf-analysis">
+    <div id="pf-chart"></div>
+    <div class="action">
+        <button>收起评分分析</button>
+    </div>
+</div>
+<script>
+    var myChartPf = echarts.init(document.getElementById('pf-chart'));
+    var optionChartPf = {
+        title : {
+            text: '近30日线索质量平均分布变化情况',
+            bottom: 0,
+            left: "50%",
+            textAlign: 'center',
+            textStyle: {
+                color: '#666'
+            }
+        },
+        tooltip: {},
+        legend:{
+            data : ['全国','北京'],
+            orient: 'vertical',
+            left:'right',
+            top:'80px'
+        },
+        xAxis:{
+            type: 'category',
+            boundaryGap: false,
+            data: ["0713","0714","0715","0716","0717","0718","0719","0720"]
+        },
+        yAxis:{
+            type: 'value',
+            interval: 1,
+        },
+        series: [
+         {
+            name: '全国',
+            type: 'line',
+            smooth: 'true',
+            symbol: 'emptyCircle',
+            symbolSize: 14,
+            itemStyle : {normal:{label:{show: true}}},
+            data: [1.7,2.6,1.2,2.7,1.3,4,0.5,2.4],
+        },
+        {
+            name: '北京',
+            type: 'line',
+            smooth: 'true',
+            symbol: 'emptyCircle',
+            symbolSize: 14,
+            data: [2.6,1.7,2.7,1.2,3.5,1.3,2.4,0.5]
+        }
+        ]
+    };
+    myChartPf.setOption(optionChartPf);
+    $(document).on("click",".pf-analysis .action",function () {
+        var that = $(this);
+        var actionBtn = that.find("button");
+        that.siblings("#pf-chart").toggle(function () {
+            if(actionBtn.text()=="收起评分分析"){
+                actionBtn.text("展开评分分析")
+            }else{
+                actionBtn.text("收起评分分析")
+            }
+        });
+    })
+</script>
+</body>
+</html>
