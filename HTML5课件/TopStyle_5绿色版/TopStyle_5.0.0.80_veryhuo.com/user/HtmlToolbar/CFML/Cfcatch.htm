@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<TITLE>cfcatch</TITLE>
+<SCRIPT LANGUAGE="javascript">
+function initUI() {
+  document.forms[0].type.focus();
+}
+function objectTag() {
+  var result = '<cfcatch';
+
+  var type = document.forms[0].type.value;
+	if (type)
+	  result += ' type="' + type + '"';
+
+  return result += '>' + ts.getSelection(true) + '</cfcatch>';
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+	<table border="0" cellpadding="2">
+		<tr>
+			<td class="ui" align="right" nowrap>Exception type:</td>
+			<td>
+			  <input type="text" name="type" style="width:150px" class="ui">
+			</td>
+			<td align="left" valign="bottom" height="28">
+				<img src="../Shared/Images/btnDown.gif" onClick="document.forms[0].type.value = ts.showPopupMenu(document.forms[0].type.value, 'Application,Database,Template,Object,Synchronization,MissingInclude,Expression,Lock,Any')">
+			</td>
+		</tr>
+	</table>
+</FORM>
+</BODY>
+</HTML>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS3控制超级链接的颜色样式效果_脚本之家</title>
+<style>
+    html, body, h1, h2, p, div, span, fieldset, form, label, legend
+    {border: 0; margin: 0; outline: 0; padding: 0; background: transparent; vertical-align: baseline;}
+    body {width: 500px; margin: 18px 10px 36px; background: #fff; color: #000; font: .875em/1.5em Helvetica, Arial, "Liberation Sans", "Bitstream Vera Sans", sans-serif;}
+	  h1 {border-top: 4px solid #000; margin: 0 0 1em; padding: 1em 0 0; font-size: 1.5em;}
+	  h2 {border-top: 2px solid #ccc; margin: 0 0 1.286em; padding: 1.286em 0 0; font-size: 1.167em;}
+	  h3 {font-size: 1em; margin: 0;}
+	  p {margin: 0 0 1.5em;}
+	  li {margin: 0 0 .2em;}
+	  .section {border-bottom: 2px solid #ccc; margin: 0 0 1em;}
+	  .last {border: 0;}
+
+    /* THIS IS THE IMPORTANT STYLES */
+    
+    a {color: #0c7fce;}
+    
+    /* removes underline */
+    a.remove-underline:hover {text-decoration: none;}
+    
+    /* add underline */
+    a.add-underline {text-decoration: none;}
+    a.add-underline:hover {text-decoration: underline;}
+    
+    /* changes color, underline */
+    a.change-color-underline:hover {color: #ff0066;}
+    
+    /* changes color, no underline */
+    a.change-color-no-underline {text-decoration: none;}
+    a.change-color-no-underline:hover {color: #ff0066;}
+    
+    /* changes color, removes underline */
+    a.change-color-remove-underline:hover {color: #ff0066; text-decoration: none;}
+    
+    /* changes color, adds underline */
+    a.change-color-add-underline {text-decoration: none;}
+    a.change-color-add-underline:hover {color: #ff0066; text-decoration: underline;}
+    
+    /* adds background, underline */
+    a.add-background-underline:hover {background: #ffdeeb;}
+    
+    /* adds background, no underline */
+    a.add-background-no-underline {text-decoration: none;}
+    a.add-background-no-underline:hover {background: #ffdeeb;}
+    
+    /* adds background, removes underline */
+    a.add-background-remove-underline:hover {background: #ffdeeb; text-decoration: none;}
+    
+    /* adds background, adds underline */
+    a.add-background-add-underline {text-decoration: none;}
+    a.add-background-add-underline:hover {background: #ffdeeb; text-decoration: underline;}
+    
+    /* with background, changes color, underline */
+    a.background-change-color-underline {background: #ffdeeb;}
+    a.background-change-color-underline:hover {color: #ff0066;}
+    
+    /* with background, changes color, no underline */
+    a.background-change-color-no-underline {background: #ffdeeb; text-decoration: none;}
+    a.background-change-color-no-underline:hover {color: #ff0066;}
+    
+    /* with background, changes color, removes underline */
+    a.background-change-color-remove-underline {background: #ffdeeb;}
+    a.background-change-color-remove-underline:hover {color: #ff0066; text-decoration: none;}
+    
+    /* with background, changes color, adds underline */
+    a.background-change-color-add-underline {background: #ffdeeb; text-decoration: none;}
+    a.background-change-color-add-underline:hover {color: #ff0066; text-decoration: underline;}
+    
+    /* changes background, no underline */
+    a.change-background-no-underline {padding: 2px; background: #ffe300; color: #000; text-decoration: none;}
+    a.change-background-no-underline:hover {background: #ff0066;}
+    
+    /* changes background, no underline */
+    a.change-background-no-underline-bold {padding: 2px; background: #ffe300; color: #000; font-weight: 700; text-decoration: none;}
+    a.change-background-no-underline-bold:hover {background: #ff0066;}
+    
+    /* change color, dotted underlin */
+    a.change-color-dotted-underline {border-bottom: 1px dotted #0c7fce; text-decoration: none;}
+    a.change-color-dotted-underline:hover {color: #ff0066; border-color: #ff0066;}
+    
+    /* change color, different colored underline */
+    a.change-color-different-underline {border-bottom: 1px solid #ff0066; text-decoration: none;}
+    a.change-color-different-underline:hover {border-color: #0c7fce; color: #ff0066;}
+    
+    /* css3 - has background if external */
+    a.has-background-if-external[href^="http"], a.has-background-if-external[href^="https"] {padding: 0 10px 0 0; background: url(external.png) 100% 0 no-repeat; color: #ff0066;}
+    a.has-background-if-external:hover {color: #0c7fce;}
+    
+    /* css3 - add shadow */
+    a.add-shadow {color: #ff0066;}
+    a.add-shadow:hover {text-decoration: none; text-shadow: #FFB1D0 1px 2px 3px;}
+    
+    /* css3 - adds background, animated */
+    a.add-background-animated {background: #fff; color: #ff0066; -webkit-transition: background-color .5s linear;}
+    a.add-background-animated:hover{background: #FFAECE;}
+    
+    /* css3 - changes background, animated */
+    a.change-background-animated {padding: 2px; background: #ffe300; color: #000; text-decoration: none; -webkit-transition: background-color .5s linear;}
+    a.change-background-animated:hover {background: #ff0066;}
+    
+    /* css3 - show tooltip */
+    a.show-tooltip {position: relative; color: #ff0066; text-decoration: none;}
+    a.show-tooltip:hover {color: #0c7fce;}
+    a.show-tooltip:hover:after {content: attr(href); position: absolute; left: 1em; top: 2em; border: 1px solid #666; padding: 0 10px; background: #f1f1f1; color: #666; font-size: .715em;}
+    
+  </style>
+</head><body>
+  <h1>List of 10+ usability-conscious link styles</h1>
+  <p>Below you can see all the examples of the link hover effects 
+grouped together. At&nbsp;the end of the page there are some more 
+advanced styles that take advantage of CSS3.</p>
+  <h2>Link styles</h2>
+  <div class="section">
+    <h3>Using color and underline</h3>
+    <ul>
+      <li><a href="#" class="remove-underline">Removes underline</a></li>
+      <li><a href="#" class="add-underline">Adds underline</a></li>
+      <li><a href="#" class="change-color-underline">Changes color, underline</a></li>
+      <li><a href="#" class="change-color-no-underline">Changes color, no underline</a></li>
+      <li><a href="#" class="change-color-remove-underline">Changes color, removes underline</a></li>
+      <li><a href="#" class="change-color-add-underline">Changes color, adds underline</a></li>    
+    </ul>
+  </div>
+  <div class="section">
+    <h3>Using backgrounds</h3>
+    <ul>
+      <li><a href="#" class="add-background-underline">Adds background, underline</a></li>
+      <li><a href="#" class="add-background-no-underline">Adds background, no underline</a></li>
+      <li><a href="#" class="add-background-remove-underline">Adds background, removes underline</a></li>
+      <li><a href="#" class="add-background-add-underline">Adds background, adds underline</a></li>
+    </ul>
+    <ul>
+      <li><a href="#" class="background-change-color-underline">With background, changes color, underline</a></li>
+      <li><a href="#" class="background-change-color-no-underline">With background, changes color, no underline</a></li>
+      <li><a href="#" class="background-change-color-remove-underline">With background, changes color, remove underline</a></li>
+      <li><a href="#" class="background-change-color-add-underline">With background, changes color, adds underline</a></li>
+    </ul>
+    <ul>
+      <li><a href="#" class="change-background-no-underline">Changes background, no underline</a></li>
+      <li><a href="#" class="change-background-no-underline-bold">Changes background, no underline, bold</a></li>
+    </ul>
+  </div>
+  <div class="section">
+    <h3>Using border instead of text-decoration</h3>
+    <ul>
+      <li><a href="#" class="change-color-dotted-underline">Change color, dotted underline</a></li>
+      <li><a href="#" class="change-color-different-underline">Change color, different colored underline</a></li>
+    </ul>
+  </div>
+  <div class="section last">
+    <h3>Advanced link styles using CSS2.1 and CSS3</h3>
+    <p>Some of these effects require Safari or WebKit browser, some 
+require Firefox or Opera. I'll mention the support next to each link.</p>
+    <ul>
+      <li><a href="http://www.jb51.net" class="has-background-if-external">Shows an arrow in right corner if the link is external</a>, all other than IE6</li>
+      <li><a href="#" class="add-shadow">Adds shadow</a>, Safari 3+ or Opera 9.6+, degrades gracefully in other browsers</li>
+      <li><a href="#" class="add-background-animated">Adds background, animated</a>, WebKit or Safari 3+, degrades gracefully in other browsers</li>
+      <li><a href="#" class="change-background-animated">Changes background, animated</a>, WebKit or Safari 3+, degrades gracefully in other browsers</li>
+      <li><a href="http://www.jb51.net" class="show-tooltip">Changes color, shows custom tooltip with the URL</a>, reliably only WebKit, Safari 3+, and IE8 (surprise). Doesn't degrade gracefully but could with some hacks</li>
+    </ul>
+  </div><br />
+
+</div>
+</body>
+</html>

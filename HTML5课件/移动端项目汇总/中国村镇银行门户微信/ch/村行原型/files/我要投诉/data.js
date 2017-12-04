@@ -1,0 +1,119 @@
+﻿$axure.loadCurrentPage({
+  "url":"我要投诉.html",
+  "generationDate":new Date(1408153554869.31),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"2807dfde327c43459a032545b3456c13",
+    "type":"Axure:Page",
+    "name":"我要投诉",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"ce645d8c830f4770bdd7210278bef7ac",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "size":{
+              "width":400,
+              "height":700}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"3841b48fb5874ce082266fcd72bc368e",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "size":{
+                  "width":400,
+                  "height":700}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/我要投诉/u0.jpg"}},
+{
+          "id":"1829565101c34826a72fcba72f650ccd",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "opacity":"0",
+            "location":{
+              "x":0,
+              "y":20},
+            "size":{
+              "width":140,
+              "height":60}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"a35cc5f9aafb43ada335e56dbee0c6fc",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "opacity":"0",
+                "location":{
+                  "x":0,
+                  "y":20},
+                "size":{
+                  "width":140,
+                  "height":60}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"在 当前窗口 打开 村行主页",
+                      "target":{
+                        "targetType":"page",
+                        "url":"村行主页.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"resources/images/transparent.gif"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "ce645d8c830f4770bdd7210278bef7ac":{
+      "scriptId":"u0"},
+    "3841b48fb5874ce082266fcd72bc368e":{
+      "scriptId":"u1"},
+    "1829565101c34826a72fcba72f650ccd":{
+      "scriptId":"u2"},
+    "a35cc5f9aafb43ada335e56dbee0c6fc":{
+      "scriptId":"u3"}}});

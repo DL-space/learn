@@ -1,0 +1,32 @@
+Line Break
+NBSP
+Left S Quote
+Right S Quote
+Left D Quote
+Right D Quote
+Em-Dash
+En-Dash
+Bullet
+-
+Pound
+Euro
+Yen
+-
+Copyright
+Registered
+Trademark
+-
+Half
+Quarter
+ThreeQuarters
+Squared
+Cubed
+Degree
+-
+a acute
+a grave
+a umlaut
+c cedilla
+e acute
+e grave
+o umlaut

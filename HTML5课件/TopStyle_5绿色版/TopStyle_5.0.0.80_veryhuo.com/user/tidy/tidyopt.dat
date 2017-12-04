@@ -1,0 +1,499 @@
+'***********************************************************************************************
+' IMPORTANT: The following options are set internally by TopStyle, so they're not exposed here:
+'***********************************************************************************************
+' error-file
+' write-back
+' quiet
+' markup
+' gnu-emacs
+'***********************************************************************************************
+
+'**********************
+' HTML, XHTML and XML
+'**********************
+
+[add-xml-decl]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Add the XML declaration when outputting XML or XHTML
+
+[add-xml-space]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Add xml:space="preserve" to elements such as <PRE>, <STYLE> and <SCRIPT> when generating XML
+
+[alt-text]
+group=HTML, XHTML and XML
+type=string
+default=
+hint=Default ALT attribute text for IMG tags.
+
+[anchor-as-name]
+group=HTML, XHTML and XML
+type=bool
+default=yes
+hint=Delete or add the name attribute in elements where it can serve as anchor
+
+[assume-xml-procins]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Change the parsing to require ?> as the terminator rather than >
+
+[bare]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Strip Microsoft-specific HTML from Office 2000 documents and output spaces instead of &nbsp;
+
+[clean]
+type=bool
+default=no
+group=HTML, XHTML and XML
+hint=Replace presentational markup with CSS rules and structural markup
+common=1
+
+[css-prefix]
+group=HTML, XHTML and XML
+type=string
+default=c
+hint=Default prefix to use for style rules
+
+[decorate-inferred-ul]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Decorate inferred UL elements with some CSS markup to avoid indentation to the right
+
+[doctype]
+group=HTML, XHTML and XML
+type=doctype
+default=auto
+hint=DOCTYPE to generate.  Options include auto, omit, strict, loose, transitional, or user-specified string
+
+[drop-empty-paras]
+group=HTML, XHTML and XML
+type=bool
+default=yes
+hint=Discard empty <p>..</p> blocks
+common=1
+
+[drop-font-tags]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Remove rather than replace <font> and <center> tags when clean option has been set to yes.
+common=1
+
+[drop-proprietary-attributes]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Remove proprietary attributes
+
+[enclose-block-text]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Enclose block text between <p>..</p>
+
+[enclose-text]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Enclose body text between <p>..</p>
+
+[escape-cdata]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Convert CDATA sections to text
+
+[fix-backslash]
+group=HTML, XHTML and XML
+type=bool
+default=yes
+hint=Replace backslashes in URLs with forward slashes
+common=1
+
+[fix-bad-comments]
+group=HTML, XHTML and XML
+type=bool
+default=yes
+hint=Replace unexpected hyphens in comments
+
+[fix-uri]
+group=HTML, XHTML and XML
+type=bool
+default=yes
+hint=Escape illegal chars in URI attributes
+
+[hide-comments]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Remove comments
+common=1
+
+[hide-endtags]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Remove optional end tags (ignored for XML)
+common=1
+
+[indent-cdata]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Indent CDATA sections
+
+[input-xml]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Use XML parser instead of error-correcting HTML parser
+
+[join-classes]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Combine class names in elements with multiple class assignments
+
+[join-styles]
+group=HTML, XHTML and XML
+type=bool
+default=yes
+hint=Combine styles in elements with multiple style values
+
+[literal-attributes]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Retain whitespace within attribute values
+
+[logical-emphasis]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Replace <i> with <em> and <b> with <strong>
+common=1
+
+[lower-literals]
+group=HTML, XHTML and XML
+type=bool
+default=yes
+hint=Lowercase pre-defined attribute values
+
+[merge-divs]
+group=HTML, XHTML and XML
+type=autobool
+default=auto
+hint=Merge nested <div> tags when using clean option
+
+[merge-spans]
+group=HTML, XHTML and XML
+type=autobool
+default=auto
+hint=Merge nested <span> tags when using clean option
+
+[ncr]
+group=HTML, XHTML and XML
+type=bool
+default=yes
+hint=Allow numeric character references
+
+[new-blocklevel-tags]
+group=HTML, XHTML and XML
+type=string
+default=
+hint=Space- or comma-separated list of new block-level tags
+
+[new-empty-tags]
+group=HTML, XHTML and XML
+type=string
+default=
+hint=Space- or comma-separated list of new empty inline tags
+
+[new-inline-tags]
+group=HTML, XHTML and XML
+type=string
+default=
+hint=Space- or comma-separated list of new non-empty inline tags
+
+[new-pre-tags]
+group=HTML, XHTML and XML
+type=string
+default=
+hint=Space- or comma-separated list of <pre>-style tags
+
+[numeric-entities]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Output unknown HTML entities in numeric form
+
+[output-html]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Output HTML
+
+[output-xhtml]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Output XHTML
+common=1
+
+[output-xml]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Output well-formed XML
+
+[preserve-entities]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Preserve well-formed entitites
+
+[quote-ampersand]
+group=HTML, XHTML and XML
+type=bool
+default=yes
+hint=Convert & to &amp;
+
+[quote-marks]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Convert quotes to &quot;
+
+[quote-nbsp]
+group=HTML, XHTML and XML
+type=bool
+default=yes
+hint=Output non-breaking space characters as &nbsp;
+
+[repeated-attributes]
+group=HTML, XHTML and XML
+type=string
+default=keep-last
+hint=Keep the first or last value of repeated attributes
+
+[replace-color]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Replace numeric color values with color names where applicable
+
+[show-body-only]
+group=HTML, XHTML and XML
+type=autobool
+default=no
+hint=Output only the contents of the <body> tag
+
+[uppercase-attributes]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Output attribute names in upper case
+common=1
+
+[uppercase-tags]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Output tag names in upper case
+common=1
+
+[word-2000]
+group=HTML, XHTML and XML
+type=bool
+default=no
+hint=Remove surplus markup from HTML generated from Microsoft Word 2000
+
+'**********************
+' Diagnostics
+'**********************
+
+[accessibility-check]
+group=Diagnostics
+type=integer
+default=0
+hint=0-Tidy Classic (no check), 1-Priority I Checks, 2-Priority II Checks, 3-Priority III Checks
+
+[show-errors]
+group=Diagnostics
+type=integer
+default=6
+hint=Specifies the number to determine if further errors should be shown
+
+[show-warnings]
+group=Diagnostics
+type=bool
+default=yes
+hint=Suppress warnings
+common=1
+
+'**********************
+' Pretty Print
+'**********************
+
+[break-before-br]
+group=Pretty Print
+type=bool
+default=no
+hint=Add a line break before each <br>
+common=1
+
+[indent]
+group=Pretty Print
+type=autobool
+default=no
+hint=Indent block-level tags
+common=1
+
+[indent-attributes]
+group=Pretty Print
+type=bool
+default=no
+hint=Begin each attribute on a new line
+common=1
+
+[indent-spaces]
+group=Pretty Print
+type=integer
+default=2
+hint=Number of spaces to use when indent option is enabled
+common=1
+
+[punctuation-wrap]
+group=Pretty Print
+type=bool
+default=no
+hint=Line wrap after some Unicode or Chinese punctuation characters
+
+[sort-attributes]
+group=Pretty Print
+type=string
+default=none
+hint=Sort attributes within an element using the specified sort algorithm. If set to "alpha", the algorithm is an ascending alphabetic sort. 
+
+[tab-size]
+group=Pretty Print
+type=integer
+default=4
+hint=Number of columns (spaces) between successive tab stops
+
+[vertical-space]
+group=Pretty Print
+type=bool
+default=no
+hint=Add some empty lines for readability
+common=1
+
+[wrap]
+group=Pretty Print
+type=integer
+default=68
+hint=Right margin for line wrapping (use 0 to disable)
+common=1
+
+[wrap-asp]
+group=Pretty Print
+type=bool
+default=yes
+hint=Wrap lines contained in ASP blocks <%..%>
+
+[wrap-attributes]
+group=Pretty Print
+type=bool
+default=no
+hint=Wrap attribute values
+common=1
+
+[wrap-jste]
+group=Pretty Print
+type=bool
+default=yes
+hint=Wrap lines contained in JSTE blocks <#..#>
+
+[wrap-php]
+group=Pretty Print
+type=bool
+default=yes
+hint=Wrap lines contained in PHP blocks <?php..?>
+
+[wrap-script-literals]
+group=Pretty Print
+type=bool
+default=no
+hint=Wrap lines containing string literals that appear in script
+
+[wrap-sections]
+group=Pretty Print
+type=bool
+default=yes
+hint=Wrap lines contained in <![..]> sections
+
+'**********************
+' Encoding
+'**********************
+
+[ascii-chars]
+group=Encoding
+type=bool
+default=no
+hint=Same as char-encoding: ascii
+
+[char-encoding]
+group=Encoding
+type=encoding
+default=ascii
+hint=Character encoding to use for both input and output
+
+[input-encoding]
+group=Encoding
+type=encoding
+default=latin1
+hint=Character encoding to use for input
+
+[newline]
+group=Encoding
+type=string
+default=
+hint=Newline format (LF, CRLF or CR)
+
+[output-bom]
+group=Encoding
+type=autobool
+default=auto
+hint=Write a Unicode BOM to the beginning of the output
+
+[output-encoding]
+group=Encoding
+type=encoding
+default=ascii
+hint=Character encoding to use for output
+
+'**********************
+' Miscellaneous
+'**********************
+
+[force-output]
+group=Miscellaneous
+type=bool
+default=no
+hint=Produce output even if errors are encountered
+common=1
+
+[tidy-mark]
+group=Miscellaneous
+type=bool
+default=no
+hint=Add HTML Tidy <meta> tag to output
+common=1

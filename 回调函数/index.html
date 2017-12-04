@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>回调函数</title>
+    <script src="js/callback.js"></script>
+</head>
+<body>
+<div>
+    <button id="btn" onclick="aa(this)">点击</button>
+    <button id="a" onclick="add(1,2,callback)">回调</button>
+</div>
+<script>
+    var btn = document.getElementById("btn");
+    /*btn.addEventListener("click",function () {
+        console.log("你点击了按钮");
+        console.log(this);
+        this.style.color = "red";
+    });*/
+    function aa(i) {
+        var self = i;
+        console.log("你点击了按钮");
+        console.log(self);
+        self.style.color = "red";
+    }
+    function add(a,b,callback) {
+        console.log(this);//这个this指向了window
+        var result =  a+b;
+        callback(result);
+    }
+    function callback(i) {
+        console.log("你触发了回调函数");
+        console.log(i);
+    }
+</script>
+</body>
+</html>

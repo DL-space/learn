@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<TITLE>JSP Include</TITLE>
+<SCRIPT LANGUAGE="javascript">
+function initUI() {
+  document.forms[0].page.focus();
+}
+function objectTag() {
+  var result = '<jsp:include';
+
+  var page = document.forms[0].page.value;
+	if (!page) page = '|';
+	result += ' page="' + page + '"';
+
+	(document.forms[0].flush.checked) ? result += ' flush="true"' : result += ' flush="false"';
+
+  return result += ' />';
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+	<table border="0" cellpadding="2">
+		<tr>
+			<td class="ui" align="right" nowrap>Page:</td>
+			<td nowrap>
+			  <input type="text" name="page" style="width:150px" class="ui">
+				<img src="../Shared/Images/folder.gif" style="cursor: hand" onClick="document.forms[0].page.value = ts.browseForFileURL(document.forms[0].page.value)">
+			</td>
+		</tr>
+    <tr>
+      <td></td>
+			<td class="ui" nowrap><input name="flush" type="checkbox" checked>Flush</td>
+    </tr>
+	</table>
+</FORM>
+</BODY>
+</HTML>

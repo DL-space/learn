@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>遍历localStorage中内容</title>
+<script language="javascript">
+function ergodic(){
+	var storage = window.localStorage;
+	for (var i=0, len = storage.length; i  <  len; i++){
+		var key = storage.key(i);
+		var value = storage.getItem(key);
+		var kk =key + "=" + value+"  "+kk;
+	}
+	document.getElementById("key").innerHTML =kk;
+}
+</script>
+</head>
+
+<body onLoad="ergodic()">
+<div id="key"></div>
+</body>
+</html>

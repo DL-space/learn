@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>ADODB.Connection</title>
+<script src="ASPConnection.vbs" language="VBScript"></script>
+</head>
+<body>
+<form>
+<table>
+<tr><td class="ui">Connection&nbsp;name&nbsp;</td><td><input style="width:170px" class="ui" type="text" name="conn" value="conn"></td></tr>
+<tr><td class="ui">User ID</td><td><input style="width:170px" class="ui" type="text" name="uid"></td></tr>
+<tr><td class="ui">Password</td><td><input style="width:170px" class="ui" type="text" name="pwd"></td></tr>
+
+
+<tr><td class="ui">Data&nbsp;Provider</td><td><select style="width:170px" class="ui" name="provider">
+<option value="0">Microsoft Jet (Access)</option>
+<option value="1">SQL Server 2000</option>
+<option value="2">SQL Server 2005</option>
+<option value="3">SQL Server 2005 Express</option>
+</select></td></tr>
+<tr><td class="ui">Data Source</td><td><input style="width:150px" class="ui" type="text" name="datasource">&nbsp;<img src="../Shared/Images/folder.gif" style="cursor: hand" onClick="document.forms(0).datasource.value = ts.browseForFileURL(document.forms(0).datasource.value)"></td></tr>
+<tr><td valign="top" class="ui">Database<br>(Initial Catalog)</td><td valign="top"><input class="ui" style="width:170px" type="text" name="database" ></td></tr>
+<tr><td class="ui" colspan="2">Add ASP delimiters&nbsp;<input class="ui" type="checkbox" name="asptags" value="true"></td></tr>
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.ui-resizable {
+	POSITION: relative
+}
+.ui-resizable-handle {
+	Z-INDEX: 99999; POSITION: absolute; DISPLAY: block; FONT-SIZE: 0.1px
+}
+.ui-resizable-disabled .ui-resizable-handle {
+	DISPLAY: none
+}
+.ui-resizable-autohide .ui-resizable-handle {
+	DISPLAY: none
+}
+.ui-resizable-n {
+	WIDTH: 100%; HEIGHT: 7px; TOP: -5px; CURSOR: n-resize; LEFT: 0px
+}
+.ui-resizable-s {
+	WIDTH: 100%; BOTTOM: -5px; HEIGHT: 7px; CURSOR: s-resize; LEFT: 0px
+}
+.ui-resizable-e {
+	WIDTH: 7px; HEIGHT: 100%; TOP: 0px; CURSOR: e-resize; RIGHT: -5px
+}
+.ui-resizable-w {
+	WIDTH: 7px; HEIGHT: 100%; TOP: 0px; CURSOR: w-resize; LEFT: -5px
+}
+.ui-resizable-se {
+	WIDTH: 12px; BOTTOM: 1px; HEIGHT: 12px; CURSOR: se-resize; RIGHT: 1px
+}
+.ui-resizable-sw {
+	WIDTH: 9px; BOTTOM: -5px; HEIGHT: 9px; CURSOR: sw-resize; LEFT: -5px
+}
+.ui-resizable-nw {
+	WIDTH: 9px; HEIGHT: 9px; TOP: -5px; CURSOR: nw-resize; LEFT: -5px
+}
+.ui-resizable-ne {
+	WIDTH: 9px; HEIGHT: 9px; TOP: -5px; CURSOR: ne-resize; RIGHT: -5px
+}

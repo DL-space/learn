@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js获取元素样式</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="../数组/jquery-3.2.0.js"></script>
+</head>
+<body>
+<div id="a" style="background-color: #0000cc">这是a</div>
+<div id="b" style="background-color: red">这是b</div>
+<div id="c" style="background-color: green">这是c</div>
+<script>
+    var a = document.getElementById('a');
+    var b = document.getElementById("b");
+    a.onclick = function () {
+        console.log(this.style.backgroundColor);//ele.style只能获取行间style的样式，无法获取外链样式
+        console.log(this.style.color);//获取不到
+        //console.log(this.currentStyle.color);//ie获取元素当前样式（包括外链）
+        var aStyle = getComputedStyle(this);//获取元素样式，包括行间style和外链样式
+        console.log(aStyle.color);
+        console.log(aStyle.backgroundColor);
+    };
+    a.onclick = function () {
+        console.log(1)
+    };
+    a.addEventListener("click",function () {
+        console.log(2)
+    });
+    a.addEventListener("click",function () {
+        console.log(3)
+    });
+    b.onclick = function () {
+        var bStyle = getStyle(this);
+        console.log(bStyle.fontSize);
+        console.log(bStyle.backgroundColor);
+    };
+    $("#c").click(function () {
+        var cStyle = $(this).css("fontSize");
+        console.log(cStyle);
+    });
+    /*js获取元素样式*/
+    function getStyle(ele) {
+        var style = null;
+        if(window.getComputedStyle) {
+            style = window.getComputedStyle(ele, null);
+        }else{
+            style = ele.currentStyle;
+        }
+        return style;
+    }
+</script>
+</body>
+</html>

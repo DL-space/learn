@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<TITLE>JSP Param</TITLE>
+<SCRIPT LANGUAGE="javascript">
+function initUI() {
+  document.forms[0]._name.focus();
+}
+function objectTag() {
+  var result = '<jsp:param';
+
+  var _name = document.forms[0]._name.value;
+	if (!_name) _name = '|'; 
+  result += ' name="' + _name + '"';
+
+	result += ' value="' + document.forms[0]._value.value + '"';
+
+  return result += ' />';
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+	<table border="0" cellpadding="2">
+		<tr>
+			<td class="ui" align="right">Name:</td>
+			<td><input type="text" name="_name" style="width:150px" class="ui"></td>
+		</tr>
+		<tr>
+			<td class="ui" align="right">Value:</td>
+			<td><input type="text" name="_value" style="width:150px" class="ui"></td>
+		</tr>
+	</table>
+</FORM>
+</BODY>
+</HTML>

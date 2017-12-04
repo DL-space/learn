@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>Table</title>
+<script src="Table.js" language="JavaScript"></script>
+<link href="../Shared/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<form>
+  <table border="0" cellpadding="0" cellspacing="4">
+    <tr>
+      <td colspan="5" align="right" nowrap>
+			  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td valign="center" nowrap class="ui">Table size&nbsp;</td>
+            <td width="100%" valign="center">
+              <hr size="2">
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td align="right" nowrap class="ui">Rows:</td>
+      <td width="1%">
+        <input name="Rows" type="text" style="width:35px" class="ui" value="3" size="8">
+      </td>
+      <td align="right" nowrap class="ui">Columns:</td>
+      <td><input name="Cols" type="text" style="width:35px" class="ui" value="3" size="8">
+      </td>
+      <td width="20">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right" nowrap class="ui">Table width:</td>
+      <td><input name="Width" type="text" style="width:35px" class="ui" value="200" size="8">
+      </td>
+      <td colspan="2" align="left" nowrap><select name="Units" style="width:75px" class="ui">
+          <option value="percent"> percent
+          <option value="pixels" selected> pixels
+        </select>
+      </td>
+      <td align="left" nowrap>&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right" nowrap class="ui">Border thickness:</td>
+      <td><input name="Border" type="text" style="width:35px" class="ui" value="1" size="8">
+      </td>
+      <td colspan="2" align="left" nowrap class="ui">pixels</td>
+      <td align="left" nowrap>&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right" nowrap class="ui">Cell padding:</td>
+      <td><input name="Cellpad" type="text" style="width:35px" class="ui" value="" size="8">
+      </td>
+      <td colspan="2" align="left" nowrap><img src="../Shared/Images/tableCellPadding.gif" width="17" height="17" align="middle">
+      </td>
+      <td align="left" nowrap>&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right" nowrap class="ui">Cell spacing:</td>
+      <td><input name="Cellspace" type="text" style="width:35px" class="ui" value="" size="8">
+      </td>
+      <td colspan="2" align="left" nowrap><img src="../Shared/Images/tableCellSpacing.gif" width="17" height="17" align="middle">
+      </td>
+      <td align="left" nowrap>&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="5" align="right" valign="baseline" nowrap><table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td valign="center" nowrap class="ui">Header&nbsp;</td>
+            <td width="100%" valign="center">
+              <hr size="2">
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" align="center" nowrap>
+        <table cellspacing="1" border="0">
+          <tr>
+            <td width="70" height="65" align="center" nowrap bgcolor="#316AC5" id="none" class="ui">
+						  <font color="#FFFFFF" id="nonefont">
+                <img onClick="TBL_HDR.update('none');focus()" src="../Shared/Images/tableHeaderNone.gif" alt="No header" name="tableImage12" width="37" height="33" align="absmiddle" style="cursor: hand">
+                <br>
+                None
+							</font>
+						</td>
+            <td width="70" height="65" align="center" nowrap bgcolor="#CCCCCC" id="col" class="ui">
+						  <font color="#000000" id="colfont">
+                <img onClick="TBL_HDR.update('col');focus()" src="../Shared/Images/tableHeaderColumn.gif" alt="Left column header" name="tableImage22" width="37" height="33" align="absmiddle" style="cursor: hand">
+                <br>
+                Left
+							</font>
+						</td>
+            <td width="70" height="65" align="center" nowrap bgcolor="#CCCCCC" id="row" class="ui">
+						  <font color="#000000" id="rowfont">
+                <img onClick="TBL_HDR.update('row');focus()" src="../Shared/Images/tableHeaderRow.gif" alt="Top row header" name="tableImage32" width="37" height="33" align="absmiddle" style="cursor: hand">
+                <br>
+                Top
+							</font>
+						</td>
+            <td width="70" height="65" align="center" nowrap bgcolor="#CCCCCC" id="both" class="ui">
+						  <font color="#000000" id="bothfont">
+                <img onClick="TBL_HDR.update('both');focus()" src="../Shared/Images/tableHeaderBoth.gif" alt="Left and top headers" name="tableImage42" width="37" height="33" align="absmiddle" style="cursor: hand">
+                <br>
+                Both
+							</font>
+						</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" align="right" nowrap><table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td valign="center" nowrap class="ui">Accessibility&nbsp;</td>
+            <td width="100%" valign="center">
+              <hr size="2">
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" align="right" nowrap><table width="100%" border="0" cellpadding="0" cellspacing="4">
+          <tr>
+            <td align="right" class="ui">Caption:</td>
+            <td><input name="Caption" type="text" id="Caption" value="" style="width:250px" class="ui">
+            </td>
+          </tr>
+          <tr>
+            <td align="right" nowrap class="ui">Align caption:</td>
+            <td>
+						  <select name="CaptionAlign" id="CaptionAlign" class="ui">
+                <option value="default" selected> default
+                <option value="top"> top
+                <option value="bottom"> bottom
+                <option value="left"> left
+                <option value="right"> right
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td align="right" valign="top" class="ui">Summary:</td>
+            <td>
+						  <textarea name="Summary" wrap="virtual" style="width:250px;height:50px" id="Summary" class="ui"></textarea>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

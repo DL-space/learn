@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>asp:ImageButton</title>
+<SCRIPT SRC="imagebutton.js" language="javascript"></SCRIPT>
+</head>
+<body>
+<form>
+  <table border="0" cellspacing="4">
+    <tr> 
+      <td align="right" nowrap class="ui">ID:</td>
+      <td colspan="2">
+				<input name="idField" type="text" id="idField" style="width:100px" class="ui">
+			</td>
+    </tr>
+    <tr> 
+      <td align="right" nowrap class="ui">Image URL:</td>
+      <td colspan="2" nowrap>
+				<input name="imgURL" type="text" id="imgURL" style="width:200px" class="ui">
+				<img src="../Shared/Images/folder.gif" style="cursor: hand" onClick="document.forms[0].imgURL.value = ts.browseForFileURL(document.forms[0].imgURL.value, true, 'Select Image File')">
+			</td>
+    </tr>
+    <tr>
+      <td align="right" nowrap class="ui">Alternate text:</td>
+      <td colspan="2" nowrap>
+				<input name="altText" type="text" id="altText" style="width:200px" class="ui">
+      </td>
+    </tr>
+    <tr> 
+      <td align="right" nowrap class="ui">Tool tip:</td>
+      <td colspan="2">
+				<input name="toolTip" type="text" id="toolTip" style="width:200px" class="ui">
+			</td>
+    </tr>
+    <tr>
+      <td align="right" nowrap class="ui">Command name:</td>
+      <td colspan="2">
+				<input name="commandName" type="text" id="commandName" style="width:200px" class="ui">
+      </td>
+    </tr>
+    <tr>
+      <td align="right" nowrap class="ui">Command argument:</td>
+      <td colspan="2">
+				<input name="commandArg" type="text" id="commandArg" style="width:200px" class="ui">
+			</td>
+    </tr>
+    <tr>
+      <td align="right" nowrap class="ui">Width:</td>
+      <td>
+				<input type="text" name="width" style="width:35px" class="ui">
+			</td>
+      <td class="ui">
+				Height: 
+				<input type="text" name="height" style="width:35px" class="ui">
+			</td>
+    </tr>
+    <tr>
+      <td align="right" nowrap class="ui">Access key:</td>
+      <td colspan="2">
+				<input type="text" name="aKey" style="width:35px" class="ui">
+			</td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

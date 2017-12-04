@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>编号嵌套-1</title>
+<style type="text/css">
+h1:before{
+	content:counter(count1)".";
+	color:#f00;
+}
+h1{
+	counter-increment:count1;
+	counter-reset:count2;
+}
+h2:before{
+	content:counter(count1)"."counter(count2);
+	color:#090;
+}
+h2{
+	counter-increment:count2;
+	counter-reset:count3;
+	margin-left:30px;
+}
+h3:before{
+	content:counter(count1)"."counter(count2)"."counter(count3);
+	color:#009;
+}
+h3{
+	counter-increment:count3;
+	margin-left:50px;
+}
+</style>
+</head>
+<body>
+<h1>创建网站及站点信息</h1>
+<h2>网站建设理论</h2>
+<h3>站点开发的流程</h3>
+<h3>网页制作过程</h3>
+<h2>安装IIS服务器</h2>
+<h3>Internet信息服务</h3>
+<h3>虚拟目录</h3>
+<h1>网站栏目及版块设计</h1>
+<h2>网页文本概述</h2>
+<h3>文字的格式化</h3>
+<h3>网页文字运用</h3>
+<h2>设计产品信息版块</h2>
+<h3>项目符号与编号</h3>
+<h3>设计过程</h3>
+</body>
+</html>

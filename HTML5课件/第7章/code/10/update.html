@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>更新数据</title>
+<script language="javascript">
+function updateSetting(){
+	var DEMODB = window.openDatabase("mydata", "1.0", "数据库描述", 20000);
+	var JUname=document.getElementsByName("Uname").item(0).value;
+	var Jpost=document.getElementsByName("post").item(0).value;
+	var Jaddress=document.getElementsByName("address").item(0).value;
+	DEMODB.transaction(function (tx){tx.executeSql("UPDATE  user SET Uname=?,post=?,address=? where id=1",[JUname,Jpost,Jaddress]);});  
+		location.reload();
+}  
+</script>
+</head>
+<body>
+<form action="#"  name="formd" method="post">
+  <label for="Uname">员工：</label>
+  <input type="text" name="Uname" size="15">
+  <label for="post">职位：</label>
+  <input type="text" name="post">
+  <label for="address">家庭住址：</label>
+  <input type="text" name="address">
+  <input type="submit" value="提交" name="butt" onClick="updateSetting()">
+</form>
+</body>
+</html>

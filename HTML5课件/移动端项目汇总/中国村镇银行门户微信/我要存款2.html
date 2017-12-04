@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>我要存款2</title>
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<script type="text/javascript" src="./js/Calendar3.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script>
+	<script type="text/javascript">
+		window.onload=function(){
+			checkInput('cb_box_nv');
+		}
+	</script>
+
+</head>
+
+<body>
+
+	<section>
+		<div class="outer_spacing">
+			<form class="cb_box_nv">
+				<ul class="clearfix">
+					<li class="cb_borrow_two">
+						<h3 class="cb_borrow_title fl">预计存款额度</h3>
+						<h3 class="cb_borrow_title fr">存款期限</h3>
+					</li>
+					<li class="cb_borrow_two clearfix">
+						<div class="cb_putin_box fl">
+							<input type="text" class="cb_borrow_cont js_input" name="money">
+							<b>元</b>
+							<p class="cb_input_tip" title="预计存款额度不能为空"></p>
+						</div>
+						
+						<div class="cb_putin_box fr">
+							<input type="text" class="cb_borrow_cont js_input" name="money">
+							<b>天</b>
+							<p class="cb_input_tip" title="存款期限不能为空"></p>
+						</div>
+					</li>
+				</ul>
+				<ul class="clearfix">
+					<li class="cb_borrow_two">
+						<h3 class="cb_borrow_title fl">存款起始时间</h3>
+						<h3 class="cb_borrow_title fr">存款行</h3>
+					</li>
+					<li class="cb_borrow_two">
+						<div class="cb_putin_box fl">
+							<input type="text" class="cb_borrow_cont js_input" onclick="new Calendar().show(this);" readonly="readonly">
+							<p class="cb_input_tip" title="存款起始时间不能为空"></p>
+						</div>
+						<div class="cb_putin_box fr">
+							<select class="cb_borrow_cont">
+								<option>工商银行</option>
+								<option>建设银行</option>
+								<option>农业银行</option>
+							</select>
+						</div>
+						
+					</li>
+				</ul>
+				<h3 class="cb_borrow_title">备注</h3>
+				<input type="text" class="cb_putin_cont js_input" name="empty">
+				<p class="cb_input_tip" title="备注不能为空"></p>
+				<input type="submit" href="javascript:;" class="cb_bapply" value="提交申请">
+			</form>
+
+		</div>
+	</section>
+
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+﻿$axure.loadCurrentPage({
+  "url":"村行名录.html",
+  "generationDate":new Date(1408153554803.3),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"ff9d0c38c52e405bbb00e67b2bcd77a2",
+    "type":"Axure:Page",
+    "name":"村行名录",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"80f2ea062d1345c7a9a6d9ac8bfdd193",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "size":{
+              "width":400,
+              "height":700}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"794ce9f3d999458089c3cb5e583a6fa9",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "size":{
+                  "width":400,
+                  "height":700}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"在 当前窗口 打开 村行主页",
+                      "target":{
+                        "targetType":"page",
+                        "url":"村行主页.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"images/村行名录/u0.png"}},
+{
+          "id":"db6376ead80e450aaf1a502e812cd245",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "opacity":"0",
+            "location":{
+              "x":0,
+              "y":30},
+            "size":{
+              "width":100,
+              "height":50}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"2e4cea73ffd246dca6839bad84408ec7",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "opacity":"0",
+                "location":{
+                  "x":0,
+                  "y":30},
+                "size":{
+                  "width":100,
+                  "height":50}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"在 当前窗口 打开 Home",
+                      "target":{
+                        "targetType":"page",
+                        "url":"home.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"resources/images/transparent.gif"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "80f2ea062d1345c7a9a6d9ac8bfdd193":{
+      "scriptId":"u0"},
+    "794ce9f3d999458089c3cb5e583a6fa9":{
+      "scriptId":"u1"},
+    "db6376ead80e450aaf1a502e812cd245":{
+      "scriptId":"u2"},
+    "2e4cea73ffd246dca6839bad84408ec7":{
+      "scriptId":"u3"}}});

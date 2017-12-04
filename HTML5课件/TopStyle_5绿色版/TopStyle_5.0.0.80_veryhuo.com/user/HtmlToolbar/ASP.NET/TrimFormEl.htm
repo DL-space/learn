@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>Trimmed Form Element</title>
+<script language="javascript">
+function objectTag() {
+  if (ts.isASP_VB())
+		return 'Trim(Request.Form("' + ts.getSelection(true) + '"))'
+	else
+    return 'Request.Form["' + ts.getSelection(true) + '"].Trim()';
+}
+</script>
+</head>
+<body>
+</body>
+</html>

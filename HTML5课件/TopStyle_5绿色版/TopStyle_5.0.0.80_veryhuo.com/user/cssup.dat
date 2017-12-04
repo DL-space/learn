@@ -1,0 +1,86 @@
+'---------------------------------------------------------------------------------
+'
+'  TopStyle Pro 3.0 Style Upgrade Configuration
+'---------------------------------------------------------------------------------
+'  If you make any changes to this file, be sure to save a backup since it will
+'  be overwritten every time TopStyle is installed.
+'---------------------------------------------------------------------------------
+
+[version]
+Version=3.0
+
+[options]
+UpgradeBodyLinkColors=1	' create separate rules from body link, alink, vlink
+UpgradeBaseFont=1	' add <basefont> size, color and face to body rule
+CombineFontTags=1	' combine adjacent font tags into a single font tag before conversion
+
+'---------------------------------------------------------------------------------
+' before conversion, replace the following tags
+'---------------------------------------------------------------------------------
+[TagReplace]
+center=div align="center"
+font=span
+'note that replacing <font> with <span> requires the [font,span] section below
+
+'---------------------------------------------------------------------------------
+' after conversion, these tags will be removed if empty (<font>, <basefont>, etc.)
+'---------------------------------------------------------------------------------
+[RemoveEmptyTags]
+basefont
+font
+span
+
+'---------------------------------------------------------------------------------
+' This section contains html elements that will be converted to styles.  
+'---------------------------------------------------------------------------------
+
+[font,span]
+color=color
+face=font-family
+size=font-size
+
+[body]
+background=background-image
+bgcolor=background-color
+text=color
+leftmargin=margin-left
+topmargin=margin-top
+rightmargin=margin-right
+bottommargin=margin-bottom
+
+[div,p,caption,legend,h1,h2,h3,h4,h5,h6]
+align=text-align
+
+[hr]
+align=text-align
+size=height
+width=width
+
+[object]
+align=text-align
+width=width
+height=height
+
+[pre]
+width=width
+
+[table]
+bgcolor=background-color
+background=background-image
+width=width
+'align=text-align
+'http://www.w3.org/TR/html4/struct/tables.html for comments on table width 
+
+[th,td]
+bgcolor=background-color
+background=background-image
+height=height
+width=width
+' 3.01 - align is not deprecated
+
+[tr]
+bgcolor=background-color
+' 3.01 - align is not deprecated
+
+[ul,ol,li]
+type=list-style-type

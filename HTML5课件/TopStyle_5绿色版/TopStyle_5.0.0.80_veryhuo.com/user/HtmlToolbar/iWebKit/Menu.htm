@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>iWebKit Menu</title>
+<script language="javascript">
+function canInsertObject() {
+  if (ts.hasParent('ul', 'class', 'pageitem'))
+    return true
+  else {
+    alert('Menu MUST be inside <ul class="pageitem">');
+    return false;
+  }
+}
+function objectTag() {
+  return '<li class="menu">' + ts.getSelection(true) + '</li>';
+}
+</script>
+</head>
+<body>
+</body>
+</html>

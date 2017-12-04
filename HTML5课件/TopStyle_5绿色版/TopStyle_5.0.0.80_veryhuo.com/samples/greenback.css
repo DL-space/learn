@@ -1,0 +1,45 @@
+BODY, TD {
+	background : #228B22 none;
+	color : #FFFFFF;
+	font : 400 normal 100% Arial, Helvetica, sans-serif;
+	text-decoration : none;
+}
+
+A {
+	background : #228B22 none;
+	color : #FFD700;
+	font-weight : 500;
+	text-decoration : underline;
+}
+
+H1 {
+	background : #228B22 none;
+	color : #FF6347;
+	font-size : 150%;
+}
+
+H2 {
+	background : #FFDEAD none;
+	color : #000000;
+	font-size : 125%;
+}
+
+H3, H4, H5, H6 {
+	font-size : 90%;
+}
+
+P {
+	background : #A9A9A9 none;
+	color : #2F4F4F;
+	font : 400 normal 110% Arial, Helvetica, sans-serif;
+	text-decoration : none;
+	padding : 2% 2% 2% 2%;
+}
+
+TH {
+	background : #000000 none;
+	color : #DCDCDC;
+	font-size : 115%;
+	font-weight : 600;
+}
+

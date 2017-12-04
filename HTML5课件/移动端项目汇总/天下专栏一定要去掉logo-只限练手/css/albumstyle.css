@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+.ones{
+	margin:0px 0px 30px 20px;
+	padding:0px;
+	width:310px;
+	height:287px;
+	background:url(../images/p-25.jpg) no-repeat;
+	}
+.ones-one{
+	margin:0px 0px 0px 0px;
+	padding:0px;
+	}
+.ones-one img{
+	margin:0px;
+	padding:0px;
+	width:306px;
+	height:185px;
+	}
+.ones-two{
+	margin:-30px 0px 0px 0px;
+	padding:4px 0px 0px 0px;
+	height:30px;
+	width:42px;
+	background:url(../images/p-27.jpg) no-repeat;
+	font-size:14px;
+	color:#FFF;
+	text-align:center;
+	z-index:22;
+	position:absolute;
+	}
+.ones-three{
+	margin:10px 0px 0px 10px;
+	padding:0px;
+	font-size:18px;
+	color:#333;
+	font-family:"微软雅黑";
+	}
+.ones-three a:link,.ones-three a:visited{
+	margin:0px;
+	padding:0px;
+	text-decoration:none;
+	color:#333;
+	}	
+.ones-four{
+	margin:5px 0px 0px 10px;
+	padding:0px;
+	font-size:12px;
+	color:#666;
+	}	
+.ones-five{
+	margin:10px 0px 0px 10px;
+	padding:0px;
+	font-size:12px;
+	color:#054673;
+	}	
+.ones-five a:link,.ones-five a:visited{
+	margin:0px;
+	padding:0px;
+	text-decoration:none;
+	color:#054673;
+	}	
+.ones-spic{
+	margin:-5px 0px 30px 0px;
+	padding:0px;
+	width:210px;
+	height:223px;
+	background:url(../images/i-9.jpg) no-repeat;
+	float:left;
+	}	
+
+
+.xian-albm{
+	margin:20px 0px 0px 0px;
+	padding:0px 0px 0px 20px;
+	border-top:1px solid #E8E8E8;
+	border-left:1px solid #E8E8E8;
+	height:1146px;
+	}
+
+.title{
+	margin:10px 0px 0px 0px;
+	padding:0px;
+	height:49px;
+	background:url(../images/p-28.jpg) no-repeat;
+	line-height:49px;
+	}
+.title a:link,.title a:visited{
+	margin:0px 0px 0px 10px;
+	padding:0px;
+	text-decoration:none;
+	font-family:"微软雅黑";
+	font-size:24px;
+	}
+/*人类*/
+.humb{
+	margin:30px 0px 0px 0px;
+	padding:0px;
+	height:174px;
+	}
+.humb img{
+	margin:0px 10px 0px 0px;
+	padding:0px;
+	float:left;
+	}
+.humb h3{
+	margin:0px 0px 0px 0px;
+	padding:0px;
+	font-weight:normal;
+	font-size:18px;
+	font-family:"微软雅黑";
+	color:#333;
+	}
+.humb h3 A:LINK,.humb h3 A:visited{
+	text-decoration:none;
+	color:#333;
+	}
+.humb h3 a:hover{
+	text-decoration:none;
+	}
+.humb P{
+	margin:10px 0px 0px 0px;
+	padding:0px;
+	font-size:12px;
+	color:#666;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+

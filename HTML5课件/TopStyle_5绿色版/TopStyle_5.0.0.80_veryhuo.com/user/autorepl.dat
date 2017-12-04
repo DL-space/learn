@@ -1,0 +1,88 @@
+[!i | ]
+!important
+[bb: | ]
+border-bottom:
+[bc: | ]
+background-color:
+[bl: | ]
+border-left:
+[br: | ]
+border-right:
+[bs: | ]
+border-style:
+[bt: | ]
+border-top:
+[c: | ]
+color:
+[ff: | ]
+font-family:
+[fv: | ]
+font-variant:
+[fw: | ]
+font-weight:
+[h: | ]
+height:
+[lh: | ]
+line-height:
+[mb: | ]
+margin-bottom:
+[ml: | ]
+margin-left:
+[mr: | ]
+margin-right:
+[mt: | ]
+margin-top:
+[td: | ]
+text-decoration:
+[w: | ]
+width:
+[pos: | ]
+position:
+[p: | ]
+padding:
+[pb: | ]
+padding-bottom:
+[pl: | ]
+padding-left:
+[pr: | ]
+padding-right:
+[pt: | ]
+padding-top:
+[bp: | ]
+background-position:
+[t: | ]
+top:
+[l: | ]
+left:
+[r: | ]
+right:
+[b: | ]
+bottom:
+[d: | ]
+display:
+[z: | ]
+zoom:
+[zi: | ]
+z-index:
+[f: | ]
+float:
+[o: | ]
+overflow:
+[tt: | ]
+text-transform:
+[v: | ]
+visibility:
+[fst: | ]
+font-style:
+[fs: | ]
+font-size:
+[bg: | ]
+background:
+[ta: | ]
+text-align:
+[op: | ]
+opacity:
+[ls: | ]
+letter-spacing:
+[m: | ]
+margin:

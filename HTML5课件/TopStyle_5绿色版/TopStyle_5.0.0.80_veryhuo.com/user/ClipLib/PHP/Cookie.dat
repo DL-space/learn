@@ -1,0 +1,1 @@
+setcookie("%r[Name]","%r[Value]",%r[Expires],"%r[Path]","%r[Domain]",%r[Security]);/-sep-/

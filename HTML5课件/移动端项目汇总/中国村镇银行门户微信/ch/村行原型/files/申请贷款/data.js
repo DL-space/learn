@@ -1,0 +1,119 @@
+﻿$axure.loadCurrentPage({
+  "url":"申请贷款.html",
+  "generationDate":new Date(1408153554632.29),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"f3083e9c7e6e42bfa2b78e6fb72ec977",
+    "type":"Axure:Page",
+    "name":"申请贷款",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"c952c89f1de54b29bd756e45c5be079d",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "size":{
+              "width":400,
+              "height":700}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"fe1be3e87d75459f913a09df46487299",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "size":{
+                  "width":400,
+                  "height":700}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/申请贷款/u0.png"}},
+{
+          "id":"6325104bed334e02b4ab919e11a1b26f",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "opacity":"0",
+            "location":{
+              "x":0,
+              "y":30},
+            "size":{
+              "width":100,
+              "height":50}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"915e80168e094e818a3fc7f6fab33718",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "opacity":"0",
+                "location":{
+                  "x":0,
+                  "y":30},
+                "size":{
+                  "width":100,
+                  "height":50}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"在 当前窗口 打开 Home",
+                      "target":{
+                        "targetType":"page",
+                        "url":"home.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"resources/images/transparent.gif"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "c952c89f1de54b29bd756e45c5be079d":{
+      "scriptId":"u0"},
+    "fe1be3e87d75459f913a09df46487299":{
+      "scriptId":"u1"},
+    "6325104bed334e02b4ab919e11a1b26f":{
+      "scriptId":"u2"},
+    "915e80168e094e818a3fc7f6fab33718":{
+      "scriptId":"u3"}}});

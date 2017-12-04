@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+<TITLE>cfswitch</TITLE>
+<SCRIPT LANGUAGE="javascript">
+function initUI() {
+  document.forms[0].exp.focus();
+}
+function objectTag() {
+  var result = '<cfswitch';
+
+  var exp = document.forms[0].exp.value;
+	if (exp)
+		result += ' expression="' + exp + '"';
+
+  return result += '>|</cfswitch>';
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+	<table border="0" cellpadding="2">
+		<tr>
+			<td class="ui" align="right" nowrap>Expression:</td>
+			<td nowrap>
+			  <input type="text" name="exp" style="width:150px" class="ui">
+			</td>
+		</tr>
+	</table>
+</FORM>
+</BODY>
+</HTML>

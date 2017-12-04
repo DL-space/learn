@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Link</title>
+<script language="javascript" src="Link.js"></script>
+</head>
+<body>
+<form>
+  <table cellpadding="4" cellspacing="2">
+    <tr>
+      <td align="right" valign="baseline" nowrap class="ui">Href:</td>
+      <td colspan="3" valign="baseline" nowrap>
+        <input name="href" type="text" style="width:200px" class="ui">
+			</td>
+			<td align="left">
+				<img src="../Shared/Images/folder.gif" style="cursor: hand" onClick="document.forms[0].href.value = ts.browseForFileURL(document.forms[0].href.value)">
+      </td>
+    </tr>
+    <tr>
+      <td valign="baseline" align="right" nowrap class="ui">ID:</td>
+      <td width="98">
+        <input name="id" type="text" style="width:50px" class="ui">
+      </td>
+      <td align="right" valign="baseline" nowrap class="ui">Title:</td>
+      <td>
+        <input name="title" type="text" style="width:50px" class="ui">
+      </td>
+			<td></td>
+    </tr>
+    <tr>
+      <td valign="baseline" align="right" nowrap class="ui">Rel:</td>
+      <td width="98">
+        <input name="rel" type="text" style="width:50px" class="ui">
+      </td>
+      <td align="right" valign="baseline" nowrap class="ui">Rev:</td>
+      <td>
+        <input name="rev" type="text" style="width:50px" class="ui">
+      </td>
+			<td></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

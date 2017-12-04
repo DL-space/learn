@@ -1,0 +1,46 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>opacity属性与rgba()颜色取值</title>
+<style type="text/css">
+body{
+        background-color:rgb(255,255,204);
+}
+div {
+	margin-top: 10px;
+	margin-left: 50px;
+	padding: 3px;
+	width: 468px;
+	height: 60px;
+        color: red;
+}
+
+#test1 {
+	 opacity: 0.3;
+	background-color: #6600CC;
+}
+#test2 {
+	 opacity: 0.3;
+	background-color: rgb(102,0,204);
+}
+#test3 {
+         background-color: rgba(102,0,204,0.3);
+}
+#test4 {
+        background-color: #6600CC;
+}
+#test5 {
+        background-color: rgb(102,0,204);
+}
+</style>
+</head>
+<body>
+<div id="test1"><code>opacity: 0.3; background-color: #6600CC;</code></div>
+<div id="test2"><code>opacity: 0.3; background-color: rgb(102,0,204);</code></div>
+<div id="test3"><code>background-color: rgba(102,0,204,0.3);</code></div>
+<div id="test4"><code>background-color: #6600CC;</code></div>
+<div id="test5"><code>background-color: rgb(102,0,204);</code></div>
+</body>
+</html>
+

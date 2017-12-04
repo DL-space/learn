@@ -1,0 +1,1 @@
+MSG_InvalidName = "You have entered an invalid name. Names can contain only letters and numbers and cannot start with a number."

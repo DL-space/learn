@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<TITLE>cfcase</TITLE>
+<SCRIPT LANGUAGE="javascript">
+function initUI() {
+  document.forms[0].value.focus();
+}
+function objectTag() {
+  var result = '<cfcase';
+
+	result += ' value="' + document.forms[0].value.value + '"';
+
+  var delimiters = document.forms[0].delimiters.value;
+	if (delimiters) result += ' delimiters="' + delimiters + '"';
+
+  return result += '>|</cfcase>';
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+	<table border="0" cellpadding="2">
+		<tr>
+			<td class="ui" align="right">Value:</td>
+			<td><input type="text" name="value" style="width:150px" class="ui"></td>
+		</tr>
+		<tr>
+			<td class="ui" align="right">Delimiters:</td>
+			<td><input type="text" name="delimiters" style="width:150px" class="ui"></td>
+		</tr>
+	</table>
+</FORM>
+</BODY>
+</HTML>

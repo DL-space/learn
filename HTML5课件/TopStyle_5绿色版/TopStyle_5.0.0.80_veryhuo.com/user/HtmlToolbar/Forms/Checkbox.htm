@@ -1,0 +1,59 @@
+<HTML>
+<HEAD>
+<TITLE>Checkbox</TITLE>
+<SCRIPT LANGUAGE="javascript">
+function initUI() {
+  if (ts.hasSelection()) {
+	  document.forms[0].value.value = ts.getSelection(false, true);
+		document.forms[0].value.select();
+		document.forms[0].value.focus();
+  }
+  else
+    document.forms[0].name.focus();
+}
+function objectTag() {
+  var result = '<input type="checkbox"';
+
+  var name = document.forms[0].name.value;
+	if (name) {
+	  result += ' name="' + name + '"';
+    if (ts.isXHTML())
+      result += ' id="' + name + '"';
+  }
+
+	var value = document.forms[0].value.value;
+	if (value) result += ' value="' + value + '"'
+
+	if (document.forms[0].disabled.checked)
+	  result += ' disabled="true"';
+
+	if (document.forms[0].checked.checked)
+	  result += ' checked';
+
+	if (ts.isXHTML()) result += ' /';
+	
+  return result += '>';
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+   <table border="0" cellpadding="2">
+     <tr>
+       <td class="ui" align="right">Name:</td>
+       <td><input type="text" name="name" style="width:150px" class="ui"></td>
+     </tr>
+     <tr>
+       <td class="ui" align="right">Value:</td>
+       <td><input type="text" name="value" style="width:150px" class="ui"></td>
+     </tr>
+     <tr>
+       <td colspan="2" class="ui"><input name="checked" type="checkbox">Checked</td>
+     </tr>
+		 <tr>
+       <td colspan="2" class="ui"><input name="disabled" type="checkbox">Disabled</td>
+     </tr>
+   </table>
+</FORM>
+</BODY>
+</HTML>

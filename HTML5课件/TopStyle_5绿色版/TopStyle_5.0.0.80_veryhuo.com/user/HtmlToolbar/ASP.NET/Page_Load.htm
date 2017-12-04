@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>Page_Load</title>
+<script language="javascript">
+function objectTag() {
+	if (ts.isASP_VB())
+	  return '<script runat="server">\nSub Page_Load(Src As Object, E As EventArgs)\nIf Not IsPostBack Then\nDataBind()\nEnd If' + ts.getSelection(true) + '\nEnd Sub\n<' + '/script>'
+	else
+	  return '<script runat="server">\nprotected void Page_Load(Object Src, EventArgs E)\n{\n  if (!IsPostBack) DataBind();' + ts.getSelection(true) + '\n}\n<' + '/script>';
+}
+</script>
+</head>
+<body>
+</body>
+</html>

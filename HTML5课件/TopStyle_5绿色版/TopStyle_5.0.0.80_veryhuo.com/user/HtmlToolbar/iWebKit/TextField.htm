@@ -1,0 +1,112 @@
+<HTML>
+<HEAD>
+<TITLE>iWebKit Text Field</TITLE>
+<SCRIPT LANGUAGE="javascript">
+function canInsertObject() {
+  if (ts.hasParent('ul', 'class', 'pageitem'))
+    return true
+  else {
+    alert('Text Field MUST be inside <ul class="pageitem">');
+    return false;
+  }
+}
+function initUI() {
+  document.forms[0].edtName.value = ts.getSelection(false, true);
+  document.forms[0].edtName.select();
+  document.forms[0].edtName.focus();
+}
+function getSelectedIndex(radioGroup) {
+  var result = -1;
+  for (var i = 0; i < radioGroup.length; i++) {
+    if (radioGroup[i].checked) {
+      result = i; 
+      break;
+    }
+  }
+  return result;
+}
+function updateUI() {
+  if (getSelectedIndex(document.forms[0].size) == 1)
+    document.getElementById("lblName").innerText = "Description:"
+  else
+    document.getElementById("lblName").innerText = "Placeholder:";
+}
+function getInputType() {
+  var i = getSelectedIndex(document.forms[0].type);
+  if (i == 1)
+    return 'password'
+  else if (i == 2)
+    return 'tel'
+  else
+    return 'text';
+}
+function objectTag() {
+  var edtName = document.forms[0].edtName.value;
+  if (!edtName)
+    edtName = '|';
+  var result = '<li ';
+  if (getSelectedIndex(document.forms[0].size) == 1) {
+	result += 'class="smallfield">\r\n';
+	result += '<span class="name">' + edtName + '</span>\r\n';
+    result += '<input type="' + getInputType() + '" />\r\n';
+  }
+  else {
+	result += 'class="bigfield">\r\n';
+	result += '<input placeholder="' + edtName + '" type="' + getInputType() + '" />\r\n';
+  }
+  return result += '</li>';
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+	<table border="0">
+	<tr>
+		<td class="ui" align="right" nowrap>Size:</td>
+		<td nowrap class="ui">
+			<input type="radio" name="size" onclick="updateUI()" checked>
+			<label onclick="document.forms[0].size[0].checked = true; updateUI()">Big (with placeholder)</label>
+		</td>
+	</tr>
+	<tr>
+		<td class="ui" align="right" nowrap></td>
+		<td nowrap class="ui">
+			<input type="radio" name="size" onclick="updateUI()">
+			<label onclick="document.forms[0].size[1].checked = true; updateUI()">Small (with description)</label>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2"><hr /></td>
+	</tr>	
+	<tr>
+		<td id="lblName" class="ui" align="right" nowrap width="80">Placeholder:</td>
+		<td><input type="text" name="edtName" style="width:200px" class="ui"></td>
+	</tr>
+	<tr>
+		<td class="ui" align="right" nowrap>Type:</td>
+		<td nowrap class="ui">
+			<input type="radio" name="type" checked>
+			<label onclick="document.forms[0].type[0].checked = true;">Text</label>
+		</td>
+	</tr>
+	<tr>
+		<td class="ui" align="right" nowrap></td>
+		<td nowrap class="ui">
+			<input type="radio" name="type">
+			<label onclick="document.forms[0].type[1].checked = true">Password</label>
+		</td>
+	</tr>
+	<tr>
+		<td class="ui" align="right" nowrap></td>
+		<td nowrap class="ui">
+			<input type="radio" name="type">
+			<label onclick="document.forms[0].type[2].checked = true">Phone number (keypad)</label>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2"><hr /></td>
+	</tr>		
+	</table>
+</FORM>
+</BODY>
+</HTML>

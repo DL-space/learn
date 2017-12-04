@@ -1,0 +1,119 @@
+﻿$axure.loadCurrentPage({
+  "url":"详情.html",
+  "generationDate":new Date(1408153554680.29),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"b4ce412b15f649ff8e90c1afdd6c0cde",
+    "type":"Axure:Page",
+    "name":"详情",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"c208d446597f4695b6053e1efc1ab1aa",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "size":{
+              "width":400,
+              "height":700}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"b3090fde5fb141ab8c559977663e1e4e",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "size":{
+                  "width":400,
+                  "height":700}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/详情/u0.jpg"}},
+{
+          "id":"397d211acc89473d9f579db518e642d9",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "opacity":"0",
+            "location":{
+              "x":0,
+              "y":20},
+            "size":{
+              "width":110,
+              "height":60}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"07c3bece81f34c3fb367893995b12176",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "opacity":"0",
+                "location":{
+                  "x":0,
+                  "y":20},
+                "size":{
+                  "width":110,
+                  "height":60}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"在 当前窗口 打开 行业要闻",
+                      "target":{
+                        "targetType":"page",
+                        "url":"行业要闻.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"resources/images/transparent.gif"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "c208d446597f4695b6053e1efc1ab1aa":{
+      "scriptId":"u0"},
+    "b3090fde5fb141ab8c559977663e1e4e":{
+      "scriptId":"u1"},
+    "397d211acc89473d9f579db518e642d9":{
+      "scriptId":"u2"},
+    "07c3bece81f34c3fb367893995b12176":{
+      "scriptId":"u3"}}});

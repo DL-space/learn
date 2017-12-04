@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312"/>
+<title>canvas元素</title>
+<script type="text/javascript">
+function draw() {
+//取得绘图区域
+  var ctx = document.getElementById('myPic').getContext('2d');
+
+  //建立(读取)图像绘制的来源
+  var myImg = new Image();
+  myImg.src = 'img/DSC_0044s.jpg';
+  
+  //当图片文件载入完成后
+  myImg.onload = function(){
+    // 绘制图像
+    var paintImg = ctx.createPattern(myImg,'no-repeat');//重复贴图repeat,水平贴图repeat-x,垂直贴图repeat-y,不重复贴图no-repeat，返回贴图对象
+    ctx.fillStyle = paintImg;
+    ctx.fillRect(0,0,800,300);
+  }
+}
+      
+</script>
+</head>
+<body onload="draw()">
+<canvas id="myPic" width="800" height="300" style="border:1px solid #000000;"></canvas>
+</body>
+</html>

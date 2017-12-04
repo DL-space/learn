@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Script</title>
+<script language="javascript" src="jQuery-script.js"></script>
+</head>
+<body>
+<form>
+  <table border="0">
+    <tr valign="baseline"> 
+      <td align="right" nowrap class="ui"><label for="linkTarget">Src:</label></td>
+      <td align="left" width="364">
+	      <input name="linkTarget" style="width:364px" class="ui">
+	    </td>
+			<td align="left" valign="bottom" width="313" height="27">
+				<img src="../Shared/Images/btnDown.gif" onClick="document.forms[0].linkTarget.value = ts.showPopupMenu(document.forms[0].linkTarget.value, getTargets())">
+			</td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

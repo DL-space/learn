@@ -1,0 +1,335 @@
+﻿$axure.loadCurrentPage({
+  "url":"村行主页.html",
+  "generationDate":new Date(1408153554850.3),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"607c2423845240f6ba47f92bb21587c3",
+    "type":"Axure:Page",
+    "name":"村行主页",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"0880f1ee794c45b88a98caf2eb7aa2b0",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "size":{
+              "width":400,
+              "height":700}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"6ef79fe550434492893ad44bd64702ce",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "size":{
+                  "width":400,
+                  "height":700}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/村行主页/u0.png"}},
+{
+          "id":"92886a4d7d0f443a8bda82c46ad5f1af",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "opacity":"0",
+            "location":{
+              "x":20,
+              "y":190},
+            "size":{
+              "width":360,
+              "height":50}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"bf994885e396492bb0077187b249b003",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "opacity":"0",
+                "location":{
+                  "x":20,
+                  "y":190},
+                "size":{
+                  "width":360,
+                  "height":50}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"在 当前窗口 打开 我要存款1",
+                      "target":{
+                        "targetType":"page",
+                        "url":"我要存款1.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"49ddbc3a993a4607b13448627a1627b9",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "opacity":"0",
+            "location":{
+              "x":20,
+              "y":240},
+            "size":{
+              "width":360,
+              "height":50}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"3820e9bd539240f8921265b32663cfbd",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "opacity":"0",
+                "location":{
+                  "x":20,
+                  "y":240},
+                "size":{
+                  "width":360,
+                  "height":50}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"在 当前窗口 打开 申请贷款",
+                      "target":{
+                        "targetType":"page",
+                        "url":"申请贷款.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"eed0e6d035d942489eee151d23a0120e",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "opacity":"0",
+            "location":{
+              "x":20,
+              "y":290},
+            "size":{
+              "width":360,
+              "height":50}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"955918997581432db45d1dd2fddf4184",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "opacity":"0",
+                "location":{
+                  "x":20,
+                  "y":290},
+                "size":{
+                  "width":360,
+                  "height":50}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"在 当前窗口 打开 委托放贷",
+                      "target":{
+                        "targetType":"page",
+                        "url":"委托放贷.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"fbb1fd2a657b4ce0aba1f6913cf36524",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "opacity":"0",
+            "location":{
+              "x":0,
+              "y":20},
+            "size":{
+              "width":110,
+              "height":60}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"3de4e47f00f4473c8a8e0d51cb3c37c0",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "opacity":"0",
+                "location":{
+                  "x":0,
+                  "y":20},
+                "size":{
+                  "width":110,
+                  "height":60}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"在 当前窗口 打开 村行名录",
+                      "target":{
+                        "targetType":"page",
+                        "url":"村行名录.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"808c6109ce51469c8141321c6b9f0207",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "opacity":"0",
+            "location":{
+              "x":20,
+              "y":340},
+            "size":{
+              "width":360,
+              "height":50}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"e3f727588f724777af1e3601885cfd89",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "opacity":"0",
+                "location":{
+                  "x":20,
+                  "y":340},
+                "size":{
+                  "width":360,
+                  "height":50}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"在 当前窗口 打开 我要投诉",
+                      "target":{
+                        "targetType":"page",
+                        "url":"我要投诉.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"resources/images/transparent.gif"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "0880f1ee794c45b88a98caf2eb7aa2b0":{
+      "scriptId":"u0"},
+    "6ef79fe550434492893ad44bd64702ce":{
+      "scriptId":"u1"},
+    "92886a4d7d0f443a8bda82c46ad5f1af":{
+      "scriptId":"u2"},
+    "bf994885e396492bb0077187b249b003":{
+      "scriptId":"u3"},
+    "49ddbc3a993a4607b13448627a1627b9":{
+      "scriptId":"u4"},
+    "3820e9bd539240f8921265b32663cfbd":{
+      "scriptId":"u5"},
+    "eed0e6d035d942489eee151d23a0120e":{
+      "scriptId":"u6"},
+    "955918997581432db45d1dd2fddf4184":{
+      "scriptId":"u7"},
+    "fbb1fd2a657b4ce0aba1f6913cf36524":{
+      "scriptId":"u8"},
+    "3de4e47f00f4473c8a8e0d51cb3c37c0":{
+      "scriptId":"u9"},
+    "808c6109ce51469c8141321c6b9f0207":{
+      "scriptId":"u10"},
+    "e3f727588f724777af1e3601885cfd89":{
+      "scriptId":"u11"}}});

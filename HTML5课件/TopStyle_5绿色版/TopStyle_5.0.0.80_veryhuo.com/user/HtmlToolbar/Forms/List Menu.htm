@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<TITLE>List/Menu</TITLE>
+<SCRIPT LANGUAGE="javascript">
+function initUI() {
+  document.forms[0].name.focus();
+}
+function objectTag() {
+  var result = '<select';
+
+  var name = document.forms[0].name.value;
+	if (name) {
+	  result += ' name="' + name + '"';
+    if (ts.isXHTML())
+      result += ' id="' + name + '"';
+  }
+
+	var size = document.forms[0].size.value;
+	if (size) result += ' size="' + size + '"';
+
+	if (document.forms[0].disabled.checked)
+	  result += ' disabled="disabled"';
+
+	if (document.forms[0].multiple.checked)
+	  result += ' multiple';
+	
+  return result += '>' + ts.getSelection(true) + '</select>';
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+  <table border="0" cellpadding="2">
+    <tr>
+      <td class="ui" align="right">Name:</td>
+      <td><input type="text" name="name" style="width:150px" class="ui"></td>
+    </tr>
+    <tr>
+      <td class="ui" align="right">Size:</td>
+      <td><input type="text" name="size" style="width:50px" class="ui"></td>
+    </tr>
+		<tr>
+			<td colspan="2" class="ui"><input name="multiple" type="checkbox">Allow multiple selections</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="ui"><input name="disabled" type="checkbox">Disabled</td>
+		</tr>
+	</table>
+</FORM>
+</BODY>
+</HTML>

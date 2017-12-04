@@ -1,0 +1,12 @@
+body, td {
+	font-family : Verdana, Arial, sans-serif ;
+	font-size : 9pt;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}

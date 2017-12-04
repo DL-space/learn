@@ -1,0 +1,5 @@
+SELECT table_name_1.*, table_name_2.*
+FROM table_name_1, table_name_2
+WHERE condition
+AND
+ORDER BY ASC/-sep-/

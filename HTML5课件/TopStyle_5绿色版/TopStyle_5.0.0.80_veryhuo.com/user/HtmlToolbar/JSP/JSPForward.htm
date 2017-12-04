@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+<TITLE>JSP Forward</TITLE>
+<SCRIPT LANGUAGE="javascript">
+function initUI() {
+  document.forms[0].page.focus();
+}
+function objectTag() {
+  var page = document.forms[0].page.value;
+	if (!page) page = '|';
+  return '<jsp:forward page="' + page + '" />';
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+	<table border="0" cellpadding="2">
+		<tr>
+			<td class="ui" align="right" nowrap>Page:</td>
+			<td nowrap>
+			  <input type="text" name="page" style="width:150px" class="ui">
+				<img src="../Shared/Images/folder.gif" style="cursor: hand" onClick="document.forms[0].page.value = ts.browseForFileURL(document.forms[0].page.value)">
+			</td>
+		</tr>
+	</table>
+</FORM>
+</BODY>
+</HTML>

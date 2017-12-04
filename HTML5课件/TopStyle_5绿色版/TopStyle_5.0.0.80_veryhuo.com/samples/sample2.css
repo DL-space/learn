@@ -1,0 +1,84 @@
+BODY {
+	background-color : #EEEEEE;
+	color : #000000;
+	font-family : Arial, Tahoma, Helvetica, sans-serif;
+	margin-left : 8%;
+	margin-right : 5%;
+}
+
+A:LINK, A:VISITED {
+	color : #000099;
+	text-decoration : none;
+}
+
+A:HOVER {
+	background-color : #FFFFFF;
+	color : #00009F;
+	text-decoration : none;
+}
+
+H1 {
+	color : #990000;
+	font-family : Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size : 200%;
+	margin-bottom : -1em;
+	margin-left : -5%;
+}
+
+H2 {
+	color : #990000;
+	font-family : Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size : 160%;
+	margin-left : -5%;
+	margin-top : 2.7em;
+}
+
+H3 {
+	color : #990000;
+	font-family : Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size : 140%;
+	margin-left : -5%;
+	margin-top : 2em;
+}
+
+H4 {
+	color : #990000;
+	font-family : Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size : 115%;
+	margin-left : -5%;
+	margin-top : 1.5em;
+}
+
+H5 {
+	color : #990000;
+	font-family : Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size : 100%;
+	font-weight : 900;
+	margin-top : 1.5em;
+}
+
+H6 {
+	color : #000000;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 100%;
+	font-style : italic;
+	font-weight : 800;
+	margin-bottom : -0.8em;
+}
+
+BLOCKQUOTE {
+	margin-left : 0;
+}
+
+CAPTION {
+	font-family : Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-weight : 800;
+}
+
+TH {
+	background-color : #FFFFFF;
+}
+
+TD {
+	background-color : #F0F0F0;
+}

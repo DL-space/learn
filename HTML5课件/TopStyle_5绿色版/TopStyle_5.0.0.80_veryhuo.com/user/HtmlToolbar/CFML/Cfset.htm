@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>cfset</title>
+<script language="javascript">
+function objectTag() {
+  var result = '<cfset ' + ts.getSelection(true);
+	if (ts.isXHTML()) result += ' /';
+	return result += '>';
+}
+</script>
+</head>
+<body>
+</body>
+</html>

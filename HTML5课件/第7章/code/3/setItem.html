@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>setItem存储value</title>
+<script language="javascript">
+function ergodic(){
+	var ls=window.localStorage;
+	ls.setItem("site", "www.lanfeng.com");
+	ls.setItem("user", "张军");
+	ls.setItem("sex", "男");
+	alert("添加成功");
+	alert( ls.getItem("user"));
+}
+</script>
+</head>
+<body onLoad="ergodic()">
+</body>
+</html>

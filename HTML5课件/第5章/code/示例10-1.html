@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="utf-8" />
+<head>
+   <title>示例10-1</title>
+   <script type="text/javascript">
+     function triangular(){
+		 var c=document.getElementById("mycanvas");
+		 var context=c.getContext("2d");
+		 context.strokeStyle="#ff0000";
+		 context.lineWidth=20;
+		 context.lineCap="round";
+		 context.lineJoin="round";
+		 context.fillStyle="#ffff00";
+		 context.beginPath();
+		 //从左上角开始绘制
+		 context.moveTo(30,30);
+		 context.lineTo(250,30);
+		 context.lineTo(30,250);
+		 context.lineTo(30,30);
+		 context.stroke();
+	     context.fill();
+		}
+       window.addEventListener("load",triangular,true);
+   </script>
+</head>
+<body>
+<canvas id="mycanvas"  height="300" width="550" style="border:1px solid">
+
+</canvas>
+</body>
+</html>

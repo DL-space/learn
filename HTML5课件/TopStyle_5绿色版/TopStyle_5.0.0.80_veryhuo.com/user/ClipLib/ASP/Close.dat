@@ -1,0 +1,4 @@
+objRS.close
+objConn.close
+set objRS = nothing
+set objConn = nothing/-sep-/

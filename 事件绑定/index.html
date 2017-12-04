@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js事件绑定</title>
+</head>
+<body>
+<div class="father">
+    <div class="child">div儿子</div>
+    <span class="child">span儿子</span>
+</div>
+<script>
+    /**
+     * 事件绑定方法I：绑定元素属性
+
+     * 事件绑定方法II：绑定对象属性
+
+     * 事件绑定方法III：使用addEventListener() 方法(DOM2级事件程序)
+
+         -绑定语法：target.addEventListener(type,listener,useCapture);
+
+             ·type: 字符串,事件名称,不含“on”,比如 “click”、 “mouseover”、“keydown”等。
+             ·listener：实现了 EventListener 接口或者是 JavaScript 中的函数。
+             ·useCapture：是否使用捕获,一般用 false。
+
+         -删除绑定：target.removeEventListener(type,listener,useCapture);
+
+     * IE事件处理程序
+
+     IE8及以下浏览器不支持addEventListener， IE8及以下版本浏览器实现了与DOM中类似的两个方法：attachEvent()和detachEvent()。 这两个方法都需要两个参数：事件名称和事件处理函数。
+
+     IE11只支持addEventListener！ IE9，IE10对attachEvent和addEventListener都支持！ IE8及以下版本只支持attachEvent！
+
+     * 事件源
+         概念：发生事件的DOM节点（HTML元素）。 不管在哪个事件中，只要你操作的那个元素就是事件源。
+         获取方式： ie：window.event.srcElement 标准下:event.target
+
+     * 阻止默认事件：
+         1.return false; (HTML、DOM0级)
+         2.event.preventDefault(); (W3C)
+         3.event.returnValue = false;(IE)
+         兼容写法： if (event.preventDefault) { event.preventDefault(); }else{ event.returnValue = false; }
+
+     * 阻止冒泡事件：
+         1、不再派发事件 event.stopPropagation();//标准浏览器
+         2、event.cancelBubble = true; // IE浏览器
+         兼容写法: if (event.stopPropagation) { event.stopPropagation(); }else{ event.cancelBubble = true; }
+     */
+
+    /*DOM0级事件会相互覆盖、DOM2级事件可以共存、最后一个DOM0级事件和DOM2级事件可以共存*/
+</script>
+</body>
+</html>

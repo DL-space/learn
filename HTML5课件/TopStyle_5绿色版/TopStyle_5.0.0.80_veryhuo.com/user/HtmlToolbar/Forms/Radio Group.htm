@@ -1,0 +1,143 @@
+<HTML>
+<HEAD>
+<SCRIPT SRC="Radio Group.js" LANGUAGE="javascript"></SCRIPT>
+<SCRIPT LANGUAGE="javascript">
+var sPrompt = 'Please enter a radio button label:';
+
+function updateUI() {
+  var selectObj = getSelect();
+  if (selectObj) {
+		var suffix = '';
+		var prefix = '../Shared/Images/';
+    if (selectObj.selectedIndex == -1) suffix = '_dis';
+		suffix += '.gif';
+    document.getElementById('btnDel').src = prefix + 'btnDel' + suffix;
+    document.getElementById('btnUp').src = prefix + 'btnUp' + suffix;
+    document.getElementById('btnDown').src = prefix + 'btnDown' + suffix;
+    document.getElementById('btnEdit').disabled = (selectObj.selectedIndex == -1); 
+	}
+}
+
+function getRadioLabel() {
+  var result;
+	var selectObj = getSelect();
+	if (selectObj) {
+    if (selectObj.selectedIndex > -1)
+			result = selectObj.options[selectObj.selectedIndex].text;
+	}
+	return result;
+}
+
+function add() {
+  var selectObj = getSelect();
+	if (selectObj) {
+		var result = prompt(sPrompt, '');
+		if (result) {
+			selectObj.add(new Option(result));
+			selectObj.selectedIndex = selectObj.length - 1;
+		}
+	}
+}
+
+function edit() {
+  var selectObj = getSelect();
+	if (selectObj) {
+    if (selectObj.selectedIndex > -1) {
+		  var result = prompt(sPrompt, getRadioLabel());
+      if (result) {
+			  selectObj.options[selectObj.selectedIndex].text = result;
+      }
+		}
+	}
+}
+
+function del() {
+  var selectObj = getSelect();
+	if (selectObj) {
+    if (selectObj.selectedIndex > -1) {
+			if (confirm('Are you sure you want to delete radio button "' + getRadioLabel() + '"?')) {
+				selectObj.remove(selectObj.selectedIndex);
+				updateUI();
+			}
+	  }
+	}
+}
+
+function move(bUp) {
+  var selectObj = getSelect();
+	if (selectObj) {
+		var index = selectObj.selectedIndex;
+    if (index > -1) {
+			var optionObj = selectObj.options[index];
+      if (bUp) {
+        if (index > 0) {
+          selectObj.remove(index);
+          selectObj.add(optionObj, index - 1); 
+        }
+      } else {
+        if (index < selectObj.length - 1) {
+          selectObj.remove(index);
+          selectObj.add(optionObj, index + 1); 
+        }
+      }
+    }
+  }
+}
+</SCRIPT>
+<TITLE>Radio Group</TITLE>
+</HEAD>
+<BODY>
+<form>
+  <table border="0">
+    <tr>
+      <td align="right" nowrap class="ui">Name:</td>
+      <td nowrap>
+        <input name="GroupName" type="text" style="width:200px" class="ui">
+      </td>
+    </tr>
+    <tr>
+      <td align="right" nowrap class="ui">Radio buttons:</td>
+      <td nowrap>
+        <img src="../Shared/Images/btnAdd.gif" id="btnAdd" alt="Add" onClick="add()" style="cursor: hand">
+        <img src="../Shared/Images/btnDel_dis.gif" id="btnDel" alt="Delete" width="20" height="18" onClick="del()" style="cursor: hand">
+        <img src="../Shared/Images/transparent.gif" width="183" height="23">
+        <img src="../Shared/Images/btnUp_dis.gif" id="btnUp" alt="Move Up" width="20" height="18" onClick="move(true)" style="cursor: hand">
+        <img src="../Shared/Images/btnDown_dis.gif" id="btnDown" alt="Move Down" width="20" height="18" onClick="move(false)" style="cursor: hand">
+      </td>
+    </tr>
+    <tr>
+      <td align="right" nowrap></td>
+      <td nowrap>
+        <select name="select" style="width:280px" size=5 class="ui" OnChange="updateUI()">
+					<option>RadioButton</option>
+					<option>RadioButton</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td align="right" nowrap></td>
+      <td align="right" nowrap>
+			  <input name="btnEdit" value="Edit..." type="button" class="ui" disabled="true" onClick="edit()">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" nowrap>
+        <hr>
+      </td>
+    </tr>
+    <tr>
+      <td align="right" nowrap class="ui">Lay out using:</td>
+      <td nowrap class="ui">
+        <input type="radio" name="Layout" value="LineBreaks" checked>
+        Line breaks (&lt;br&gt; tags)</td>
+    </tr>
+    <tr>
+      <td align="right" nowrap></td>
+      <td nowrap class="ui">
+        <input type="radio" name="Layout" value="Table">
+        Table</td>
+    </tr>
+  </table>
+</form>
+</BODY>
+</HTML>

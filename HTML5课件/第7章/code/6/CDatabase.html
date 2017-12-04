@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>创建本地数据库</title>
+<script language="javascript">
+function initDatabase(){
+	try{
+		if(!window.openDatabase){
+			alert('数据库不支持浏览器。');
+			}else{
+				var shortName = "mydata";
+				var version = "1.0";
+				var displayName = "数据库描述";
+				var maxSize = 20000; //  bytes
+				var DEMODB = window.openDatabase(shortName, version, displayName, maxSize);
+				}
+	}catch(e){
+		if(e == 2){
+			// Version number mismatch.
+			document.querySelector("err").innerHTML=console.log("无效的数据库版本。");
+			}else{
+				document.querySelector("err").innerHTML=console.log("未知的错误:"+e+".");
+				}
+			return;
+	}
+	if(DEMODB){
+		alert("数据库创建成功！");
+		}else{
+			alert("数据库创建失败");
+		}
+}
+</script>
+</head>
+<body onLoad="initDatabase()">
+<div id="err"></div>
+</body>
+</html>

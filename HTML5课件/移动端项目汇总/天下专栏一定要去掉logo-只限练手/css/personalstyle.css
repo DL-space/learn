@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+.ones{
+	margin:0px 0px 30px 0px;
+	padding:0px;
+	width:210px;
+	height:223px;
+	background:url(../images/i-9.jpg) no-repeat;
+	float:left;
+	}
+.ones-one{
+	margin:0px 0px 0px 3px;
+	padding:0px;
+	}
+.ones-one img{
+	margin:0px;
+	padding:0px;
+	width:195px;
+	height:120px;
+	}
+.ones-two{
+	margin:-24px 0px 0px 3px;
+	padding:2px 0px 0px 0px;
+	height:24px;
+	width:36px;
+	background:url(../images/p-11.jpg) no-repeat;
+	font-size:14px;
+	color:#FFF;
+	text-align:center;
+	z-index:22;
+	position:absolute;
+	}
+.ones-three{
+	margin:10px 0px 0px 10px;
+	padding:0px;
+	font-size:18px;
+	color:#333;
+	font-family:"微软雅黑";
+	}
+.ones-three a:link,.ones-three a:visited{
+	margin:0px;
+	padding:0px;
+	text-decoration:none;
+	color:#333;
+	}	
+.ones-four{
+	margin:5px 0px 0px 10px;
+	padding:0px;
+	font-size:12px;
+	color:#666;
+	}	
+.ones-five{
+	margin:10px 0px 0px 10px;
+	padding:0px;
+	font-size:12px;
+	color:#054673;
+	}	
+.ones-five a:link,.ones-five a:visited{
+	margin:0px;
+	padding:0px;
+	text-decoration:none;
+	color:#054673;
+	}	
+.ones-spic{
+	margin:-5px 0px 30px 0px;
+	padding:0px;
+	width:210px;
+	height:223px;
+	background:url(../images/i-9.jpg) no-repeat;
+	float:left;
+	}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

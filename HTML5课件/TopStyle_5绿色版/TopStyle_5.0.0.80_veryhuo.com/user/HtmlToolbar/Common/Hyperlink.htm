@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Hyperlink</title>
+<script language="javascript" src="Hyperlink.js"></script>
+</head>
+<body>
+<form>
+  <table border="0">
+    <tr valign="baseline"> 
+      <td width="70" align="right" nowrap class="ui"><label for="linkText">Text:</label></td>
+      <td align="left" colspan="2"><input name="linkText" type="text" style="width:200px" class="ui" value=""></td>
+    </tr>
+    <tr valign="baseline"> 
+      <td align="right" nowrap class="ui"><label for="linkPath">Link:</label></td>
+      <td align="left" nowrap colspan="2">
+			  <input name="linkPath" style="width:200px" class="ui">
+				<img src="../Shared/Images/folder.gif" style="cursor: hand" onClick="document.forms[0].linkPath.value = browseForFileURL(document.forms[0].linkPath.value)">
+	    </td>
+    </tr>
+    <tr valign="baseline"> 
+      <td align="right" nowrap class="ui"><label for="linkTarget">Target:</label></td>
+      <td align="left" width="125">
+	      <input name="linkTarget" style="width:125px" class="ui">
+	    </td>
+			<td align="left" valign="bottom" width="100" height="27">
+				<img src="../Shared/Images/btnDown.gif" onClick="document.forms[0].linkTarget.value = ts.showPopupMenu(document.forms[0].linkTarget.value, getTargets())">
+			</td>
+    </tr>
+    <tr valign="baseline"> 
+      <td align="right" nowrap class="ui"><label for="linkTitle">Title:</label></td>
+      <td align="left" colspan="2"><input name="linkTitle" type="text" style="width:200px" class="ui"></td>
+    </tr>
+    <tr valign="baseline"> 
+      <td align="right" nowrap class="ui"><label for="accessKey">Access key:</label></td>
+      <td align="left" colspan="2"><input name="accessKey" type="text" style="width:35px" class="ui" maxlength="1"></td>
+    </tr>
+    <tr valign="baseline"> 
+      <td align="right" nowrap class="ui"><label for="tabIndex">Tab index:</label></td>
+      <td align="left" colspan="2"><input name="tabIndex" type="text" style="width:35px" class="ui" maxlength="5"></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

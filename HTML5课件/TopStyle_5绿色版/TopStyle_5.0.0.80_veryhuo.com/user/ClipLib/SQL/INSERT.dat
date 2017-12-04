@@ -1,0 +1,2 @@
+INSERT INTO table_name (column_name) VALUES ('".$var."')
+WHERE condition/-sep-/

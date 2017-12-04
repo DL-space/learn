@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Server Variable</title>
+<script language="javascript">
+function initUI() {
+  document.forms[0].variable.focus();
+}
+function objectTag() {
+  return '#CGI.' + document.forms[0].variable.options[document.forms[0].variable.selectedIndex].text + '#';
+}
+</script>
+</head>
+<body>
+<form>
+	<table border="0" cellpadding="2" cellspacing="4">
+		<tr> 
+			<td align="right" valign="baseline" nowrap class="ui">Variable:</td>
+			<td valign="baseline" nowrap> 
+				<select name="variable" style="width:150px" class="ui">
+					<option>ALL_HTTP</option>
+					<option>AUTH_PASS</option>
+					<option>AUTH_TYPE</option>
+					<option>CONTENT_LENGTH</option>
+					<option>CONTENT_TYPE</option>
+					<option>GATEWAY_INTERFACE</option>
+					<option>PATH_INFO</option>
+					<option>PATH_TRANSLATED</option>
+					<option>QUERY_STRING</option>
+					<option>REMOTE_ADDR</option>
+					<option>REMOTE_HOST</option>
+					<option>REMOTE_IDENT</option>
+					<option>REMOTE_USER</option>
+					<option>REQUEST_BODY</option>
+					<option>REQUEST_METHOD</option>
+					<option>SCRIPT_NAME</option>
+					<option>SERVER_NAME</option>
+					<option>SERVER_PORT</option>
+					<option>SERVER_PROTOCOL</option>
+					<option>SERVER_SOFTWARE</option>
+				</select>
+			</td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

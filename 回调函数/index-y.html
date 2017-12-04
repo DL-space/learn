@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件触发，处理函数回调</title>
+    <script src="../../myTest/jQuery/jquery-3.2.0.js"></script>
+</head>
+<body>
+<button class="a">按钮a</button>
+<button class="b">按钮b</button>
+<form action="" method="get">
+    <input type="text">
+    <button type="submit">提交</button>
+</form>
+<script>
+    $(".a").on("click",function () {
+        /*$(".b").animate({
+            width:"200px"
+        },500,function () {
+            alert(22);
+        })*/
+        /*$("form").submit(function () { //这里只是为submit事件绑定了一个匿名处理函数，并没有执行submit
+         alert(11)
+         });*/
+        /*$("form").submit(); 这里需要再执行一下submit*/
+    });
+    $("form").submit(function () {
+        alert(11)
+    });
+    /*$("form").submit(function () {//注意：submit处理事件可以多次注册！！
+        alert(11)
+    });*/
+</script>
+</body>
+</html>

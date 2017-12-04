@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>paused属性应用</title>
+<script>
+    function toggleSound() {
+        var Audio1 = document.getElementById("Audio1");
+        var btn = document.getElementById("btn");
+        if (Audio1.paused) {
+          Audio1.play();
+          btn.innerHTML = "暂停";
+        }
+        else {
+          Audio1.pause();
+          btn.innerHTML ="播放";
+        }
+    }
+</script>
+</head>
+<body>
+<h5>paused属性应用</h5>
+ <audio id="Audio1" src="sky.ogg" controls></audio>
+ <br/> <br/>
+  <button id="btn" onclick="toggleSound()">播放</button>
+</body>
+</html>

@@ -1,0 +1,119 @@
+﻿$axure.loadCurrentPage({
+  "url":"村行注册.html",
+  "generationDate":new Date(1408153554883.31),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"6ec83cf4dbb244ad92c4c1b01c98cc13",
+    "type":"Axure:Page",
+    "name":"村行注册",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"fd24abac96904431bb5e6ec6b84a81da",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "size":{
+              "width":400,
+              "height":700}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"7f301ea109eb4e38a71ef5b36a1e623b",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "size":{
+                  "width":400,
+                  "height":700}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/村行注册/u0.jpg"}},
+{
+          "id":"ea9ec22369a1452eaa9b1f68261685ee",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "opacity":"0",
+            "location":{
+              "x":0,
+              "y":30},
+            "size":{
+              "width":100,
+              "height":50}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"aa876ced133f47e8a4fd3ff535e4483a",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "opacity":"0",
+                "location":{
+                  "x":0,
+                  "y":30},
+                "size":{
+                  "width":100,
+                  "height":50}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"在 当前窗口 打开 Home",
+                      "target":{
+                        "targetType":"page",
+                        "url":"home.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"resources/images/transparent.gif"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "fd24abac96904431bb5e6ec6b84a81da":{
+      "scriptId":"u0"},
+    "7f301ea109eb4e38a71ef5b36a1e623b":{
+      "scriptId":"u1"},
+    "ea9ec22369a1452eaa9b1f68261685ee":{
+      "scriptId":"u2"},
+    "aa876ced133f47e8a4fd3ff535e4483a":{
+      "scriptId":"u3"}}});

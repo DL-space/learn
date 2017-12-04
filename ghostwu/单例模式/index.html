@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js设计模式-单例模式</title>
+</head>
+<body>
+<script>
+    function Singleton ( uName ){  //singleton(单例模式)
+        this.userName = uName;
+        this.ins = null;  //这个是什么意思呢？
+    }
+    Singleton.prototype.showUserName = function(){
+        return this.userName;
+    };
+    var obj1 = new Singleton( 'dl' );
+    var obj2 = new Singleton( 'zk' );
+    console.log(obj1);
+    console.log(obj2);
+    console.log( obj1 === obj2 ); //false
+
+    /*加一个静态方法,进行单例判断*/
+
+    function Singleton ( uName ){
+        this.userName = uName;
+    }
+    Singleton.prototype.showUserName = function(){
+        return this.userName;
+    };
+    Singleton.getInstance = function( uName ){
+        if ( !this.ins ) {  //判断是否已经创建实例，确保单例
+            this.ins = new Singleton( uName );
+        }
+       return this.ins;
+    };
+    var obj3 = Singleton.getInstance( 'dl' );
+    var obj4 = Singleton.getInstance( 'zk' );
+    console.log(obj3);
+    console.log(obj4);
+    console.log( obj3 === obj4 ); //true
+
+    /*利用闭包*/
+    function Singleton ( uName ){
+        this.userName = uName;
+    }
+    Singleton.prototype.showUserName = function(){
+        return this.userName;
+    };
+    Singleton.getInstance = (function(){
+        var ins = null;
+        return function( uName ) {
+            if ( !ins ) {
+                ins = new Singleton( uName );
+            }
+           return ins;
+        }
+    })();
+    var obj5 = Singleton.getInstance( 'dl' );
+    var obj6 = Singleton.getInstance( 'zk' );
+    console.log( obj5 );
+    console.log( obj6 );
+    console.log( obj5 === obj6 );
+</script>
+</body>
+</html>

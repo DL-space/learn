@@ -1,0 +1,45 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>背景图片的大小设定</title>
+<style type="text/css">
+div {
+	margin-top: 15px;
+	margin-left: 30px;
+	padding: 20px;
+	width: 400px;
+	height: 80px;
+        border: 10px dotted #930;
+	text-align: right;
+	font-weight: bolder;
+	color: red;
+	background-image: url("img/charlesp.gif");
+        background-repeat: repeat;
+}
+#test1 {
+	background-size: 50px auto;
+	-moz-background-size: 50px auto;
+}
+#test2 {
+	background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+}
+#test3 {
+	background-size: cover;
+	-webkit-background-size: cover;
+}
+#test4 {
+	background-size: contain;
+	-webkit-background-size: contain;
+}
+</style>
+</head>
+<body>
+<div id="test1">背景图片的大小设定 50px auto</div>
+<div id="test2">背景图片的大小设定 100% 100%</div>
+<div id="test3">背景图片的大小设定 cover</div>
+<div id="test4">背景图片的大小设定 contain</div>
+</body>
+</html>
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Example 14-6</title>
+    <style type="text/css">
+		input[id$="name"] {
+			border: 2px dashed #000;
+		}
+    </style>
+</head>
+<body>
+
+<h1>Recipes for Cheese</h1>
+
+<p class="intro">Cheese is a remarkably versatile food, available in literally hundreds of varieties with different flavors and textures.</p>
+
+<div class="content">
+
+    <h2>Submit a recipe</h2>
+
+    <p class="intro">We would love to hear from you about your delicious recipes for cheese. Please complete our form (all fields required) or email us at <a href="mailto:recipes@example.com">recipes@example.com</a>.</p>
+
+    <form method="post" action="">
+    	<div>
+    		<label for="submit-name">Name</label>
+    		<input type="text" name="name" id="submit-name">
+    	</div>
+    	<div>
+    		<label for="submit-email">Email</label>
+    		<input type="text" name="email" id="submit-email">
+    	</div>
+    	<div>
+    		<label for="submit-recipe-name">Recipe Name</label>
+    		<input type="text" name="recipe-name" id="submit-recipe-name">
+    	</div>
+    	<div>
+    		<label for="submit-ingredients">Ingredients</label>
+    		<textarea name="ingredients" id="submit-ingredients" rows="5" cols="50"></textarea>
+    	</div>
+    	<div>
+    		<label for="submit-recipe">Recipe</label>
+    		<textarea name="recipe" id="submit-recipe" rows="5" cols="50"></textarea>
+    	</div>
+    	<div>
+    		<input type="submit" value="Send recipe">
+    	</div>
+    </form>
+
+</div>
+
+</body>
+</html>

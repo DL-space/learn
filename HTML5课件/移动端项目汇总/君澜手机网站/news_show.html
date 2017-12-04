@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta content="address=no" name="format-detection">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/default.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jQuery-plugin-zxjcalendar-min.js"></script>
+<title>订单详情</title>
+</head>
+<body class="bgc">
+	<!--正文部分-->
+	<div class=" body_box pct100" id="body_box">
+    	<div class="pct100 l hotel_list_box ">
+            <div class="ml-5 pl10 pr10 h44"><a href="javascript:;" id="show_nav" class="l"><img src="images/more_ico.png" /></a></div>
+           <div class="news_box pl10 pt5 pb10 pr10 clearfix">
+           		<h1 class="f-24 h30 lh30 wh tc b mb15">香水湾君澜一价全包套餐</h1>
+                <div class="wh h12 lh24 news_show">
+                	<p>执行时间：2013年10月07日—2014年3月31日（节假日除外）</p>
+                    <p>说明：</p>
+                    <p>1、 预订一价全包，需连住两晚及以上。</p>
+                    <p>2、 天澜居含3人正餐及3大1小早餐。</p>
+                    <p>3、 一价全包接机可享受专车接机服务（30分钟可拼车），回程统一乘坐酒店穿梭巴士。</p>
+                    <p>4、 一价全含产品不能与其它优惠产品同时使用。</p>
+                    <img src="images/002.png"  />
+                </div>
+           </div>
+           
+        </div>  
+    </div>
+    <!--end-->
+    <!--侧边导航-->
+    <div class="abs men_box pct80 " id="left_nav">
+    	<div class="h44 lh44 tel_box clearfix pct100"><a href="tel:10010" class="tel db l lh44 h44" ><img src="images/tel.png" width="25" height="25" class="db m mt10" /></a><a href="javascript:;" id="closed" class="closed db r lh44 h44" ><img src="images/closed.png" class="db m mt5" /></a></div>
+        <div class="p20 left_logo"><img src="images/left_logo.png" height="90" class="db m" /></div>
+        <div>
+        	<ul class="menu">
+            	<li class="home_ico"><a href="" class="db f-18 b ">首页</a><em class="f-16">+</em></li>
+                <li class="book_ico"><a href="" class="db f-18 b ">酒店预订</a><em class="f-16">+</em></li>
+                <li class="order_ico"><a href="" class="db f-18 b ">订单管理</a><em class="f-16">+</em></li>
+                <li class="user_ico"><a href="" class="db f-18 b ">个人账户</a><em class="f-16">+</em></li>
+                <li class="cuxiao_ico"><a href="" class="db f-18 b ">促销活动</a><em class="f-16">+</em></li>
+            </ul>
+        </div>
+    </div>
+    <!--end-->
+    <script type="text/javascript">
+    $(function(){
+			$("#show_nav").bind("click",function(){
+			$("#left_nav").css({"box-shadow":"2px 0px 10px #000"});
+			$("#body_box").stop(true,true).animate({"left":"80%"});	
+			$("#left_nav").stop(true,true).animate({"left":0});	
+            return false;
+           
+		})
+		$("#closed").bind("click",function(){
+			$("#left_nav").css({"box-shadow":"none"});
+			$("#body_box").stop(true,true).animate({"left":0});	
+			$("#left_nav").stop(true,true).animate({"left":"-80%"});
+            return false;
+           
+		})
+	})	
+    </script>
+</body>
+</html>
+ 

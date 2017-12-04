@@ -1,0 +1,39 @@
+.ui-dialog {
+	POSITION: absolute; FILTER: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=180, Color='#d0d0d0'); PADDING-BOTTOM: 0.2em; PADDING-LEFT: 0.2em; WIDTH: 300px; PADDING-RIGHT: 0.2em; OVERFLOW: hidden; PADDING-TOP: 0.2em; -moz-box-shadow: 0px 1px 9px #ffffff; -webkit-box-shadow: 0px 1px 9px #d0d0d0; box-shadow: 0px 1px 9px #d0d0d0
+}
+.ui-dialog .ui-dialog-titlebar {
+	POSITION: relative; PADDING-BOTTOM: 0.3em; PADDING-LEFT: 1em; PADDING-RIGHT: 1em; PADDING-TOP: 0.5em
+}
+.ui-dialog .ui-dialog-title {
+	MARGIN: 0.1em 16px 0.2em 5px; FLOAT: left
+}
+.ui-dialog .ui-dialog-titlebar-close {
+	POSITION: absolute; PADDING-BOTTOM: 1px; MARGIN: -10px 0px 0px; PADDING-LEFT: 1px; WIDTH: 19px; PADDING-RIGHT: 1px; HEIGHT: 18px; TOP: 50%; RIGHT: 0.3em; PADDING-TOP: 1px
+}
+.ui-dialog .ui-dialog-titlebar-close SPAN {
+	MARGIN: 1px; DISPLAY: block
+}
+.ui-dialog .ui-dialog-titlebar-close:hover {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.ui-dialog .ui-dialog-titlebar-close:focus {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.ui-dialog .ui-dialog-content {
+	BORDER-BOTTOM: 0px; POSITION: relative; BORDER-LEFT: 0px; PADDING-BOTTOM: 0.5em; PADDING-LEFT: 1em; PADDING-RIGHT: 1em; ZOOM: 1; BACKGROUND: #ccd8e7; OVERFLOW: auto; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0.5em
+}
+.ui-dialog .ui-dialog-buttonpane {
+	BACKGROUND-IMAGE: none; TEXT-ALIGN: left; PADDING-BOTTOM: 0.5em; BORDER-RIGHT-WIDTH: 0px; MARGIN: 0.5em 0px 0px; PADDING-LEFT: 0.4em; PADDING-RIGHT: 1em; BORDER-TOP-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 0.3em
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+	FLOAT: right
+}
+.ui-dialog .ui-dialog-buttonpane BUTTON {
+	MARGIN: 0.5em 0.4em 0.5em 0px; CURSOR: pointer
+}
+.ui-dialog .ui-resizable-se {
+	WIDTH: 14px; BOTTOM: 3px; HEIGHT: 14px; RIGHT: 3px
+}
+.ui-draggable .ui-dialog-titlebar {
+	CURSOR: move
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>取数据</title>
+</head>
+<body>
+<div class="plate">
+    <h1>本地存储</h1>
+    <div class="get-info">
+        <p>姓名：<span id="get-name"></span></p>
+        <p>年龄：<span id="get-age"></span></p>
+    </div>
+</div>
+<script>
+    window.onload = function () {
+        var getName = document.getElementById("get-name");
+        var getAge = document.getElementById("get-age");
+        var data = JSON.parse(sessionStorage.getItem("data"));
+        console.log(data);
+        getName.innerText = data.name;
+        getAge.innerText = data.age;
+    }
+</script>
+</body>
+</html>

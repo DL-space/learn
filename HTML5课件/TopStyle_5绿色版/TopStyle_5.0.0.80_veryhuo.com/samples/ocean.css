@@ -1,0 +1,39 @@
+BODY, TD {
+	background: navy;
+	color : white;
+	font-family :  Arial, sans-serif;
+	font-size: 14px;
+	text-align: justify;
+}
+
+H2 {
+	font-size: 14pt;
+	color: #87CEFA;
+}
+
+H3 {
+	font-size: 13pt;
+	color: #7FFFD4;
+}
+
+H4 {
+    font-size: small;
+	font-variant: small-caps;
+	font-weight: bold;
+	color : white;
+	}
+
+A {
+	text-decoration: none;
+	color: aqua;
+}
+
+A:Hover {
+	text-decoration: underline;
+	color: #32CD32;
+}
+
+HR {
+	color: blue;
+	height: 1pt;
+}

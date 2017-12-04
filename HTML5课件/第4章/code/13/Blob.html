@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Blob对象的应用</title>
+<script language=javascript>
+function ShowInfo()
+{
+    var file;
+    //获取文件信息 
+    file = document.getElementById("file").files[0];
+    var size=document.getElementById("size");
+    //显示文件长度
+    size.innerHTML="文件长度:"+file.size+"KB";
+    var type=document.getElementById("type");
+    //显示文件类型
+    type.innerHTML="文件类型："+file.type;
+}
+</script>
+</head>
+<body>
+<h5>显示文件长度和类型</h5>
+<input type="file" id="file" />
+<input type="button" value="获取信息" onclick="ShowInfo();"/>
+<br/>
+<p id="size"></p>
+<p id="type"></p>
+</body>
+</html>

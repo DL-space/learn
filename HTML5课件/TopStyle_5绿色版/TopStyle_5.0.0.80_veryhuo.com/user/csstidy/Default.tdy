@@ -1,0 +1,15 @@
+allow_html_in_templates=false
+compress_colors=true
+compress_font-weight=true
+discard_invalid_properties=false
+lowercase_s=false
+preserve_css=false
+remove_bslash=true
+remove_last_;=false
+sort_properties=false
+sort_selectors=false
+timestamp=false
+merge_selectors=2
+case_properties=0
+optimise_shorthands=1
+template=default

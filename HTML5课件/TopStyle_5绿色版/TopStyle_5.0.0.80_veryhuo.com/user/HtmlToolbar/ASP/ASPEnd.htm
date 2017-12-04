@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>End</title>
+<script language="javascript">
+
+//--------------- LOCALIZEABLE GLOBALS---------------
+
+var MSG_NOT_NEEDED = "This object is only relevant when the server model is ASP VBScript. No End statement is necessary with ASP JavaScript."
+
+//---------------     API FUNCTIONS    ---------------
+
+function objectTag() {
+	if (ts.isASP_VB())
+    return "<% End If %>"
+	else
+    alert(MSG_NOT_NEEDED);
+}
+</script>
+</head>
+<body>
+</body>
+</html>

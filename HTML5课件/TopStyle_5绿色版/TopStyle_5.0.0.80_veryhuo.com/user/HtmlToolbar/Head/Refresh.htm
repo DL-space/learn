@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Refresh</title>
+<script language="javascript" src="Refresh.js"></script>
+</head>
+<body>
+<form>
+  <table cellpadding="4" cellspacing="2">
+    <tr>
+      <td align="right" valign="baseline" nowrap class="ui">Delay:</td>
+      <td valign="baseline" colspan="2" class="ui">
+        <input name="Seconds" type="text" style="width:35px" class="ui">
+        &nbsp;seconds
+			</td>
+    </tr>
+    <tr>
+      <td align="right" valign="baseline" nowrap class="ui">Action:</td>
+      <td align="right" valign="baseline">
+        <input type="radio" name="Target" value="radiobutton" checked>
+      </td>
+      <td valign="baseline" nowrap class="ui">Go to URL:
+        <input name="URL" type="text" style="width:150px" class="ui">
+				<img src="../Shared/Images/folder.gif" style="cursor: hand" onClick="document.forms[0].URL.value = ts.browseForFileURL(document.forms[0].URL.value)">
+      </td>
+    </tr>
+    <tr>
+      <td align="right" valign="baseline">&nbsp;</td>
+      <td align="right" valign="baseline">
+        <input type="radio" name="Target" value="radiobutton">
+      </td>
+      <td valign="baseline" class="ui">Refresh this document</td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

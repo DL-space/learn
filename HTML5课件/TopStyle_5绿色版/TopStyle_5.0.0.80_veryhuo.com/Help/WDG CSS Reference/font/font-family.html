@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang=en>
+<head>
+<title>Font Family</title>
+<link rel=StyleSheet href="../style.css" type="text/css">
+<link rel=StyleSheet href="../aural.css" type="text/css" media=aural>
+<meta name="author" content="John Pozadzides/Liam Quinn">
+<meta name="description" content="A description of the font-family property of Cascading Style Sheets, level 1.">
+<meta name="keywords" content="font-family property, font family">
+<meta http-equiv="Content-Style-Type" content="text/css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#000080">
+<h2><!-- <img src="../wdglogo1.gif" width=250 height=83 alt="The Web Design Group"> --></h2>
+<h1 align=center>Font Family<!-- <img src="../css.gif" alt="" align=right width=99 height=73 hspace=5> --></h1>
+<hr noshade>
+<table cellpadding=5>
+<tr>
+	<th valign=top align=left><b>Syntax:</b> </th> 
+	<td valign=top>font-family: [[&lt;family-name&gt; | &lt;generic-family&gt;],]* [&lt;family-name&gt; | &lt;generic-family&gt;]<br>
+</tr>
+<tr>
+	<th valign=top align=left><b>Possible Values:</b> </th> 
+	<td valign=top>&lt;family-name&gt;<ul><li>Any font family name may be used</ul>
+		&lt;generic-family&gt;<ul>
+<li><strong class=css><span style="font-family: serif">serif</span></strong> (<i>e.g.</i>, <span style="font-family: Times">Times</span>)</li>
+<li><strong class=css><span style="font-family: sans-serif">sans-serif</span></strong> (<i>e.g.</i>, <span style="font-family: Arial">Arial</span> or <span style="font-family: Helvetica">Helvetica</span>)</li>
+<li><strong class=css><span style="font-family: cursive">cursive</span></strong> (<i>e.g.</i>, <span style="font-family: Zapf-Chancery">Zapf-Chancery</span>)</li>
+<li><strong class=css><span style="font-family: fantasy">fantasy</span></strong> (<i>e.g.</i>, <span style="font-family: Western">Western</span>)</li>
+<li><strong class=css><span style="font-family: monospace">monospace</span></strong> (<i>e.g.</i>, <span style="font-family: Courier">Courier</span>)</li>
+</ul>
+</tr>
+<tr>
+	<th valign=top align=left><b>Initial Value:</b> </th> 
+	<td valign=top>Determined by browser<br>
+</tr>
+<tr>
+	<th valign=top align=left><b>Applies to:</b> </th> 
+	<td valign=top>All elements<br>
+</tr>
+<tr>
+	<th valign=top align=left><b>Inherited:</b> </th> 
+	<td valign=top>Yes<br>
+</tr>
+</table>
+</p>
+<p>Font families may be assigned by a specific font name or a generic font family. Obviously, defining a specific font will not be as likely to match as a generic font family. Multiple family assignments can be made, and if a specific font assignment is made it should be followed by a generic family name in case the first choice is not present.</p>
+<p>A sample <strong class=css>font-family</strong> declaration might look like this:</p>
+<pre><code class=css>P { font-family: "New Century Schoolbook", Times, serif }</code></pre>
+<p>Notice that the first two assignments are specific type faces: <span style="font-family: 'New Century Schoolbook'">New Century Schoolbook</span> and <span style="font-family: Times">Times</span>. However, since both of them are <strong class=css><span style="font-family: serif">serif</span></strong> fonts, the generic font family is listed as a backup in case the system does not have either of these but has another <strong class=css><span style="font-family: serif">serif</span></strong> font which meets the qualifications.</p>
+<p>Any font name containing whitespace must be quoted, with either single or double quotes.</p>
+<p>The font family may also be given with the <strong class=css><a href="font.html">font</a></strong> property.</p>
+<!-- <hr width="60%" align=right> -->
+<!-- <p align=right>Maintained by <a href="mailto:john@htmlhelp.com">John&#160;Pozadzides</a> and <a href="mailto:liam@htmlhelp.com">Liam&#160;Quinn</a></p> -->
+<hr noshade>
+<p class=toolbar align=center><a href="../properties.html"><img src="../wdglogo-small.gif" width=105 height=40 alt="Web Design Group ~ "></a><a href="../properties.html"><!-- CSS&#160;Index</a>&#160;~ <a href="../structure.html">CSS&#160;Structure</a>&#160;~ <a href="../properties.html">CSS&#160;Properties</a> --></p>
+<p align=center><small><a href="../copyright.html">Copyright &#169;</a> 1997 John Pozadzides and Liam Quinn. All rights reserved.</small></p>
+</body>
+</html>

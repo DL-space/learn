@@ -1,0 +1,6 @@
+Applet
+ActiveX
+Plugin
+-
+Flash
+Shockwave

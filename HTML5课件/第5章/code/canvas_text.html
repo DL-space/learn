@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312"/>
+<title>canvas元素</title>
+<script type="text/javascript">
+function draw() {
+//取得绘图区域
+  var ctx = document.getElementById('myPic').getContext('2d');
+  //设定阴影
+  ctx.shadowOffsetX = 10;
+  ctx.shadowOffsetY = 10;
+  ctx.shadowBlur = 2;
+  ctx.shadowColor = "rgba(245, 90, 210, 0.5)";
+  //设定文字样式
+  ctx.font = "24px 楷体";
+  ctx.fillStyle = "Blue";
+  //绘制文字
+  ctx.fillText("canvas 元素是HTML5标准中新增的元素。", 5, 30);
+
+  ctx.shadowColor = "rgba(100, 0, 250, 0.5)";
+  ctx.fillStyle = "rgb(110, 210, 50)";
+  ctx.fillText("canvas 元素是一个绘图的画布元素", 5, 60);
+}
+</script>
+</head>
+<body onload="draw()">
+<canvas id="myPic" width="600" height="150"></canvas>
+</body>
+</html>

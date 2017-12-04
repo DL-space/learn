@@ -1,0 +1,37 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>框线背景图设定</title>
+<style type="text/css">
+div {
+	margin-top: 30px;
+	margin-left: 30px;
+	padding: 5px;
+	width: 300px;
+	height: 150px;
+	text-align: center;
+	font-weight: bolder;
+	color:#F00;
+        background-color: #099;
+	
+}
+#test1 {
+	-o-border-image: url("img/w123.jpg") 75 / 75px;
+        -moz-border-image: url("img/w123.jpg") 75 / 75px;
+        -webkit-border-image: url("img/w123.jpg") 75 / 75px;
+        border-top-image: url("img/w123.jpg") 75 / 75px;
+	}
+#test2 {
+	-o-border-image: url("img/w123.jpg") 75 / 50px 30px;
+        -moz-border-image: url("img/w123.jpg") 75 / 50px 30px;
+        -webkit-border-image: url("img/w123.jpg") 75 / 50px 30px;
+        border-top-image: url("img/w123.jpg") 75 / 50px 30px;
+}
+</style>
+</head>
+<body>
+<div id="test1"><p>框线背景图设定1</p></div>
+<div id="test2"><p>框线背景图设定2</p></div>
+</body>
+</html>

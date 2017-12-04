@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>在线调查</title>
+<style type="text/css">
+<!--
+body {
+	background-image: url(images/bg.jpg);
+	background-repeat: repeat-y;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+body, td, th {
+	font-size: 12px;
+}
+a:link {
+	color: #333;
+	text-decoration: none;
+}
+a:visited {
+	color: #333;
+	text-decoration: none;
+}
+a:active {
+	color: #F90;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #666;
+}
+#container {
+	margin-left:215px;
+	margin-right:215px;
+	position:relative;
+	width:573px; 
+}
+#header {
+	font-size:20px;
+	color:#F90;
+	font-weight:bolder;
+	line-height:35px;
+}
+#nav{ line-height:25px;background-color:#EFEFEF; margin-bottom:0px; margin-top:5px;
+}
+#nav ul {
+	margin:0px;
+	padding:0px;
+	list-style:none; background-color:#EFEFEF;
+}
+#nav ul li {
+	padding:5px; margin:0px;
+	display:inline;
+	line-height:25px;
+}
+#footer {
+	height:25px;
+	padding-top:5px;
+	line-height:20px;
+	text-align:center;
+	background-color:#EFEFEF;
+}
+body, td, th {
+	font-size: 12px;
+}
+p {
+	padding:5px;
+	margin:0px;
+}
+.tit {
+	counter-increment:count;
+	font-size:14px;
+	color:red;
+	font-weight:bolder;
+}
+p.tit:before {
+	content:counter(count)'.';
+	color:red;
+	font-family:黑体;
+}
+-->
+</style>
+</head>
+<body>
+<div id="container">
+  <div id="header">秋天设计</div>
+  <div id="nav">
+    <ul>
+      <li><a href="#">网站首页</a></li>
+      <li><a href="#">企业文化</a></li>
+      <li><a href="#">关于我们</a></li>
+      <li><a href="#">经典案例</a></li>
+      <li><a href="#">服务理念</a></li>
+      <li><a href="#">在线咨询</a></li>
+      <li><a href="#">合作流程</a> </li>
+      <li><a href="#">联系我们</a></li>
+    </ul>
+  </div>
+  <div id="main">
+    <form action="#" method="get">
+      <fieldset>
+        <legend>在线调查</legend>
+        <label>
+        <p class="tit">调查对象</p>
+        <p>
+          <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_0" />
+          个人
+          </label>
+          <label>
+            <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_1" />
+            单位</label>
+        </p>
+        <label>
+        <p class="tit">联系人</p>
+        <p>
+          <input name="name" type="text" id="name" size="50" />
+          </label>
+        </p>
+        <label>
+        <p class="tit">联系电话 </p>
+        <p>
+          <input name="tel" type="text" id="tel" size="50" /></label>
+        </p>
+        <label>
+        <p class="tit">Emai</p>
+        <p>
+          <input name="email" type="text" id="email" size="50" /></label>
+        </p>
+        <p class="tit">我们提供的哪些服务还未能达到您的满意？</p>
+        <p>
+          <label>
+            <input type="checkbox" name="复选框组1" value="复选框" id="复选框组1_0" />
+            市场调研、整合形象、策划</label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="复选框组1" value="复选框" id="复选框组1_1" />
+            企业标志、视觉形象识别VIS系统设计</label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="复选框组1" value="复选框" id="复选框组1_1" />
+            企业年报、宣传画册、杂志、手提袋、海报</label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="复选框组1" value="复选框" id="复选框组1_1" />
+            产品推广、PIS、物料设计</label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="复选框组1" value="复选框" id="复选框组1_1" />
+            产品包装</label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="复选框组1" value="复选框" id="复选框组1_1" />
+            平面设计印刷</label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="复选框组1" value="复选框" id="复选框组1_1" />
+            为企业全面导入独特、鲜明的形象系统 </label>
+        </p>
+        <p class="tit">您对我们目前的客服满意吗？</p>
+        <p>
+          <label>
+            <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_0" />
+            非常满意</label>
+          <label>
+            <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_0" />
+            基本满意</label>
+          <label>
+            <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_1" />
+            一般</label>
+          <label>
+            <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_2" />
+            不满意</label>
+          <label>
+            <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_3" />
+            非常不满意</label>
+        </p>
+        <p>
+          <input type="submit" name="button" id="button" value="提交" />
+        </p>
+      </fieldset>
+    </form>
+  </div>
+  <div id="footer">
+Copyright © 2009autumndesign86.com.cn Inc. All Rights Reserved
+  </div>
+</div>
+</body>
+</html>

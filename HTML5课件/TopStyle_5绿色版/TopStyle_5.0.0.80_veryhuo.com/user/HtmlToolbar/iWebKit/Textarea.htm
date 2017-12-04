@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>iWebKit Textarea</title>
+<script language="javascript">
+function canInsertObject() {
+  if (ts.hasParent('ul', 'class', 'pageitem'))
+    return true
+  else {
+    alert('Textarea MUST be inside <ul class="pageitem">');
+    return false;
+  }
+}
+function objectTag() {
+  var DOM = ts.getDocumentDOM();
+  if (DOM)
+    return '<li class="textbox">\r\n<textarea name="' + DOM.getUniqueNameForTag('textarea', 'TextArea') + '"></textarea>\r\n</li>';
+}
+</script>
+</head>
+<body>
+</body>
+</html>

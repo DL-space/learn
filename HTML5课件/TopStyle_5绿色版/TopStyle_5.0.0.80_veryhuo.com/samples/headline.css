@@ -1,0 +1,20 @@
+BODY, TD {
+	background-color: #D2B48C;
+	font-family : sans-serif ;
+}
+ 
+A {
+	color: blue;
+}
+
+A:Hover {
+	color: red;
+}
+
+H1, H2, H3, H4 { 
+	font-variant: small-caps;
+	background-color: black;
+	color: white; 
+	padding: 4px;
+	width: 100%;
+}

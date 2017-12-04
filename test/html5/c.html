@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div class="set-info">
+    <input type="text" name="name" id="name" placeholder="姓名">
+    <input type="text" name="age" id="age" placeholder="年龄">
+    <button class="btn" id="btn-set">存储</button>
+    <button class="btn" id="btn-get">获取</button>
+    <button class="btn" id="btn-go">跳转</button>
+    <button class="btn" id="btn-del">清除数据</button>
+</div>
+
+<div class="get-info">
+    <p>姓名：<span id="get-name"></span></p>
+    <p>年龄：<span id="get-age"></span></p>
+</div>
+
+<div id="result"></div>
+
+<script>
+    var btnGet = document.getElementById("btn-get");
+    var btnSet = document.getElementById("btn-set");
+    btnSet.addEventListener("click",function () {
+        alert(22)
+    });
+    if (typeof(Storage) !== "undefined") {
+        localStorage.setItem("lastname", "Gates");
+        document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+    } else {
+        document.getElementById("result").innerHTML = "抱歉！您的浏览器不支持 Web Storage ...";
+    }
+</script>
+
+</body>

@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>用户注册</title>
+<style type="text/css">
+* {
+	margin:0;
+	padding:0;
+	border:0;
+}
+html, body {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	color:#000000;
+	background:#d0a06e;
+	margin:0 0 0 0;
+	padding:8px 0 0 0;
+}
+a {
+	color:#e98321;
+	text-decoration:none;
+}
+a:hover {
+	color:#F00;
+	text-decoration:none;
+	font-size: 12px;
+}
+.body_bk {
+	width:820px;
+	margin:0 auto;
+}
+.Content {
+	background:url(images/page_bg.jpg) bottom no-repeat;
+	height:543px;
+	width:819px;
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+}
+.nav {
+	float:left;
+	margin:10px 0px 10px 0px;
+}
+.nav ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	list-style-type: none;
+	white-space: nowrap;
+}
+.nav li {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	display: inline;
+}
+.nav a {
+	padding: 0.2em 0.45em;
+	color:#9b5f25;
+	font-weight: normal;
+	text-decoration: none;
+	line-height: 1.75em;
+	font-size: 14px;
+	font-weight:bold;
+}
+.nav a:hover {
+	color:#F00;
+	text-decoration:none;
+	font-size: 14px;
+	font-weight:bold;
+}
+.online {
+	margin:0px 0px 0px 10px;
+	padding:20px 0px 0px 0px;
+	width:100px;
+}
+.register_text {
+	width:100xp;
+	margin:20px 0px 0px 550px;
+	font-family:"黑体";
+	font-size:20px;
+	letter-spacing:5px;
+	font-weight:bold;
+	color:#8e5f35;
+}
+.footer{
+	text-align:center;
+	margin:0px;
+	width:100%;
+	height:25px;
+	padding:10px;
+	line-height:25px;
+	}
+.formwrapper {
+	margin:20px 0px 0px 85px;
+	width:620px;
+	height:325px;
+	text-align:left;
+	float:left;
+}
+.register_left {
+	margin-left:20px;
+	padding:10px;
+	border:1px solid #8a531f;
+	width:400px;
+	float:left;
+	background-image: -o-linear-gradient(top, #d8b37e, #e1c69b);
+	border-radius:0px 0px 0px 30px;
+}
+.register_left label {
+	float:left;
+	width:120px;
+	text-align:right;
+	padding:4px;
+	margin:1px;
+}
+.register_left div {
+	clear:left;
+	margin-bottom:2px;
+}
+.button {
+	margin-top:20px;
+	padding:7px;
+	border-radius:3px;
+	font-size:12px;
+	border:1px #8a531f solid;
+	background-image: -o-linear-gradient(top, #c88a4e, #e6b586);
+	font-family:"黑体";
+	color:#FFF;
+}
+.enter {
+	text-align:center;
+}
+.register_right {
+	text-align:center;
+	float:left;
+	margin-left:5px;
+	width:150px;
+	height:252px;
+	line-height:268px;
+	border:1px solid #8a531f;
+	border-radius:0px 30px 0px 0px;
+	background-image: -o-linear-gradient(top, #d8b37e, #e1c69b);
+}
+input {
+	padding:1px;
+	margin:2px;
+	font-size:11px;
+}
+input:focus {
+	border:#F60 2px solid;
+	background: rgba(250, 180, 180, 0.7) no-repeat;
+}
+</style>
+</head>
+
+<body>
+<div class="body_bk">
+  <div class="Content">
+    <div class="nav">
+      <ul>
+        <li><a href="#">首    页</a></li>
+        <li>-</li>
+        <li><a href="#">视频文件</a></li>
+        <li>-</li>
+        <li><a href="#">课程安排</a></li>
+        <li>-</li>
+        <li><a href="#">学习笔记</a></li>
+        <li>-</li>
+        <li><a href="#">选择课程</a></li>
+        <li>-</li>
+        <li><a href="#">统考结果</a></li>
+      </ul>
+    </div>
+    <div class="online">
+      <p><strong>在线人数:</strong>25468</p>
+    </div>
+        <div class="register_text">用户注册</div>
+        <div class="formwrapper">
+      <form action="#" method="post"  name="apForm" id="apForm" >
+       <div class="register_left">
+          <p><strong>在您注册之前请认真阅读服务条款。</strong><br/>
+            您的电子邮箱不回被公布出去，但是必须填写。 </p>
+          <br/>
+          <div>
+            <label for="Name">用户名:</label>
+            <input   type="text"   name="Name"   id="Name"   value=""   size="20"   maxlendth="30" autofocus required>
+            *（最多30个字符）<br/>
+          </div>
+          <div>
+            <label for="Email">电子邮箱:</label>
+            <input   type="email"   name="Email"   id="Email"   value=""   size="20"   maxlength="150" required>
+            *<br/>
+          </div>
+          <div>
+            <label for="password">密码:</label>
+            <input   type="password"   name="password"   id="password"   size="18"   maxlength="15" required>
+            *(最多15个字符)<br/>
+          </div>
+          <div>
+            <label for="confirm">重复密码:</label>
+            <input   type="password"   name="confirm"   id="confirm"   size="18"   maxlength="15" required>
+            *<br/>
+          </div>
+          <div>
+            <label for="yanz">验证码:</label>
+            <input   type="text"   name="yanz"   id="yanz"  size="6" maxlength="6" required>
+            s5q4s3<br/>
+          </div>
+          <div>
+            <label for="Agree"></label>
+            <input type="checkbox" name="Agree" id="Agree" value="1" required>
+            我已阅读并同意<a href="#" title="会员注册协议">会员注册协议</a>和<a href="#" title="您是否同意服务条款">隐私保护政策</a></div>
+             <div class="enter">
+            <input name="create" type="submit" class="button" value="提&nbsp;&nbsp;交" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input name="Submit" type="reset" class="button" value="重新输入" />
+          </div>
+          </div>
+           <div class="register_right">
+          <div>已经有帐户？现在<a href="#" title="我已经注册帐户"><strong>登录</strong></a></div>
+        </div>
+       </form>
+    </div>
+  </div>
+      <div class="footer">
+关于我们 - 版权声明 - 帮助(？) - 联系我们 - 友情链接 - 用户注册 - 地图 <br/>
+计算机教学 版权所有 CopyRight 2011-2013 AAZcn.com, Inc. All Rights Reserved 站长统计 
+
+    </div>
+</div>
+</body>
+</html>

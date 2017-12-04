@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>回调函数</title>
+</head>
+<body>
+<input type="text" id="ipt">
+<button id="btn">点击</button>
+<p id="p"></p>
+<script>
+    var btn = document.getElementById("btn");
+    btn.addEventListener("click",function () {
+        var str = document.getElementById("ipt").value;
+        document.getElementById("p").innerHTML = str;
+    })
+</script>
+</body>
+</html>

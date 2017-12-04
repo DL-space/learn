@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>output元素</title>
+<script type="text/javascript">
+function write_sum()
+{
+x=document.forms["sumform"]["aa"].value
+y=document.forms["sumform"]["bb"].value
+document.forms["sumform"]["sum"].value=parseFloat(x)+parseFloat(y)
+}
+</script>
+</head>
+
+<body>
+<form action="#" method="get" name="sumform">
+  <input type="number" name="aa">
+  +
+  <input type="number" name="bb">
+  <input type="submit" onClick="write_sum()" value="计算">
+  <p>计算结果：
+    <output name="sum"></output>
+  </p>
+</form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>删除数据表及数据</title>
+<script language="javascript">
+function deltable(){
+	var DEMODB = window.openDatabase("mydata", "1.0", "数据库描述", 20000)
+	alert("打开数据库");
+    DEMODB.transaction(  
+        function (transaction) {  
+            transaction.executeSql("DROP TABLE ToDo;");
+			alert("删除数据库");  
+        }
+	);
+	if(!ToDo){
+		alert("删除成功");
+		}  
+    location.reload();  
+}  
+</script>
+</head>
+<body>
+<input type="button" value="删除数据表" onClick="deltable()">
+</body>
+</html>

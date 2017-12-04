@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>ColdFusion Page Encoding</title>
+<script language="javascript">
+function getCloseTag() {
+  if (ts.isXHTML())
+    return ' />';
+  else
+    return '>';
+}
+function objectTag() {
+  var encoding = ts.getCharSet();
+	if (encoding) {
+		var result = "<cfprocessingdirective pageencoding=\"" + encoding + "\"" + getCloseTag() + "\n";
+		result += "<cfcontent type=\"text/html; charset=" + encoding + "\"" + getCloseTag() + "\n";
+		result += "<cfset setEncoding(\"URL\", \"" + encoding + "\")" + getCloseTag() + "\n";
+		result += "<cfset setEncoding(\"Form\", \"" + encoding + "\")" + getCloseTag() + "\n";
+		return result;
+	}
+}
+</script>
+</head>
+</html>

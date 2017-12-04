@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>Trimmed QueryString Element</title>
+<script language="javascript">
+function objectTag() {
+  if (ts.isASP_VB())
+	  return 'Trim(Request.QueryString("' + ts.getSelection(true) + '"))'
+	else
+	  return 'Request.QueryString["' + ts.getSelection(true) + '"].Trim()'; 
+}
+</script>
+</head>
+<body>
+</body>
+</html>

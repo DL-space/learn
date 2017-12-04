@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>ADODB.Recordset</title>
+<script src="ASPRecordset.vbs" language="VBScript"></script>
+</head>
+<body>
+<form>
+<table>
+<tr><td class="ui">Connection name</td><td><input style="width:200px" class="ui" type="text" name="conn" value="conn"></td></tr>
+<tr><td class="ui">Recordset name</td><td><input style="width:200px" class="ui" type="text" name="rs" value="rs"></td></tr>
+<tr><td class="ui">SQL&nbsp;Query&nbsp;name&nbsp;</td><td><input style="width:200px" class="ui" type="text" name="sql" value="sql"></td></tr>
+
+<tr><td class="ui">Cursor Type</td><td><select style="width:200px" class="ui" name="CursorType">
+<option value="0">adOpenForwardOnly</option>
+<option value="1">adOpenKeyset</option>
+<option value="2">adOpenDynamic</option>
+<option value="3" selected>adOpenStatic</option>
+</select></td></tr>
+<tr><td class="ui">Lock Type</td><td><select style="width:200px" class="ui" name="LockType">
+<option value="1" selected>adLockReadOnly</option>
+<option value="2">adLockPessimistic</option>
+<option value="3">adLockOptimistic</option>
+<option value="4">adLockBatchOptimistic</option>
+</select></td></tr>
+<tr><td class="ui">SQL Query</td><td><textarea style="overflow:auto; width:200px; height:50px" name="sqlquery" class="ui"></textarea></td></tr>
+<tr><td class="ui" colspan="2">Add ASP delimiters&nbsp;<input type="checkbox" name="asptags" value="true"></td></tr>
+</table>
+</form>
+
+</body>
+</html>

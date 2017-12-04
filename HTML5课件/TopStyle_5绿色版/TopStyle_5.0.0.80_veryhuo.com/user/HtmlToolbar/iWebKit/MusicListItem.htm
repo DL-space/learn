@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>iWebKit iTunes Music List Item</title>
+<script language="javascript">
+function canInsertObject() {
+  if (ts.hasParent('body', 'class', 'musiclist')) {
+    if (ts.hasParent('div', 'id', 'content'))
+      return true
+    else {
+      alert('iTunes Music List Item MUST be inside <div id="content">');
+      return false;
+    }
+  }
+  else {
+    alert('iTunes Music List Item MUST be inside <body class="musiclist">');
+    return false;
+  }
+}
+function initUI() {
+  if (ts.hasSelection())
+    document.forms[0].name.value = ts.getSelection(false, true);  
+  document.forms[0].name.focus();
+  document.forms[0].name.select();
+}
+function objectTag() {
+  var result = '<li>\r\n';
+  result += '<a href="' + document.forms[0].href.value + '">\r\n';
+  result += '<span class="number">' + document.forms[0].number.value + '</span>\r\n';
+  var itemName = document.forms[0].name.value;
+  if (!itemName)
+    itemName = '|';
+  result += '<span class="name">' + itemName + '</span>\r\n';
+  result += '<span class="time">' + document.forms[0].time.value + '</span>\r\n';
+  result += '<span class="arrow"></span>\r\n</a>\r\n</li>';
+  return result; 
+}
+</script>
+</head>
+<body>
+<form>
+	<table border="0">
+	<tr>
+		<td class="ui" align="right">href:</td>
+		<td>
+			<input type="text" name="href" style="width:200px" class="ui">
+		</td>
+		<td>
+			<img src="../Shared/Images/folder.gif" style="cursor: hand" onClick="document.forms[0].href.value = ts.browseForFileURL(document.forms[0].href.value)">
+		</td>
+	</tr>
+	<tr>
+		<td class="ui" align="right">number:</td>
+		<td colspan="2">
+			<input type="text" name="number" style="width:200px" class="ui">
+		</td>
+	</tr>
+	<tr>
+		<td class="ui" align="right" nowrap>name of song:</td>
+		<td colspan="2">
+			<input type="text" name="name" style="width:200px" class="ui">
+		</td>
+	</tr>
+	<tr>
+		<td class="ui" align="right" nowrap>time:</td>
+		<td colspan="2">
+			<input type="text" name="time" style="width:200px" class="ui">
+		</td>
+	</tr>		
+	<tr>
+		<td colspan="3" align="right" nowrap><hr /></td>
+	</tr>
+	</table>
+</form>
+</body>
+</html>

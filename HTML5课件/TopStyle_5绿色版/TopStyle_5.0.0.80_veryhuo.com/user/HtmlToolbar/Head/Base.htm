@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Base</title>
+<script src="Base.js" language="JavaScript"></script>
+</head>
+<body>
+<form>
+  <table>
+    <tr>
+      <td colspan="3" nowrap class="ui" height="30">
+        Make all document-relative links relative to:
+			</td>
+    </tr>
+    <tr>
+      <td align="right" nowrap class="ui">Href:</td>
+      <td>
+        <input name="hrefFileName" type="text" style="width:200px" class="ui">
+			</td>
+			<td align="left">
+				<img src="../Shared/Images/folder.gif" style="cursor: hand" onClick="document.forms[0].hrefFileName.value = ts.browseForFileURL(document.forms[0].hrefFileName.value)">
+      </td>
+    </tr>
+    <tr>
+      <td align="right" nowrap class="ui">Target:</td>
+      <td>
+        <input name="frameTarget" type="text" style="width:200px" class="ui">
+			</td>
+			<td align="left" valign="bottom" height="27">
+				<img src="../Shared/Images/btnDown.gif" onClick="document.forms[0].frameTarget.value = ts.showPopupMenu(document.forms[0].frameTarget.value, '_blank,_parent,_self,_top')">
+      </td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

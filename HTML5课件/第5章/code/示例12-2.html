@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="utf-8" />
+<head>
+   <title>示例12-2</title>
+   <script type="text/javascript">
+     function canvasFont(){
+		   var canvas=document.getElementById("mycanvas");
+		   var context=canvas.getContext("2d");
+		   context.fillStyle="#3A5FCD";
+		   context.font="30px Arial";
+		   context.fillText("Hello Word!",20,50,300);
+		   context.font="bold 30px Arial";
+		   context.strokeText("Hello World",20,150,300);
+		}
+     
+   </script>
+</head>
+<body onLoad="canvasFont();">
+<canvas id="mycanvas"  height="300" width="550" style="border:1px solid">
+
+</canvas>
+
+</body>
+</html>

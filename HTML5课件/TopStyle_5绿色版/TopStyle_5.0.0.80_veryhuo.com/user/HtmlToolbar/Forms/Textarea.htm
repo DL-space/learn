@@ -1,0 +1,72 @@
+<HTML>
+<HEAD>
+<TITLE>Textarea</TITLE>
+<SCRIPT LANGUAGE="javascript">
+function initUI() {
+  document.forms[0].name.focus();
+}
+function objectTag() {
+  var result = '<textarea';
+
+  var name = document.forms[0].name.value;
+	if (name) {
+	  result += ' name="' + name + '"';
+    if (ts.isXHTML())
+      result += ' id="' + name + '"';
+  }
+
+	var cols = document.forms[0].cols.value;
+	if (cols) result += ' cols="' + cols + '"';
+
+	var rows = document.forms[0].rows.value;
+	if (rows) result += ' rows="' + rows + '"';
+
+	var wrap = document.forms[0].wrap.value;
+	if (wrap) result += ' wrap="' + wrap + '"';
+
+	if (document.forms[0].disabled.checked)
+	  result += ' disabled="disabled"';
+
+	if (document.forms[0].readonly.checked)
+	  result += ' readonly="readonly"';
+	
+  return result += '>' + ts.getSelection(true) + '</textarea>';
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+  <table border="0" cellpadding="2">
+    <tr>
+      <td class="ui" align="right">Name:</td>
+      <td><input type="text" name="name" style="width:150px" class="ui"></td>
+    </tr>
+    <tr>
+      <td class="ui" align="right">Columns:</td>
+      <td><input type="text" name="cols" style="width:50px" class="ui"></td>
+    </tr>
+    <tr>
+      <td class="ui" align="right">Rows:</td>
+      <td><input type="text" name="rows" style="width:50px" class="ui"></td>
+    </tr>
+    <tr>
+      <td class="ui" align="right">Wrap:</td>
+      <td>
+		  <select name="wrap" class="ui" style="width:80px">
+			  <option value="">Default</option>
+				<option value="off">off</option>
+				<option value="virtual">virtual</option>
+				<option value="physical">physical</option>
+		  </select>			 
+		 </td>
+    </tr>
+	 <tr>
+     <td colspan="2" class="ui"><input name="disabled" type="checkbox">Disabled</td>
+   </tr>
+   <tr>
+     <td colspan="2" class="ui"><input name="readonly" type="checkbox">Readonly</td>
+   </tr>
+ </table>
+</FORM>
+</BODY>
+</HTML>

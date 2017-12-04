@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="utf-8" />
+<head>
+   <title>示例11-1</title>
+   <script type="text/javascript">
+     function insertImg(){
+		   var canvas=document.getElementById("mycanvas");
+		   var context=canvas.getContext("2d");
+		   var img1=new Image();
+		   img1.src="img/P1030675.JPG";
+		   img1.onload=function(){		   
+		   context.drawImage(img1,30,30);
+		   }
+		}
+     
+   </script>
+</head>
+<body onLoad="insertImg();">
+<canvas id="mycanvas"  height="300" width="550" style="border:1px solid">
+
+</canvas>
+
+</body>
+</html>

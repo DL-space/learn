@@ -1,0 +1,15 @@
+PHPFormVars
+PHPGetVars
+PHPSessionVars
+PHPCookieVars
+-
+PHPInclude
+PHPRequire
+-
+PHPTag
+PHPOutput
+PHPComment
+-
+PHPIf
+PHPElse
+

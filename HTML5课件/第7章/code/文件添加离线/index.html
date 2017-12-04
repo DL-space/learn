@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html manifest="MyHomeStuff.manifest">
+   <head>
+   	  <meta name="viewport" content="width=480; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" charset="utf-8">
+      <title>MyHomeStuff</title>
+      <script type="text/javascript" src="MyHomeStuff.js" ></script>
+   </head>
+   <body onload="onInit()">
+      <h3>Overview.</h3>
+      <ul  id="itemData" >
+      </ul>
+	  <h3>Details</h3>
+      <form name="itemForm">
+		<label for="id">编号:</label><input type="text" name="id" id="id" size=2 disabled="true"/>
+		<label for="amount">数量:</label><input type="text" name="amount" id="amount" size = 3/>
+		<label for="name">名称:</label><input type="text" name="name" id="name" size=10 /> <br>
+		<br>
+		<input type="button" name="create" value="创建" onclick="onCreate()" />
+		<input type="button" name="update" value="更改" onclick="onUpdate()" />
+		<input type="button" name="delete" value="删除" onclick="onDelete()" />
+      </form>
+	  <h4>位置</h4>
+      <div id="status"></div>
+   </body>
+</html>

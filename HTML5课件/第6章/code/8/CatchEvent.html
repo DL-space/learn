@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>捕捉事件</title>
+<script>
+var video;
+function play() 
+{
+    video = document.getElementById("video");  
+	
+    //使用事件监听方式捕捉事件
+    video.addEventListener("pause", function()
+    {  
+		catchs = document.getElementById("catchs");
+		catchs.innerHTML="捕捉到pause事件";
+    }, false);  
+	video.addEventListener("play", function()
+    {  
+		catchs = document.getElementById("catchs");
+		catchs.innerHTML="捕捉到play事件";
+    }, false);  
+    if(video.paused) 
+    {  
+            video.play();    
+    } 
+    else 
+    {  
+        video.pause();  
+    }  
+}
+</script>
+</head>
+<body>
+   <video id="video" autobuffer="true" width="510" height="270">
+    <source src="4.ogv" type='video/ogg; codecs="theora, vorbis"'>
+  </video><br/>
+  <input name="play" type="button" onClick="play()" value="播放">
+  <span id="catchs"></span>
+</body>
+</html>

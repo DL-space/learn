@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>视频播放</title>
+<script>
+var video;
+function play() 
+{
+    // 播放视频
+	video = document.getElementById("video");
+    video.play();
+}
+function pause() 
+{
+    //暂停播放
+	video = document.getElementById("video");
+    video.pause();
+}
+</script>
+</head>
+<body>
+   <video id="video" autobuffer="true">
+    <source src="4.ogv" type='video/ogg; codecs="theora, vorbis"'>
+  </video>
+ <p>
+ <input name="play" type="button" onClick="play()" value="播放">
+ <input name="pause" type="button" onClick="pause()" value="暂停">
+</p>
+</body>
+</html>

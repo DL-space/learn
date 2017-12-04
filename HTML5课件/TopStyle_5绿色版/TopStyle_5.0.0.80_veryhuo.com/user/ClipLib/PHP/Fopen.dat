@@ -1,0 +1,1 @@
+fopen('%r[File Name]', '%r[Mode]')/-sep-/

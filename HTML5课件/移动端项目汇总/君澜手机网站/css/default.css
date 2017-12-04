@@ -1,0 +1,78 @@
+@charset "utf-8";
+/*君澜手机网站样式*/
+.book_btn_in{ color:#fff;}
+.book_btn_in i{ width:40px; background:url(../images/book_ico.png) left center no-repeat;}
+.date_input{padding:8px 0;border-radius:8px; background:#fff url(../images/date_bg.png) 92% center no-repeat; text-indent:10px; border:none;background-size:20px 20px;}
+.ui-select{background:#fff url(../images/se_bg.png) 96% center no-repeat;-webkit-appearance: none;width:100%;border-radius:8px;padding:8px 12px; border:1px solid #fff; margin:10px 0;background-size:22px 22px;}	
+.ui-input{padding:12px 0;border-radius:8px; background:#fff ; text-indent:10px; border:none;background-size:20px 20px;}
+.ui-btn{background:#cc9e0d;
+   background:-webkit-gradient(linear, left top, left bottom, from(#fdc106), to(#9e7d15));
+   background: -webkit-linear-gradient(top, #fdc106, #9e7d15);
+   background: -moz-linear-gradient(top, #fdc106, #9e7d15);
+   background: -ms-linear-gradient(top, #fdc106, #9e7d15);
+   background: -o-linear-gradient(top, #fdc106, #9e7d15);
+   color:#000;
+   border-radius:8px;}
+.ui-btn2{background:#83b463;
+   background:-webkit-gradient(linear, left top, left bottom, from(#95c674), to(#7aa95a));
+   background: -webkit-linear-gradient(top, #95c674, #7aa95a);
+   background: -moz-linear-gradient(top, #95c674, #7aa95a);
+   background: -ms-linear-gradient(top, #95c674, #7aa95a);
+   background: -o-linear-gradient(top, #95c674, #7aa95a);
+   color:#000;
+   border-radius:8px;}   
+.city_ico{-webkit-appearance: none;width:100%;border-radius:8px;padding:8px 40px; border:1px solid #fff; margin:10px 0;background:url(../images/se_bg.png) 96% center no-repeat,url(../images/map.png) 10px center no-repeat,#fff;background-size:22px 22px;}
+.hotel_ico{-webkit-appearance: none;width:100%;border-radius:8px;padding:8px 40px; border:1px solid #fff; margin:10px 0;background:url(../images/se_bg.png) 96% center no-repeat,url(../images/city.png) 10px center no-repeat,#fff;background-size:22px 22px;}
+.search_btn em{ background:url(../images/fdj.png) left center no-repeat; display:inline-block; padding:0 0 0 30px; clear:both; overflow:hidden;height:44px; line-height:44px;background-size:25px 25px;}   
+.body_box{  height: 100%;}
+.men_box{background:#111213;  height: 100%; left:-80%; top:0; border-right:1px solid #2b2b2c;}
+.tel{ width:44px; border-right:1px solid #2b2b2c;}
+.tel_box{ border-bottom:1px solid #2b2b2c; border-top:1px solid #2b2b2c; background:url(../images/text_logo.png) center no-repeat; background-size:50% 50%;}
+.closed{ border-left:1px solid #2b2b2c; width:44px; }
+.left_logo{ border-bottom:1px solid #2b2b2c;}
+.menu{}
+.menu li{ height:50px; line-height:50px; border-bottom:1px solid #2b2b2c; padding-left:50px; position:relative;}
+.menu li em{ display:block; position:absolute; line-height:50px; top:0; right:15px;color:#2b2b2c;}
+.menu li a{color:#dbdbdb;}
+.home_ico{ background:url(../images/home_ico.png) 10px center no-repeat;background-size:22px 22px;}
+.book_ico{ background:url(../images/book_ico.png) 11px center no-repeat;background-size:22px 22px;}
+.order_ico{ background:url(../images/order_ico2.png) 12px center no-repeat;background-size:22px 22px;}
+.user_ico{ background:url(../images/user_ico.png) 11px center no-repeat;background-size:30px 22px;}
+.cuxiao_ico{ background:url(../images/cuxiao_ico2.png) 10px center no-repeat;background-size:22px 22px;}
+.hotel_name{ padding-right:20px; background:url(../images/in.png) right center no-repeat; max-width:55%; overflow:hidden; background-size:20px 20px;}
+.hotel_list_box{ height:100%;}
+.hotel_list{background:#eaeaea url(../images/sanjiao.png) 65px top no-repeat; height:100%;}
+.hotel_list ul {  }
+.hotel_list ul li{ border-bottom:1px solid #cacaca; margin-bottom:10px; overflow:hidden;}
+.more_price{ border-bottom:1px solid #c9c9c9; overflow:hidden;}
+.show_more_price{ display:none; border-top:1px solid #c9c9c9; }
+.book_btn{
+	background:#e5ad03;
+   background:-webkit-gradient(linear, left top, left bottom, from(#fcc006), to(#d19e00));
+   background: -webkit-linear-gradient(top, #fcc006, #d19e00);
+   background: -moz-linear-gradient(top, #fcc006, #d19e00);
+   background: -ms-linear-gradient(top, #fcc006, #d19e00);
+   background: -o-linear-gradient(top, #fcc006, #d19e00);
+   color:#fff;
+   border-radius:8px;
+	}
+.user_name{ background:#fff url(../images/user_ico2.png) 10px center no-repeat;background-size:20px 20px; text-indent:40px;}
+.user_tel{ background:#fff url(../images/tel_ico.png) 10px center no-repeat;background-size:20px 20px; text-indent:40px;}
+.submit_btn em{ background:url(../images/tijiao_ico.png) left center no-repeat; display:inline-block; padding:0 0 0 30px; clear:both; overflow:hidden;height:44px; line-height:44px;background-size:25px 25px;}
+.book_yes{ margin:50px auto 0 auto; text-align:center; height:45px; line-height:45px; color:#fff; }
+.book_yes a{ color:#00a2ff; margin:0 5px;}
+.user_info{ background:#fff; height:100%;}
+.user_p_info{background:url(../images/sanjiao.png) 30% top no-repeat; }
+.user_p_password{background:url(../images/sanjiao.png) 56% top no-repeat;}
+.user_p_password input{background:#eee; border:1px solid #ccc;}
+.user_p_point {background:url(../images/sanjiao.png) 83% top no-repeat;}
+.user_p_point td{text-overflow: ellipsis;overflow: hidden;white-space: nowrap;-moz-text-overflow: ellipsis;}
+.tab_user .active{color:#d6b039;}
+.order_list{background:#fff url(../images/sanjiao.png) 78px top no-repeat; height:100%;}
+.order_list ul { margin-top:20px;border-top:1px dashed #d2d2d2;}
+.order_list ul li{ border-bottom:1px dashed #d2d2d2; height:auto; line-height:20px; padding-bottom:10px; margin:10px 0;}
+.news_box{}
+.news_show img{width:100%; display:block; margin:10px auto;}
+.hotel_about{background:#fff url(../images/sanjiao.png) 29% top no-repeat;}
+.rooms_list{background:#fff url(../images/sanjiao.png) 56% top no-repeat;}
+.show_info_box{ height:100%;}

@@ -1,0 +1,32 @@
+/* 
+	This style sheet contains examples of common CSS authoriing mistakes
+ */
+
+.e1 {
+	font-size: 2 px;	/* space between number and unit */	
+}
+
+.e2 {
+	font-size: 12;	/* missing length unit */
+}
+
+.e3 {
+	font-family: arial;	/* missing generic font - should add sans-serif */
+}
+
+.e4 {
+	font: sans-serif;	/* the font property requires a font size value */
+}
+
+.e5 {
+	font: 16px sans-serif;
+	font-style : italic;	/* shorthand font property already defines font-style */
+}
+
+.e6 {
+	background: red;
+	background-color: blue; /*  shorthand background property already defines background-color */
+}
+
+.e_7 { /* selectors shouldn't contain underscores */ }
+.1e8 { /* selectors shouldn't start with a number  */ }

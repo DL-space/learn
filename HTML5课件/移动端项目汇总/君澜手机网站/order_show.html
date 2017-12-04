@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta content="address=no" name="format-detection">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/default.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jQuery-plugin-zxjcalendar-min.js"></script>
+<title>订单详情</title>
+</head>
+<body class="bgc">
+	<!--正文部分-->
+	<div class=" body_box pct100" id="body_box">
+    	<div class="pct100 l hotel_list_box ">
+            <div class="ml-5 pl10 pr10 h44"><a href="javascript:;" id="show_nav" class="l"><img src="images/more_ico.png" /></a><em class="f-16 b mr10 ml10 wh h44 lh44 l">订单管理</em></div>
+           <div class="hotel_list pt10 order_list">
+           		<div class="pl10 pr10 bbc2 lh35 f-14 b">酒店名称：君澜度假酒店</div>
+                <div class="clearfix pl10 pr10 pt10">
+                	<div class="pct50 l f-12 lh18">
+                    	<p>单号：w11613131131631</p>
+                        <p>房型：豪华大床房</p>
+                        <p>入住时间：2013-12-15</p>
+                        <p>入住时间：2013-12-15</p>
+                    </div>
+                    <div class="pct50 r f-12 lh18">
+                    	<p>宾客姓名：王大锤</p>
+                        <p>手机号码：15878965485</p>
+                        <p>电子邮箱：admin@admin.com</p>
+                        <p>身份证：341154643263846</p>
+                    </div>
+                   </div> 
+                  <div class="pl10 pr10 bbc2 lh35 f-14 b">备注</div>
+                  <div class="f-14 pl10 pr10 pt10 bbc2 pb10 lh24">备注备注备注备注备注备注备注备注</div>
+                  <div class="f-18 pl10 pr10 pt10 bbc2 pb10 lh30 b">订单金额：￥9999</div>
+                  <div class="pl10 pr10 mt20"><a href="" class="ui-btn h44 lh44 tc db f-14 wh b mt10" style="color:#fff;">去支付</a></div>
+           </div>
+           
+        </div>  
+    </div>
+    <!--end-->
+    <!--侧边导航-->
+    <div class="abs men_box pct80 " id="left_nav">
+    	<div class="h44 lh44 tel_box clearfix pct100"><a href="tel:10010" class="tel db l lh44 h44" ><img src="images/tel.png" width="25" height="25" class="db m mt10" /></a><a href="javascript:;" id="closed" class="closed db r lh44 h44" ><img src="images/closed.png" class="db m mt5" /></a></div>
+        <div class="p20 left_logo"><img src="images/left_logo.png" height="90" class="db m" /></div>
+        <div>
+        	<ul class="menu">
+            	<li class="home_ico"><a href="" class="db f-18 b ">首页</a><em class="f-16">+</em></li>
+                <li class="book_ico"><a href="" class="db f-18 b ">酒店预订</a><em class="f-16">+</em></li>
+                <li class="order_ico"><a href="" class="db f-18 b ">订单管理</a><em class="f-16">+</em></li>
+                <li class="user_ico"><a href="" class="db f-18 b ">个人账户</a><em class="f-16">+</em></li>
+                <li class="cuxiao_ico"><a href="" class="db f-18 b ">促销活动</a><em class="f-16">+</em></li>
+            </ul>
+        </div>
+    </div>
+    <!--end-->
+    <script type="text/javascript">
+    $(function(){
+			$("#show_nav").bind("click",function(){
+			$("#left_nav").css({"box-shadow":"2px 0px 10px #000"});
+			$("#body_box").stop(true,true).animate({"left":"80%"});	
+			$("#left_nav").stop(true,true).animate({"left":0});	
+            return false;
+           
+		})
+		$("#closed").bind("click",function(){
+			$("#left_nav").css({"box-shadow":"none"});
+			$("#body_box").stop(true,true).animate({"left":0});	
+			$("#left_nav").stop(true,true).animate({"left":"-80%"});
+            return false;
+           
+		})
+	})	
+    </script>
+</body>
+</html>
+ 

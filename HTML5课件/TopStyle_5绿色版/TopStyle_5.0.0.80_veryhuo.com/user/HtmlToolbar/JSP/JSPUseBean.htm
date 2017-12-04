@@ -1,0 +1,63 @@
+<HTML>
+<HEAD>
+<TITLE>JSP Use Bean</TITLE>
+<SCRIPT LANGUAGE="javascript">
+function initUI() {
+  document.forms[0]._id.focus();
+}
+function objectTag() {
+  var result = '<jsp:useBean';
+
+  var _id = document.forms[0]._id.value;
+	if (!_id) _id = '|'; 
+	result += ' id="' + _id + '"';
+
+  result += ' scope="' + document.forms[0]._scope.options[document.forms[0]._scope.selectedIndex].text + '"';
+
+  var _class = document.forms[0]._class.value;
+	if (_class) result += ' class="' + _class + '"';
+
+  var _type = document.forms[0]._type.value;
+	if (_type) result += ' type="' + _type + '"';
+
+  var _bean = document.forms[0]._bean.value;
+	if (_bean) result += ' beanName="' + _bean + '"';
+	
+  return result += ' />';
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+	<table border="0" cellpadding="2">
+	<tr>
+		<td class="ui" align="right">ID:</td>
+		<td><input type="text" name="_id" style="width:150px" class="ui"></td>
+	</tr>
+	<tr>
+		<td class="ui" align="right">Scope:</td>
+		<td>
+		  <select name="_scope" style="width:150px" class="ui">
+				<option>page</option>
+				<option>request</option>
+				<option>session</option>
+				<option>application</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td class="ui" align="right">Class:</td>
+		<td><input type="text" name="_class" style="width:150px" class="ui"></td>
+	</tr>
+	<tr>
+		<td class="ui" align="right">Type:</td>
+		<td><input type="text" name="_type" style="width:150px" class="ui"></td>
+	</tr>
+	<tr>
+		<td class="ui" align="right">Bean:</td>
+		<td><input type="text" name="_bean" style="width:150px" class="ui"></td>
+	</tr>
+	</table>
+</FORM>
+</BODY>
+</HTML>

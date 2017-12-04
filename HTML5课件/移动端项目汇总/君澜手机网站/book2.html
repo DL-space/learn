@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta content="address=no" name="format-detection">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/default.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jQuery-plugin-zxjcalendar-min.js"></script>
+<title>预订信息填写</title>
+</head>
+<body class="bgc">
+	<!--正文部分-->
+	<div class=" body_box pct100" id="body_box">
+    	<div class="pct100">
+            <div class="ml-5 pl10 pr10 h44"><a href="javascript:;" id="show_nav" ><img src="images/more_ico.png" /></a></div>
+            <div class="pl10 pr10">
+				<div class="pct100"><label class="db f-16 wh b ">房间数<em class="f-12 n ml5 g1">Rooms</em></label></div>
+                <div class="pct100">
+                	<select class=" b f-16 ui-select">
+                        <option>房间数</option>
+                        <option>1间</option>
+                        <option>2间</option>
+                        <option>3间</option>
+                	</select>
+                </div>
+            </div>
+            <div class="lsd mt5 mb10"></div>
+            <div class="clearfix pl10 pr10">
+                <div class="l pct48">
+                    <div class="pct100"><label class="db f-16 wh b ">成人<em class="f-12 n ml5 g1">Adult</em></label></div>
+                    <div class="pct100">
+                        <select class=" b f-16 ui-select">
+                            <option>1人</option>
+                            <option>2人</option>
+                            <option>3人</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="r pct48">
+                    <div class="pct100"><label class="db f-16 wh b ">儿童<em class="f-12 n ml5 g1">child</em></label></div>
+                    <div class="pct100">
+                    	<select class=" b f-16 ui-select">
+                            <option>1人</option>
+                            <option>2人</option>
+                            <option>3人</option>
+                		</select>
+                    </div>
+                </div>
+            </div>
+            <div class="lsd mt5 mb10"></div>
+            <div class="pl10 pr10">
+            	<input type="text" placeholder="请输入您的姓名" class="db ui-input pct100 mb15 user_name f-16 b" />
+                <input type="tel" placeholder="请输入您的手机" class="db ui-input pct100 mb15 user_tel f-16 b" />
+            </div>
+            <div class="pl10 pr10"><a href="book_success.html" class="db tc h44 lh50 mt15 ui-btn b f-24 submit_btn"><em>提交</em></a></div>
+          </div>  
+    </div>
+    <!--end-->
+    <!--侧边导航-->
+    <div class="abs men_box pct80 " id="left_nav">
+    	<div class="h44 lh44 tel_box clearfix pct100"><a href="tel:10010" class="tel db l lh44 h44" ><img src="images/tel.png" width="25" height="25" class="db m mt10" /></a><a href="javascript:;" id="closed" class="closed db r lh44 h44" ><img src="images/closed.png" class="db m mt5" /></a></div>
+        <div class="p20 left_logo"><img src="images/left_logo.png" height="90" class="db m" /></div>
+        <div>
+        	<ul class="menu">
+            	<li class="home_ico"><a href="" class="db f-18 b ">首页</a><em class="f-16">+</em></li>
+                <li class="book_ico"><a href="" class="db f-18 b ">酒店预订</a><em class="f-16">+</em></li>
+                <li class="order_ico"><a href="" class="db f-18 b ">订单管理</a><em class="f-16">+</em></li>
+                <li class="user_ico"><a href="" class="db f-18 b ">个人账户</a><em class="f-16">+</em></li>
+                <li class="cuxiao_ico"><a href="" class="db f-18 b ">促销活动</a><em class="f-16">+</em></li>
+            </ul>
+        </div>
+    </div>
+    <!--end-->
+    <script type="text/javascript">
+    $(function(){
+		
+		$("#show_nav").bind("click",function(){
+			$("#left_nav").css({"box-shadow":"2px 0px 10px #000"});
+			$("#body_box").stop(true,true).animate({"left":"80%"});	
+			$("#left_nav").stop(true,true).animate({"left":0});	
+			$("#show_nav").hide();
+            return false;
+           
+		})
+		$("#closed").bind("click",function(){
+			$("#left_nav").css({"box-shadow":"none"});
+			$("#body_box").stop(true,true).animate({"left":0});	
+			$("#left_nav").stop(true,true).animate({"left":"-80%"});
+			$("#show_nav").show();
+            return false;
+           
+		})
+		})
+    </script>
+</body>
+</html>
+ 

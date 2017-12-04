@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>fileReader使用</title>
+<script language=javascript>
+function ShowTxt()
+{
+    var file = document.getElementById("file").files[0];
+    var reader = new FileReader();
+    //将将文本内容读入页面
+    reader.readAsText(file);
+    reader.onload = function(f)
+    {
+        var show=document.getElementById("show");
+        //页面上显示文本
+        show.innerHTML=this.result;
+    }
+}
+</script>
+</head>
+<body>
+<p>
+    <h5>读取文本文件：</h5>
+    <input type="file" id="file" />
+    <input type="button" value="读取" onclick="ShowTxt()"/>
+</p> 
+ <!-- 显示文本内容 -->
+<p name="show" id="show"></p>
+</body>
+</html>

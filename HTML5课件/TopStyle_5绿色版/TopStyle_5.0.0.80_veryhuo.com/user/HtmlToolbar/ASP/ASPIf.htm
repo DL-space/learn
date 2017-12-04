@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>If</title>
+<script language="javascript">
+function objectTag() {
+	if (ts.isASP_VB())
+		return '<% If ' + ts.getSelection(true) + ' Then %>'
+	else
+	  return '<% if (' + ts.getSelection(true) + ') %>';
+}
+</script>
+</head>
+<body>
+</body>
+</html>

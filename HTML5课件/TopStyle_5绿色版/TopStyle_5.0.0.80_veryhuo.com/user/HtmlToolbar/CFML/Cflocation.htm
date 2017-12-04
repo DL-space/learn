@@ -1,0 +1,40 @@
+<HTML>
+<HEAD>
+<TITLE>cflocation</TITLE>
+<SCRIPT LANGUAGE="javascript">
+function initUI() {
+  document.forms[0].url.focus();
+}
+function objectTag() {
+  var result = '<cflocation';
+
+  var url = document.forms[0].url.value;
+	if (!url) url = '|';
+	result += ' url="' + url + '"';
+
+	(document.forms[0].addtoken.checked) ? result += ' addtoken="yes"' : result += ' addtoken="no"';
+
+  if (ts.isXHTML()) result += ' /';
+	
+	return result += '>';
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+	<table border="0" cellpadding="2">
+		<tr>
+			<td class="ui" align="right" nowrap>URL:</td>
+			<td nowrap>
+			  <input type="text" name="url" style="width:200px" class="ui">
+				<img src="../Shared/Images/folder.gif" style="cursor: hand" onClick="document.forms[0].url.value = ts.browseForFileURL(document.forms[0].url.value)">
+			</td>
+		</tr>
+    <tr>
+      <td></td>
+			<td class="ui" nowrap><input name="addtoken" type="checkbox" checked>Append client variables to the URL</td>
+    </tr>
+	</table>
+</FORM>
+</BODY>
+</HTML>

@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>查询数据</title>
+<script language="javascript">
+function query(){
+	var DEMODB = window.openDatabase("mydata", "1.0", "数据库描述", 20000);
+	DEMODB.transaction(function(tx) {
+		tx.executeSql("SELECT * FROM user", [],function(tx, result){
+			for(var i = 0; i < result.rows.length; i++){
+				document.write('<b>' + result.rows.item(i)['Uname']+"   "+result.rows.item(i)['post']+"   "+result.rows.item(i)['address']+ '</b><br />'); }}, function(){alert("error");});
+		});
+}
+</script>
+</head>
+<body onLoad="query()">
+</body>
+</html>

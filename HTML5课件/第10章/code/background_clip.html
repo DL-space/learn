@@ -1,0 +1,39 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>背景显示设置</title>
+<style type="text/css">
+div {
+	margin-top: 15px;
+	margin-left: 30px;
+	padding: 20px;
+	width: 300px;
+	height: 100px;
+        border: 10px dotted #930;
+	text-align: center;
+	font-weight: bolder;
+	color: white;
+	background-image: url("img/DSC_0604.jpg");
+}
+#test1 {
+	background-clip: border-box;
+	-moz-background-clip: border;
+}
+#test2 {
+	background-clip: padding-box;
+	-moz-background-clip: padding;
+}
+#test3 {
+	background-clip: content-box;
+	-webkit-background-clip: content-box;
+}
+</style>
+</head>
+<body>
+<div id="test1">背景显示设置 border-box</div>
+<div id="test2">背景显示设置 padding-box</div>
+<div id="test3">背景显示设置 content-box</div>
+</body>
+</html>
+

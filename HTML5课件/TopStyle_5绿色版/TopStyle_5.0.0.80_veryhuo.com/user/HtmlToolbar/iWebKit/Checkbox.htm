@@ -1,0 +1,71 @@
+<HTML>
+<HEAD>
+<TITLE>iWebKit Checkbox</TITLE>
+<SCRIPT LANGUAGE="javascript">
+function canInsertObject() {
+  if (ts.hasParent('ul', 'class', 'pageitem'))
+    return true
+  else {
+    alert('Checkbox MUST be inside <ul class="pageitem">');
+    return false;
+  }
+}
+function initUI() {
+  document.forms[0].desc.value = ts.getSelection(false, true);
+  document.forms[0].desc.select();
+  document.forms[0].desc.focus();
+}
+function objectTag() {
+  var result = '<li class="checkbox">\r\n';
+  
+  var desc = document.forms[0].desc.value;
+  if (!desc) desc = '|';
+  result += '<span class="name">' + desc + '</span>\r\n';
+
+  result += '<input type="checkbox"';
+
+  var name = document.forms[0].name.value;
+  if (name) {
+    result += ' name="' + name + '"';
+    if (ts.isXHTML())
+      result += ' id="' + name + '"';
+  }
+
+  var value = document.forms[0].value.value;
+  if (value) result += ' value="' + value + '"'
+
+  if (document.forms[0].checked.checked)
+    result += ' checked';
+
+  if (ts.isXHTML()) result += ' /';
+
+  return result += '>\r\n</li>';
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+	<table border="0">
+	<tr>
+		<td class="ui" align="right">Description:</td>
+		<td><input type="text" name="desc" style="width:200px" class="ui"></td>
+	</tr>
+	<tr>
+		<td class="ui" align="right">Name:</td>
+		<td><input type="text" name="name" style="width:200px" class="ui"></td>
+	</tr>
+	<tr>
+		<td class="ui" align="right">Value:</td>
+		<td><input type="text" name="value" style="width:200px" class="ui"></td>
+	</tr>
+	<tr>
+		<td class="ui" align="right"></td>
+		<td class="ui"><input name="checked" type="checkbox">Checked</td>
+	</tr>
+	<tr>
+		<td colspan="2"><hr /></td>
+	</tr>		
+	</table>
+</FORM>
+</BODY>
+</HTML>

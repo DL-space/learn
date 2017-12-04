@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>拖放</title>
+<script type="text/javascript">
+function init() 
+{
+    // (1) 拖放开始
+    source.addEventListener("dragstart", function(ev) 
+    {
+        // 向dataTransfer对象追加数据
+        var dt = ev.dataTransfer;
+        dt.effectAllowed = 'all';    
+       //(2) 拖动元素为dt.setData("text/plain", this.id); 
+        dt.setData("text/plain", "你好"); 
+    }, false);
+    // (3) dragend：拖放结束
+    dest.addEventListener("dragend", function(ev) 
+    {
+        //不执行默认处理（拒绝被拖放）
+        ev.preventDefault();
+    }, false);
+    // (4) drop:被拖放
+    dest.addEventListener("drop", function(ev) 
+    {
+        // 从DataTransfer对象那里取得数据
+        var dt = ev.dataTransfer;
+        //(5) 不执行默认处理（拒绝被拖放）
+        ev.preventDefault();
+        //停止事件传播
+        ev.stopPropagation();
+    }, false);
+}
+</script>
+</head>
+<body onload="init()">
+<h5>请拖放</h5>
+</html>
+

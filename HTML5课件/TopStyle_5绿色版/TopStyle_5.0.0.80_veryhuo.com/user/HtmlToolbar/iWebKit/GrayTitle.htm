@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>iWebKit Gray Title</title>
+<script language="javascript">
+function canInsertObject() {
+  if (ts.hasParent('div', 'id', 'content'))
+    return true
+  else {
+    alert('Gray Title MUST be inside <div id="content">');
+    return false;
+  }
+}
+function objectTag() {
+  return '<span class="graytitle">' + ts.getSelection(true) + '</span>';
+}
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+ body{
+	 margin:0px;
+	  background-image:url(../images/bg.jpg);
+	 background-repeat:no-repeat;
+	 width:1003px;
+}
+
+nav{
+	float: left;
+	width:920px;
+	height:40px;
+	background-image:url(../images/nav.jpg);
+	margin: 100px 0 0 0;
+	padding: 0 ;
+}
+
+nav ul {
+	float:left;
+	margin: 0px;
+	padding: 0 0 0 0;
+	width: 920px;
+	list-style: none;
+}
+
+nav ul li {
+	display: inline;
+}
+
+nav ul li a {
+	float: left;
+	padding: 11px 20px;	
+	text-align: center;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	background: url(../images/templatemo_menu_divider.png) center right no-repeat;
+	color: #fff;	
+	font-family: Tahoma;
+	outline: none;
+}
+
+nav li a:hover {
+	color: #2a5f00;
+}

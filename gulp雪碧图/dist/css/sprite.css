@@ -1,0 +1,102 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-ico-bad-on {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -252px;
+  width: 36px;
+  height: 36px;
+}
+.icon-ico-bad {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -298px;
+  width: 36px;
+  height: 36px;
+}
+.icon-ico-better-on {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -344px;
+  width: 37px;
+  height: 36px;
+}
+.icon-ico-better {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -390px;
+  width: 36px;
+  height: 36px;
+}
+.icon-ico-good-on {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -160px;
+  width: 37px;
+  height: 36px;
+}
+.icon-ico-good {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -206px;
+  width: 36px;
+  height: 36px;
+}
+.icon-ico-status-for {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -40px;
+  width: 60px;
+  height: 30px;
+}
+.icon-ico-status-hot {
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  width: 130px;
+  height: 30px;
+}
+.icon-ico-status-none {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -80px;
+  width: 60px;
+  height: 30px;
+}
+.icon-ico-status-on {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -120px;
+  width: 60px;
+  height: 30px;
+}
+.icon-ico-success2 {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -658px;
+  width: 100px;
+  height: 100px;
+}
+.icon-ico-video {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -436px;
+  width: 40px;
+  height: 40px;
+}
+.icon-ico-zan-nc {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -486px;
+  width: 76px;
+  height: 76px;
+}
+.icon-ico-zan {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -572px;
+  width: 76px;
+  height: 76px;
+}

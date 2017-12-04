@@ -1,0 +1,2 @@
+$to = "%r[To]"; $subject = "%r[Subject]"; $body = "%r[Body]"; $headers = "%r[Headers]"; 
+/-sep-/mail($to,$subject,$body,$headers);

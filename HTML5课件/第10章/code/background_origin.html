@@ -1,0 +1,40 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>背景的显示基准点设定</title>
+<style type="text/css">
+div {
+	margin-top: 15px;
+	margin-left: 30px;
+	padding: 20px;
+	width: 400px;
+	height: 100px;
+        border: 10px dashed #930;
+	text-align: center;
+	font-weight: bolder;
+	color: white;
+	background-image: url("img/DSC_0264.jpg");
+        background-repeat: no-repeat;
+}
+#test1 {
+	background-origin: border-box;
+	-moz-background-origin: border;
+}
+#test2 {
+	background-clip: padding-box;
+	-moz-background-origin: padding;
+}
+#test3 {
+	background-origin: content-box;
+	-webkit-background-origin: content-box;
+}
+</style>
+</head>
+<body>
+<div id="test1">背景的显示基准点设定 border-box</div>
+<div id="test2">背景的显示基准点设定 padding-box</div>
+<div id="test3">背景的显示基准点设定 content-box</div>
+</body>
+</html>
+

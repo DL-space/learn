@@ -1,0 +1,119 @@
+﻿$axure.loadCurrentPage({
+  "url":"我要存款1.html",
+  "generationDate":new Date(1408153554622.29),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"bd5679f958f14d9d90cb24a75bc102b9",
+    "type":"Axure:Page",
+    "name":"我要存款1",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"347e3ccaebab477382359ee6ba2986aa",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "size":{
+              "width":400,
+              "height":700}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"2e90cfdb594842f29b06b714f2867382",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "size":{
+                  "width":400,
+                  "height":700}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/我要存款1/u0.png"}},
+{
+          "id":"0261bce1fe0c46e4a03846d6ce2762bf",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "opacity":"0",
+            "location":{
+              "x":0,
+              "y":10},
+            "size":{
+              "width":110,
+              "height":60}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"276b6ddd9fad4de2b4a3eaecabab5100",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "opacity":"0",
+                "location":{
+                  "x":0,
+                  "y":10},
+                "size":{
+                  "width":110,
+                  "height":60}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"在 当前窗口 打开 我要存款",
+                      "target":{
+                        "targetType":"page",
+                        "url":"我要存款.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"resources/images/transparent.gif"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "347e3ccaebab477382359ee6ba2986aa":{
+      "scriptId":"u0"},
+    "2e90cfdb594842f29b06b714f2867382":{
+      "scriptId":"u1"},
+    "0261bce1fe0c46e4a03846d6ce2762bf":{
+      "scriptId":"u2"},
+    "276b6ddd9fad4de2b4a3eaecabab5100":{
+      "scriptId":"u3"}}});

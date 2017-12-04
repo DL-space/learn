@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>iWebKit Page Item</title>
+<script language="javascript">
+function canInsertObject() {
+  if (ts.hasParent('div', 'id', 'content'))
+    return true
+  else {
+    alert('Page Item MUST be inside <div id="content">');
+    return false;
+  }
+}
+function objectTag() {
+  return '<ul class="pageitem">' + ts.getSelection(true) + '</ul>';
+}
+</script>
+</head>
+<body>
+</body>
+</html>

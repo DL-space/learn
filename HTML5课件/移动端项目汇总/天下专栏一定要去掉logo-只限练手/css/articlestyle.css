@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+
+.all-article-left{
+	margin:0px;
+	padding:0px;
+	width:635px;
+	float:left;
+	}
+.all-article-left h3{
+	margin:0px;
+	padding:0px;
+	font-weight:normal;
+	font-size:28px;
+	font-family:"微软雅黑";
+	color:#535353;
+	text-align:center;
+	}
+.aut{
+	margin:10px 0px 20px 0px;
+	padding:0px 0px 5px 5px;
+	border-bottom:1px dotted #DDDDDD;
+	}
+.aut-one{
+	margin:0px 20px 0px 0px;
+	padding:0px;
+	font-size:14px;
+	color:#054673;
+	}
+.aut-two{
+	margin:0px;
+	padding:0px;
+	font-size:12px;
+	color:#666;
+	}
+.all-article-left p{
+	margin:0px;
+	padding:0px;
+	font-size:14px;
+	color:#666;
+	line-height:24px;
+	}
+.read{
+	margin:50px 0px 0px 0px;
+	padding:0px 0px 5px 5px;
+	border-bottom:1px solid #E8E8E8;
+	}	
+.read span{
+	margin:0px 20px 0px 0px;
+	padding:0px;
+	color:#B7B7B7;
+	}	
+.read span.read-s{
+    margin:0px 0px 0px 0px;
+	padding:0px;
+	color:#B7B7B7;
+	}	
+.read span.read-one{
+    margin:0px 0px 0px 420px;
+	padding:5px 0px 5px 20px;
+	color:#B7B7B7;
+	background:url(../images/p-22.jpg) no-repeat 0px 5px;
+	}		
+.read span.read-one a:link,.read span.read-one a:visited{
+	margin:0px;
+	padding:0px;
+	color:#b7b7b7;
+	}	
+.read span.read-one a:hover{
+	text-decoration:none;
+	}	
+.author{
+	margin:40px 0px 0px 0px;
+	padding:0px;
+	}	
+.author h4{
+	margin:0px 0px 20px 0px;
+	padding:0px;
+	font-weight:normal;
+	font-size:18px;
+	font-family:"微软雅黑";
+	color:#96a0a9;
+	}	
+.author ul{
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+	}
+.author ul li{
+	margin:0px 0px 10px 0px;
+	padding:0px 0px 0px 10px;
+	font-size:14px;
+	color:#666;
+	background:url(../images/p-23.jpg) no-repeat 0px 7px;
+	}	
+.review{
+	margin:50px 0px 0px 0px;
+	padding:0px;
+	}	
+.review h5{
+	margin:0px 0px 20px 0px;
+	padding:0px;
+	font-weight:normal;
+	font-size:18px;
+	font-family:"微软雅黑";
+	color:#96a0a9;
+	}	
+.pinlun{
+	margin:0px;
+	padding:0px 0px 10px 0px;
+	border:1px solid #818181;
+	}	
+	
+.pinlun p{
+	margin:10px 0px 0px 0px;
+	padding:0px;
+	}	
+	
+.text2{
+	margin:10px 0px 0px 10px;
+	padding:0px;
+	width:600px;
+	height:100px;
+	border:none;
+	outline:none;
+	}	
+.pinlun p.but{
+	margin:10px 0px 0px 560px;
+	padding:0px;
+	}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

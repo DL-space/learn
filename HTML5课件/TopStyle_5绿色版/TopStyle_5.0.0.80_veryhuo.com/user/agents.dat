@@ -1,0 +1,47 @@
+[TopStyle]
+Text=TopStyle
+
+[Internet Explorer 7.0]
+Text=Mozilla/4.0 (compatible; MSIE 7.0;)
+
+[Internet Explorer 6.0]
+Text=Mozilla/4.0 (compatible; MSIE 6.0;)
+
+[Internet Explorer 5.5]
+Text=Mozilla/4.0 (compatible; MSIE 5.5;)
+
+[Internet Explorer 5.0]
+Text=Mozilla/4.0 (compatible; MSIE 5.0;)
+
+[Internet Explorer 4.0]
+Text=Mozilla/4.0 (compatible; MSIE 4.0;)   
+
+[Internet Explorer 3.0]
+Text=Mozilla/3.0 (compatible; MSIE 3.0;)   
+
+[Netscape 4.5]
+Text=Mozilla/4.5
+
+[Netscape 4.0]
+Text=Mozilla/4.0
+
+[Netscape 3]
+Text=Mozilla/3.0
+
+[Mozilla/Gecko]
+Text=Mozilla/5.0
+
+[Opera 9]
+Text=Opera/9.00
+
+[Opera 7/8]
+Text=Mozilla/4.0 (compatible; MSIE 6.0;)
+
+[Opera 5]
+Text=Mozilla/4.0 Opera 5.0
+
+[Opera 4]
+Text=Mozilla/4.73 Opera 4.0
+
+[Opera 3]
+Text=Mozilla/4.71 Opera 3.62

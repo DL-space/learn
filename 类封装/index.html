@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js类的封装</title>
+</head>
+<body>
+<div class="container">
+    <button id="a">按钮</button>
+    <button id="b">按钮b</button>
+</div>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script>
+    /*function Person(name,sex) {
+        this.name = name;
+        this.sex = sex;
+    }*/
+    var Person = function (name,sex) {//定义方法对象(类)
+        this.name = name;
+        this.sex = sex;
+    };
+    Person.prototype = {//扩展方法
+        constructor : Person,//手动设置构造函数为Person；
+        sayHi:function () {
+            alert("hellow,i am "+this.name)
+        },
+        hehe:function () {
+            alert("呵呵呵呵")
+        }
+    };
+    var dl = new Person("dl","男");//对象实例化
+    var zk = new Person("zk","女");//对象实例化
+    $("#a").click(function () {
+        dl.sayHi();
+        dl.hehe();
+        console.log(dl.constructor)
+    });
+
+    var Doctor = function (name,sex) {//定义对象
+        this.name = name;
+        this.sex = sex;
+    };
+    Doctor.prototype = {//添加扩展方法
+        introduct:function () {
+            alert("我是一个"+this.sex+"医生，我的名字是"+this.name)
+        }
+    };
+    var zhnagsan = new Doctor("张三","男");//实例化对象
+    $("#b").click(function () {//调用方法ss
+        zhnagsan.introduct();
+    })
+</script>
+</body>
+</html>

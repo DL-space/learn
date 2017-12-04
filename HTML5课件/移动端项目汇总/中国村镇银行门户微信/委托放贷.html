@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>委托放贷</title>
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<script type="text/javascript" src="./js/index.js"></script>
+	<script type="text/javascript">
+		window.onload=function(){
+			checkInput('cb_box_nv');
+		}
+	</script>
+
+</head>
+
+<body>
+
+	<section>
+		<div class="outer_spacing">
+			<form class="cb_box_nv">
+				<h3 class="cb_borrow_title">委托贷款资金</h3>
+					<input type="text" class="cb_borrow_cont js_input" name='money' />
+					<p class="cb_input_tip" title="委托贷款资金不能为空"></p>
+				<ul>
+					<li class="cb_borrow_two">
+						<h3 class="cb_borrow_title fl">贷款委托到</h3>
+					</li>
+					<li class="cb_borrow_two">
+						<select class="cb_borrow_cont fl">
+							<option>安徽</option>
+							<option>北京</option>
+							<option>上海</option>
+						</select>
+						<select class="cb_borrow_cont fr">
+							<option>安徽</option>
+							<option>北京</option>
+							<option>上海</option>
+						</select>
+					</li>
+				</ul>
+				<h3 class="cb_borrow_title">委托村行</h3>
+				<select class="cb_borrow_cont">
+					<option>工商银行</option>
+					<option>中国银行</option>
+					<option>建设银行</option>
+				</select>
+
+
+				<h3 class="cb_borrow_title">委托要求与说明</h3>
+				<textarea class="cb_textarea js_input" name="empty"></textarea>
+				<p class="cb_input_tip" title="委托要求与说明不能为空"></p>
+				<input type="submit" href="javascript:;" class="cb_bapply" value="提交申请">
+			</form>
+
+		</div>
+	</section>
+
+
+</body>
+</html>

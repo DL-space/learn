@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>登录</title>
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<script type="text/javascript" src="./js/index.js"></script>
+	<script type="text/javascript">
+		window.onload=function(){
+			checkInput('cb_per_reg_box');
+		}
+	</script>
+
+</head>
+
+<body>
+
+	<!-- 背景图 -->
+	<div class="s-skin-container">
+		<img class="s-skin-img" src="./img/background.png" />
+	</div>
+
+	<div class="outer_spacing">
+
+		<section>
+
+			<form method="post" class="cb_per_reg_box">
+				<input type="text" class="cb_personal_reg js_input" placeholder="手机号" datavalue="mobile" />
+				<p class="cb_input_tip" title="请填写您的手机号"></p>
+				<input type="password" class="cb_personal_reg js_input" placeholder="密码" datavalue="pass" />
+				<p class="cb_input_tip" title="请填写您的密码"></p>
+				<input type="submit" href="javascript:;" class="cb_bapply" value="登录">
+			</form>
+
+		</section>
+
+	</div>
+
+
+</body>
+</html>

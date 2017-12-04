@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>iWebKit Navigation: Arrow</title>
+<script language="javascript">
+function getSelectedIndex(radioGroup) {
+  var result = -1;
+  for (var i = 0; i < radioGroup.length; i++) {
+    if (radioGroup[i].checked) {
+      result = i; 
+      break;
+    }
+  }
+  return result;
+}
+function canInsertObject() {
+  if (ts.hasParent('div', 'id', 'topbar'))
+    return true
+  else {
+    alert('Navigation: Arrow MUST be inside <div id="topbar">');
+    return false;
+  }
+}
+function initUI() {
+  document.forms[0].href.focus();
+}
+function objectTag() {
+  var href = document.forms[0].href.value;
+  var position = document.forms[0].position; 
+
+  var result = '<div id="' + position[getSelectedIndex(position)].value + '">\r\n';
+  
+  if (!href && ts.hasSelection()) href = "|";
+  result += '<a href="' + href + '">' + ts.getSelection(true) + '</a>\r\n';
+  
+  result += '</div>';
+  return result; 
+}
+</script>
+</head>
+<body>
+<form>
+	<table border="0">
+	<tr>
+		<td class="ui" align="right">href:</td>
+		<td>
+			<input type="text" name="href" style="width:200px" class="ui">
+		</td>
+		<td>
+			<img src="../Shared/Images/folder.gif" style="cursor: hand" onClick="document.forms[0].href.value = ts.browseForFileURL(document.forms[0].href.value)">
+		</td>
+	</tr>
+	<tr>
+		<td align="right" nowrap class="ui">position:</td>
+		<td colspan="2" nowrap class="ui">
+			<input type="radio" name="position" value="leftnav" checked>
+			<label onclick="document.forms[0].position[0].checked = true">to the left of the top bar</label>
+		</td>
+	</tr>
+	<tr>
+		<td align="right" nowrap></td>
+		<td colspan="2" nowrap class="ui">
+			<input type="radio" name="position" value="rightnav">
+			<label onclick="document.forms[0].position[1].checked = true">to the right of the top bar</label>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="right" nowrap><hr /></td>
+	</tr>
+	</table>
+</form>
+</body>
+</html>

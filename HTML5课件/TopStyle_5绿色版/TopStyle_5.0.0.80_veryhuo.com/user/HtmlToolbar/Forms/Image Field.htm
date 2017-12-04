@@ -1,0 +1,117 @@
+<HTML>
+<HEAD>
+<TITLE>Image Field</TITLE>
+<SCRIPT LANGUAGE="javascript">
+function initUI() {
+  if (ts.hasSelection()) {
+	  document.forms[0].value.value = ts.getSelection(false, true);
+		document.forms[0].value.select();
+		document.forms[0].value.focus();
+  }
+  else
+    document.forms[0].name.focus();
+}
+function objectTag() {
+  var result = '<input type="image"';
+
+  var name = document.forms[0].name.value;
+	if (name) {
+	  result += ' name="' + name + '"';
+    if (ts.isXHTML())
+      result += ' id="' + name + '"';
+	}
+
+	var value = document.forms[0].value.value;
+	if (value) result += ' value="' + value + '"'
+
+	var src = document.forms[0].src.value;
+	if (src) result += ' src="' + src + '"';
+
+	var alt = document.forms[0].alt.value;
+	if (alt) result += ' alt="' + alt + '"';
+
+	var align = document.forms[0].align.value;
+	if (align) result += ' align="' + align + '"';
+
+	var width = document.forms[0].width.value;
+	if (width) result += ' width="' + width + '"';
+
+	var height = document.forms[0].height.value;
+	if (height) result += ' height="' + height + '"';
+
+	var vspace = document.forms[0].vspace.value;
+	if (vspace) result += ' vspace="' + vspace + '"';
+
+	var hspace = document.forms[0].hspace.value;
+	if (hspace) result += ' hspace="' + hspace + '"';
+
+	if (document.forms[0].disabled.checked)
+	  result += ' disabled="true"';
+
+	if (ts.isXHTML()) result += ' /';
+
+  return result += '>';
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+  <table border="0" cellpadding="2">
+    <tr>
+      <td class="ui" align="right" nowrap>Name:</td>
+      <td colspan="3"><input type="text" name="name" style="width:150px" class="ui"></td>
+    </tr>
+    <tr>
+      <td class="ui" align="right" nowrap>Value:</td>
+      <td colspan="3"><input type="text" name="value" style="width:150px" class="ui"></td>
+    </tr>
+    <tr>
+      <td class="ui" align="right">Source:</td>
+      <td colspan="3">
+			  <input type="text" name="src" style="width:200px" class="ui">
+			</td>
+			<td>
+				<img src="../Shared/Images/folder.gif" style="cursor: hand" onClick="document.forms[0].src.value = ts.browseForFileURL(document.forms[0].src.value, true, 'Select Image File')">
+      </td>
+    </tr>
+    <tr>
+      <td class="ui" align="right" nowrap>Alternate text:</td>
+      <td colspan="3"><input type="text" name="alt" style="width:200px" class="ui"></td>
+    </tr>
+    <tr>
+      <td class="ui" align="right" nowrap>Alignment:</td>
+      <td colspan="3">
+			  <select name="align" class="ui">
+				  <option value="">Default</option>
+				  <option value="baseline">Baseline</option>
+				  <option value="top">Top</option>
+				  <option value="middle">Middle</option>
+				  <option value="bottom">Bottom</option>
+				  <option value="textop">Textop</option>
+				  <option value="absmiddle">Absolute Middle</option>
+				  <option value="absbottom">Absolute Bottom</option>
+				  <option value="left">Left</option>
+				  <option value="right">Right</option>
+				</select>
+			</td>
+    </tr>
+		<tr>
+		  <td></td>
+			<td colspan="3" class="ui"><input name="disabled" type="checkbox">Disabled</td>
+		</tr>
+    <tr>
+      <td class="ui" align="right" nowrap>Width:</td>
+      <td><input type="text" name="width" style="width:50px" class="ui"></td>
+      <td class="ui" align="right" nowrap>Height:</td>
+      <td><input type="text" name="height" style="width:50px" class="ui"></td>
+    </tr>
+    <tr>
+      <td class="ui" align="right" nowrap>Horizontal space:</td>
+      <td><input type="text" name="hspace" style="width:50px" class="ui"></td>
+      <td class="ui" align="right" nowrap>Vertical space:</td>
+      <td><input type="text" name="vspace" style="width:50px" class="ui"></td>
+    </tr>
+	</table>
+</FORM>
+</BODY>
+</HTML>

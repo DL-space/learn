@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组</title>
+    <script src="jquery-3.2.0.js"></script>
+</head>
+<body>
+<div class="result"></div>
+<script>
+
+    /*使用new关键字来定义数组对象,先创建后赋值*/
+    var arr1 = new Array();
+    arr1[0] = "詹姆斯";
+    arr1[1] = "欧文";
+    arr1[2] = "杜兰特";
+
+    /*使用new关键字来定义数组对象，直接赋值*/
+    var arr2 = new Array("库里","汤普森","杜兰特");
+
+    /*直接量创建数组*/
+    var arr = [3,1,4,2,6,5,8,7];
+
+    console.log(arr);
+    console.log(arr1);
+    console.log(arr2);
+
+    /*数组属性*/
+    console.log(arr.length);//数组长度
+    console.log(arr.indexOf(2));
+    console.log(arr.indexOf("2"));
+    console.log("....");
+
+    /*合并数组*/
+    var arr_con = arr1.concat(arr2);
+    console.log(arr_con);
+
+    /*数组去重*/
+    Array.prototype.unique = function(){
+        var res = [];
+        var json = {};
+        for(var i = 0; i < this.length; i++){
+            if(!json[this[i]]){
+                res.push(this[i]);
+                json[this[i]] = 1;
+            }
+        }
+        return res;
+
+    };
+    var arr_uni = arr_con.unique();
+    console.log(arr_uni);
+
+    /*数组排序*/
+    var arr_sort = arr.sort(function (a,b) {
+        return a-b;
+    });
+    console.log("排序");
+    console.log(arr_sort);
+
+    /*数组截取：slice和splice*/
+    var arr_slice = arr_sort.slice(2,5);
+    console.log("slice截取");
+    console.log(arr_slice);
+    console.log(arr_sort);
+    var arr_splice = arr_sort.splice(2,5);
+    console.log("splice截取");
+    console.log(arr_splice);
+    console.log(arr_sort);
+
+    /*jq判断元素是否存在于数组*/
+    console.log(arr);
+    for(var i = 0;i<10;i++){
+        if($.inArray(i,arr) == -1){
+            console.log(i);
+        }
+    }
+</script>
+</body>
+</html>

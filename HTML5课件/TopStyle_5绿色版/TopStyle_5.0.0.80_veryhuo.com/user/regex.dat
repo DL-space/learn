@@ -1,0 +1,17 @@
+'==============================================================
+' regular expressions used in dropdown on Find/Replace dialog.
+' be sure to back up any changes to this file since it will
+' be overwritten by future versions.
+'==============================================================
+
+[regex]
+number			= [\+\-]?[\.]?[0-9]+[\.]?[0-9]*
+percentage		= [\+\-]?[\.]?[0-9]+[\.]?[0-9]*\%
+quoted string		= (\"[^\"]*\")|(\'[^\']*\')'
+URI			= [Uu][Rr][Ll]\([^\)]*\)
+hexcolor		= #[0-9a-fA-F]{6}
+rgbcolor		= [Rr][Gg][Bb]\([^\)]*\)
+comment			= \/\*[^*]*\*+([^/][^*]*\*+)*\/
+declaration block	= \{[^\}\{]*\}
+
+

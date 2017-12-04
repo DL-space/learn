@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>插入数据</title>
+<script language="javascript">
+function insertData(){
+	var DEMODB = window.openDatabase("mydata", "1.0", "数据库描述", 20000)
+	DEMODB.transaction(function(tx){
+		tx.executeSql("CREATE Table user (id integer primary key autoincrement, Uname nvarchar(50), post nvarchar(150),address nvarchar(300))");});
+    DEMODB.transaction(
+	function (transaction) {
+		transaction.executeSql("INSERT INTO user(Uname, post, address) VALUES ('张军','职员','平安大道63号')");});  
+}
+</script>
+</head>
+<body onLoad="insertData()">
+</body>
+</html>

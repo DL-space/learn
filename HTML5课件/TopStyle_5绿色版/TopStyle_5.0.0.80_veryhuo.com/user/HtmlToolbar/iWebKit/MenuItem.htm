@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>iWebKit Menu Item</title>
+<script language="javascript">
+function canInsertObject() {
+  if (ts.hasParent('li', 'class', 'menu'))
+    return true
+  else {
+    alert('Menu Item MUST be inside <li class="menu">');
+    return false;
+  }
+}
+function initUI() {
+  if (ts.hasSelection())
+    document.forms[0].name.value = ts.getSelection(false, true);  
+  document.forms[0].name.focus();
+  document.forms[0].name.select();
+}
+function objectTag() {
+  var result = '<a href="' + document.forms[0].href.value + '">\r\n';
+  result += '<img src="' + document.forms[0].img.value + '" />\r\n';
+  var itemName = document.forms[0].name.value;
+  if (!itemName)
+    itemName = '|';
+  result += '<span class="name">' + itemName + '</span>\r\n';
+  var comment = document.forms[0].comment.value; 
+  if (comment)
+    result += '<span class="comment">' + comment + '</span>\r\n';
+  result += '<span class="arrow"></span>\r\n</a>';
+  return result; 
+}
+</script>
+</head>
+<body>
+<form>
+	<table border="0">
+	<tr>
+		<td class="ui" align="right">href:</td>
+		<td>
+			<input type="text" name="href" style="width:200px" class="ui">
+		</td>
+		<td>
+			<img src="../Shared/Images/folder.gif" style="cursor: hand" onClick="document.forms[0].href.value = ts.browseForFileURL(document.forms[0].href.value)">
+		</td>
+	</tr>
+	<tr>
+		<td class="ui" align="right">image src:</td>
+		<td>
+			<input type="text" name="img" style="width:200px" class="ui">
+		</td>
+		<td>
+			<img src="../Shared/Images/folder.gif" style="cursor: hand" onClick="document.forms[0].img.value = ts.browseForFileURL(document.forms[0].img.value, true)">
+		</td>
+	</tr>
+	<tr>
+		<td class="ui" align="right">item name:</td>
+		<td colspan="2">
+			<input type="text" name="name" style="width:200px" class="ui">
+		</td>
+	</tr>
+	<tr>
+		<td class="ui" align="right" nowrap>comment (optional):</td>
+		<td colspan="2">
+			<input type="text" name="comment" style="width:200px" class="ui">
+		</td>
+	</tr>		
+	<tr>
+		<td colspan="3" align="right" nowrap><hr /></td>
+	</tr>
+	</table>
+</form>
+</body>
+</html>

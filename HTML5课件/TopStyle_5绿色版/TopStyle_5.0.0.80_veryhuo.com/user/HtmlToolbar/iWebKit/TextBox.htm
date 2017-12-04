@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>iWebKit Text Box</title>
+<script language="javascript">
+function canInsertObject() {
+  if (ts.hasParent('ul', 'class', 'pageitem'))
+    return true
+  else {
+    alert('Text Box MUST be inside <ul class="pageitem">');
+    return false;
+  }
+}
+function initUI() {
+  if (ts.hasSelection())
+    document.forms[0].text.value = ts.getSelection(false, true);  
+  document.forms[0].text.focus();
+  document.forms[0].text.select();
+}
+function objectTag() {
+  var head = document.forms[0].head.value;
+  var text = document.forms[0].text.value; 
+  var result = '<li class="textbox">\r\n';
+  if (head)
+    result += '<span class="header">' + head + '</span>\r\n';
+  if (!text)
+    text = "|";
+  result += '<p>' + text + '</p>\r\n</li>';
+  return result; 
+}
+</script>
+</head>
+<body>
+<form>
+	<table border="0">
+	<tr>
+		<td class="ui" nowrap align="right">header (blue, optional):</td>
+		<td>
+			<input type="text" name="head" style="width:200px" class="ui">
+		</td>
+	</tr>
+	<tr>
+		<td class="ui" align="right">text:</td>
+		<td>
+			<input type="text" name="text" style="width:200px" class="ui">
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="right" nowrap><hr /></td>
+	</tr>
+	</table>
+</form>
+</body>
+</html>

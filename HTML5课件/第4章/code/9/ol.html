@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>ol列表的使用</title>
+<link href="Css/css3.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+ function Btn_Click()
+ {
+      var Num=document.getElementById("zhi").value;
+	  var Div=document.getElementById("ol");
+      Div.setAttribute("start",Num);
+ } 
+</script>
+</head>
+<body >
+期末成绩排名:
+<ol id="ol">
+  <li>张三</li>
+  <li>李四</li>
+  <li>王五</li>
+</ol>
+修改列表编号:
+<input type="text" id="zhi" class="inputtxt" style="width:30px;" />
+<input type="button" value="确定" onClick="Btn_Click();">
+</body>
+</html>

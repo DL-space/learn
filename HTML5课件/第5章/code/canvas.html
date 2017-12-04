@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312"/>
+<title>canvas元素</title>
+<script type="text/javascript">
+function draw() {
+	//取得绘图区域
+  var ctx = document.getElementById('myPic').getContext('2d');
+  for (var i=0;i<12;i++){
+    for (var j=0;j<24;j++){
+	//设定填满色彩
+	ctx.fillStyle = 'rgb(0,' + Math.floor(255-11.5*i) + ',' + Math.floor(255-11.5*j) + ')';
+	//开始路径绘制
+	ctx.beginPath();
+	//设定圆形绘制路径
+	ctx.arc(12.5+j*25,12.5+i*25,10,0,Math.PI*2,true);
+	//路径填充上色
+	ctx.fill();
+    }
+  }
+}
+</script>
+</head>
+<body onload="draw()">
+<canvas id="myPic" width="600" height="300"></canvas>
+</body>
+</html>

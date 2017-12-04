@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>村行注册</title>
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<script type="text/javascript" src="./js/index.js"></script>
+	<script type="text/javascript">
+		window.onload=function(){
+			checkInput('cb_com_reg_box',function(oTxt){
+				if(oTxt.name=='pass2'){
+					var oPass=document.getElementsByName('pass')[0];
+					
+					if(oPass.value!=oTxt.value)
+					{
+						return false;
+					}
+				}
+
+			});
+		}
+	</script>
+
+</head>
+
+<body>
+
+	<!-- 背景图 -->
+	<div class="s-skin-container">
+		<img class="s-skin-img" src="./img/background.png" />
+	</div>
+
+	<div class="outer_spacing">
+
+		<section>
+
+			<form class="cb_com_reg_box">
+				<p class="cb_com_reg_tip">以下为必填项，请认真填写</p>
+				<input type="text" class="cb_personal_reg js_input" placeholder="村行名称" name="empty" />
+				<p class="cb_input_tip" title="村行名称不能为空"></p>
+				<input type="text" class="cb_personal_reg js_input" placeholder="登录名称" name="empty" />
+				<p class="cb_input_tip" title="登录名称不能为空"></p>
+				<input type="text" class="cb_personal_reg js_input" placeholder="联系人姓名" name="name" />
+				<p class="cb_input_tip" title="联系人姓名不能为空"></p>
+				<input type="text" class="cb_personal_reg js_input" placeholder="联系人手机" name="mobile" />
+				<p class="cb_input_tip" title="联系人手机不能为空"></p>
+				<input type="password" class="cb_personal_reg js_input" placeholder="密码" / name="pass">
+				<p class="cb_input_tip" title="密码不能为空"></p>
+				<input type="password" class="cb_personal_reg js_input" placeholder="再次确认密码" name="pass2" />
+				<p class="cb_input_tip" title="再次确认密码不能为空"></p>
+				<input type="submit" href="javascript:;" class="cb_bapply" value="提交申请">
+			</form>
+
+		</section>
+
+	</div>
+
+
+</body>
+</html>

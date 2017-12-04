@@ -1,0 +1,74 @@
+[allow_html_in_templates]
+values=false|true
+default=false
+hint=Enable this if you have embedded HTML.
+
+[compress_colors]
+values=false|true
+default=true
+hint=Set to true or false. On the highest compression mode, this will be enabled automatically, so you don't need to change this.
+
+[compress_font-weight]
+values=false|true
+default=true
+hint=Set to true or false. This will change "font-weight: bold" to "font-weight: 700", for example. This is enabled automatically on highest compression mode.
+
+[discard_invalid_properties]
+values=false|true
+default=false
+hint=Discard invalid properties. Usually, you do not need to change this option.
+
+[lowercase_s]
+values=false|true
+default=false
+hint=Changes all selectors to lowercase. Lowercase text usually compresses better.
+
+[preserve_css]
+values=false|true
+default=false
+hint=Preserves comments and browser-specific hacks.
+
+[remove_bslash]
+values=false|true
+default=true
+hint=Remove unnecessary backslashes.
+
+[remove_last_;]
+values=false|true
+default=false
+hint=Removes the final semicolon in each property list. Essentially changes ";}" to "}" in your CSS document. This can improve the actual compression size.
+
+[sort_properties]
+values=false|true
+default=false
+hint=Sorts properties alphabetically. Could enhance readability, but doesn't often change the actual document size.
+
+[sort_selectors]
+values=false|true
+default=false
+hint=Sorts selectors alphabetically. Could enhance readability, but doesn't often change the actual document size.
+
+[timestamp]
+values=false|true
+default=false
+hint=Adds the date to your CSS document.
+
+[merge_selectors]
+values=0|1|2
+default=2
+hint=Combines selectors (such as "h1") that have equivalent property lists (such as "font-weight: 700").
+
+[case_properties]
+values=0|1|2
+default=0
+hint=Changes the case for your properties. Lowercase text usually compresses better.
+
+[optimise_shorthands]
+values=0|1|2
+default=1
+hint=Removes redundant values from shorthands properties. For example: changes "25px 0 30px 0" to "25px 0 30px".
+
+[template]
+values=default|low|high|highest
+default=default
+hint=Controls the compression level. It is called "template" because it potentially changes all the other options. "highest" removes all whitespace, resulting in the smallest file size.

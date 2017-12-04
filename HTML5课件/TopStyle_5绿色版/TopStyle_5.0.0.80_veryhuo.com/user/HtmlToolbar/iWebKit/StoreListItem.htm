@@ -1,0 +1,147 @@
+<html>
+<head>
+<title>iWebKit iTunes Classic List Item</title>
+<script language="javascript">
+function getSelectedIndex(radioGroup) {
+  var result = -1;
+  for (var i = 0; i < radioGroup.length; i++) {
+    if (radioGroup[i].checked) {
+      result = i; 
+      break;
+    }
+  }
+  return result;
+}
+function canInsertObject() {
+  if (ts.hasParent('li', 'class', 'store'))
+    return true
+  else {
+    alert('iTunes Classic List Item MUST be inside <li class="store">');
+    return false;
+  }
+}
+function initUI() {
+  if (ts.hasSelection())
+    document.forms[0].name.value = ts.getSelection(false, true);  
+  document.forms[0].name.focus();
+  document.forms[0].name.select();
+}
+function objectTag() {
+  var result = '<a href="' + document.forms[0].href.value + '">\r\n';
+  result += '<span class="image" style="background-image: url(\'' + document.forms[0].img.value + '\')"></span>\r\n';
+  var itemName = document.forms[0].name.value;
+  if (!itemName)
+    itemName = '|';
+  var comment = document.forms[0].comment.value; 
+  if (comment)
+    result += '<span class="comment">' + comment + '</span>\r\n';
+  result += '<span class="name">' + itemName + '</span>\r\n';
+  var rating = document.forms[0].rating[getSelectedIndex(document.forms[0].rating)].value;
+  if (rating)
+	result += '<span class="' + rating + '"></span>\r\n';
+  var review = document.forms[0].review.value;
+  if (review)
+    result += '<span class="starcomment">' + review + '</span>\r\n';
+  result += '<span class="arrow"></span>\r\n</a>';
+  return result; 
+}
+</script>
+</head>
+<body>
+<form>
+	<table border="0">
+	<tr>
+		<td class="ui" align="right">href:</td>
+		<td>
+			<input type="text" name="href" style="width:200px" class="ui">
+		</td>
+		<td>
+			<img src="../Shared/Images/folder.gif" style="cursor: hand" onClick="document.forms[0].href.value = ts.browseForFileURL(document.forms[0].href.value)">
+		</td>
+	</tr>
+	<tr>
+		<td class="ui" align="right">image src:</td>
+		<td>
+			<input type="text" name="img" style="width:200px" class="ui">
+		</td>
+		<td>
+			<img src="../Shared/Images/folder.gif" style="cursor: hand" onClick="document.forms[0].img.value = ts.browseForFileURL(document.forms[0].img.value, true)">
+		</td>
+	</tr>
+	<tr>
+		<td class="ui" align="right">item name:</td>
+		<td colspan="2">
+			<input type="text" name="name" style="width:200px" class="ui">
+		</td>
+	</tr>
+	<tr>
+		<td class="ui" align="right" nowrap>comment (optional):</td>
+		<td colspan="2">
+			<input type="text" name="comment" style="width:200px" class="ui">
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" align="right" nowrap><hr /></td>
+	</tr>
+	<tr>
+		<td align="right" nowrap class="ui">rating:</td>
+		<td nowrap class="ui">
+			<input type="radio" name="rating" value="" checked>
+			<label onclick="document.forms[0].rating[0].checked = true">none</label>
+		</td>
+	</tr>
+	<tr>
+		<td align="right" nowrap class="ui"></td>
+		<td colspan="2" nowrap class="ui">
+			<input type="radio" name="rating" value="stars0">
+			<img src="images/0stars.png" onclick="document.forms[0].rating[1].checked = true" />
+		</td>
+	</tr>
+	<tr>
+		<td align="right" nowrap></td>
+		<td colspan="2" nowrap class="ui">
+			<input type="radio" name="rating" value="stars1">
+			<img src="images/1stars.png" onclick="document.forms[0].rating[2].checked = true" />
+		</td>
+	</tr>			
+	<tr>
+		<td align="right" nowrap></td>
+		<td colspan="2" nowrap class="ui">
+			<input type="radio" name="rating" value="stars2">
+			<img src="images/2stars.png" onclick="document.forms[0].rating[3].checked = true" />
+		</td>
+	</tr>
+	<tr>
+		<td align="right" nowrap></td>
+		<td colspan="2" nowrap class="ui">
+			<input type="radio" name="rating" value="stars3">
+			<img src="images/3stars.png" onclick="document.forms[0].rating[4].checked = true" />
+		</td>
+	</tr>
+	<tr>
+		<td align="right" nowrap></td>
+		<td colspan="2" nowrap class="ui">
+			<input type="radio" name="rating" value="stars4">
+			<img src="images/4stars.png" onclick="document.forms[0].rating[5].checked = true" />
+		</td>
+	</tr>
+	<tr>
+		<td align="right" nowrap></td>
+		<td colspan="2" nowrap class="ui">
+			<input type="radio" name="rating" value="stars5">
+			<img src="images/5stars.png" onclick="document.forms[0].rating[6].checked = true" />
+		</td>
+	</tr>
+	<tr>
+		<td class="ui" align="right" nowrap>review text (optional):</td>
+		<td colspan="2">
+			<input type="text" name="review" style="width:200px" class="ui">
+		</td>
+	</tr>				
+	<tr>
+		<td colspan="3" align="right" nowrap><hr /></td>
+	</tr>
+	</table>
+</form>
+</body>
+</html>

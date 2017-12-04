@@ -1,0 +1,7 @@
+switch (%r[Expression]) {
+	case 1:
+	/-sep-/
+	break;
+	default:
+	
+}

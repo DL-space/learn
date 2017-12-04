@@ -1,0 +1,171 @@
+body{background-color:#f1f1f1}
+.s-skin-container{background-color:rgb(255, 255, 238);position:absolute;top:0;left:0;height:100%;width:100%;z-index:-10;background-position:center 0;background-repeat:no-repeat;background-attachment:fixed;-webkit-background-size:cover;-o-background-size:cover;zoom:1}
+.s-skin-img{position: fixed;width: 100%;height: 100%;top: 0px;left: 0px;display: inline;}
+/*背景图片*/
+.background_img{background: url(../img/background_ico.png) no-repeat;}
+
+/*首页*/
+.index_header{width:100%;height:42px;border-bottom: 1px solid #b6a58b;background: #fff url(../img/index_logo.png) no-repeat center;}
+.index_btn_box{width:276px;margin:0 auto;height:310px;}
+.index_main_box{width:100%;overflow: hidden;margin:0 auto;margin-top:50px;height: 100%;}
+.index_main_box li{float: left;background: rgba(255,255,255,0.8);margin:0 2px 2px 0;width: 90px;height:90px;}
+.index_main_box li a{padding-top:20px;height:80%;display:block;width:100%;text-align: center;}
+.index_main_box li a span{line-height: 30px;color: #9e7e53}
+.index_footer{position: absolute;bottom: 20px;left:50%;margin-left:-68px;}
+.index_footer_info{color:#fff;text-align: center;}
+
+/*首页按钮图标*/
+.index_btn_ico1{display:block;width:30px;height:30px;background-position: 0 -1px;margin:0 auto 0 auto;}
+.index_btn_ico2{display:block;width:30px;height:30px;background-position: -43px -3px;margin:0 auto 0 auto;}
+.index_btn_ico3{display:block;width:30px;height:30px;background-position: -84px -5px;margin:0 auto 0 auto;}
+.index_btn_ico4{display:block;width:30px;height:30px;background-position: 2px -37px;margin:0 auto 0 auto;}
+.index_btn_ico5{display:block;width:30px;height:30px;background-position: -43px -38px;margin:0 auto 0 auto;}
+.index_btn_ico6{display:block;width:30px;height:30px;background-position: -87px -41px;margin:0 auto 0 auto;}
+.index_btn_ico7{display:block;width:30px;height:30px;background-position: 1px -80px;margin:0 auto 0 auto;}
+.index_btn_ico8{display:block;width:30px;height:30px;background-position: -43px -80px;margin:0 auto 0 auto;}
+.index_btn_ico9{display:block;width:30px;height:30px;background-position: -87px -81px;margin:0 auto 0 auto;}
+
+/*杭州联合银行主页*/
+.outer_spacing{padding:10px 10px 0 10px;}
+
+.cb_index_header{width:auto;height:46px;overflow:hidden;padding:10px;background: rgba(255,255,255,0.5);border:1px solid #b1b6b5;margin:0 auto;border-radius: 5px;}
+.cb_header_logo{display:block;width:44px;height:44px;background-position: -126px -5px;float: left;}
+.cb_header_cont{float:left;margin-left:2%;}
+.cb_header_cont_title{font-size: 18px;font-weight: bold;letter-spacing: 2px;}
+.cb_header_cont_rate{overflow: hidden;margin-top:5px;}
+.cb_header_cont_rate ul{float: left;margin-right: 10px;overflow: hidden;}
+.cb_header_cont_rate ul li{float:left;}
+.cb_header_cont_word{font-size: 12px;color:#333;margin:3px 2px 0 0;}
+.cb_header_cont_num{width:40px;height:20px;border-radius: 5px;color:#fff;font-size: 18px;line-height: 20px;text-align: center;}
+.cb_header_cont_num.put{background:#ff8140;}
+.cb_header_cont_num.get{background:#2bb5c9;}
+
+.cb_index_list_box{width:auto;height:160px;padding:0 1%;overflow: hidden;background: rgba(255,255,255,0.5);border:1px solid #b1b6b5;margin:5% auto 0 auto;border-radius: 5px;}
+.cb_index_list_box ul{height:100%;}
+.cb_index_list_box .cb_index_list_btn{height:25%;border-bottom:1px solid #a9b1af;}
+.cb_index_list_btn a{position:relative;width:100%;height:100%;display:block;overflow:hidden;/*display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-align:center; */}
+.cb_index_list_btn a span{display: block;margin-left:5%;line-height: 40px;float: left;}
+.cb_index_list_btn a:after{content: ' ';position: absolute;top: 15px;right: 5%;width: 10px;height: 10px;border: #656565 solid;border-width: 1px 1px 0 0;-webkit-transform: rotate(45deg);}
+
+/*列表图标*/
+.cb_index_list_ico1{display:block;width:25px;height:22px;background-position: -178px -2px;float: left;margin-top:8px;margin-left:5%;}
+.cb_index_list_ico2{display:block;width:25px;height:22px;background-position: -176px -32px;float: left;margin-top:12px;margin-left:5%;}
+.cb_index_list_ico3{display:block;width:25px;height:22px;background-position: -175px -60px;float: left;margin-top:12px;margin-left:5%;}
+.cb_index_list_ico4{display:block;width:25px;height:22px;background-position: -177px -83px;float: left;margin-top:8px;margin-left:5%;}
+
+.cb_index_title{color:#fff;margin: 1% auto 0 auto;}
+.cb_index_intro{width: auto;height: auto;color:#4e5152;padding: 3% 2% 2% 2%;overflow: hidden;background: rgba(255,255,255,0.5);border: 1px solid #b1b6b5;margin: 1% auto 0 auto;border-radius: 5px;}
+
+
+/*村行动态*/
+.cb_info_card{width:100%;height:130px;padding:1em 0 0.3em 0;box-shadow: 0px 1px 2px #999;border:1px solid #d9d9d9;margin-bottom:10px;border-top:1px solid #f1f1f1;border-radius: 5px;}
+.cb_active_info_box{padding:0 10px;overflow: hidden;}
+.cb_active_info_title{color:#222;font-size: 1em;font-weight: bold;white-space:nowrap; overflow:hidden;text-overflow:ellipsis;word-break:normal;word-wrap:normal;}
+.cb_active_info_cont{height:58px;overflow: hidden;color: #808383;margin:1% 0 10px 0;}
+.cb_active_info_foot{overflow: hidden;padding:10px 10px 0 10px;border-top: 1px solid #d9d9d9;}
+.cb_active_info_from{float:left;color:#222;}
+.cb_active_info_from b{font-weight: bold;display: inline-block;vertical-align:bottom;width: 160px;white-space:nowrap; overflow:hidden;text-overflow:ellipsis;word-break:normal;word-wrap:normal;}
+.cb_active_info_time{float:right;color:#abaaaa;}
+
+/*行业政策*/
+.cb_info_head{width:100%;height:34px;border-bottom: 1px solid #d9d9d9;margin-bottom: 10px;position: relative;padding-top:15px;}
+.cb_info_location{float:right;margin-right: 10px;}
+.cb_location_pop{width:98%;height:200px;background:rgba(0,0,0,0.8);position: absolute;top:45px;left:1%;border-radius:5px;display:none;z-index:999}
+.cb_pop_angle{position: absolute;top:-10px;width:20px;height:20px;background: #222;opacity:0.8;-webkit-transform: rotate(45deg);z-index: 1}
+.cb_pop_angle_left{left:30px;}
+.cb_pop_angle_right{right:30px;}
+
+.cb_province{overflow: hidden;height:145px;position:relative;z-index: 9;padding:20px 0;}
+.cb_province li{width:20%;float: left;text-align: center;line-height: 40px;}
+.cb_province li a{color:#fff;display: block;width:100%;height:100%;}
+
+/*村行名录*/
+.cb_menu_location{float:left;margin-left: 10px;}
+.cb_bank_pop{width:90px;height:300px;background:rgba(0,0,0,0.8);position: absolute;top:45px;right:20px;border-radius:5px;display:none;z-index: 999;}
+.cb_bank_pop li{width:100%;text-align: center;line-height: 35px;}
+.cb_bank_pop li a{color:#fff;display: block;width:100%;height:100%;}
+.cb_bank{overflow: hidden;height: 280px;position: relative;z-index: 10;padding: 10px 0;}
+.cb_menu_card{width:100%;height:80px;margin-bottom:10px;box-shadow: 0px 1px 2px #999;border: 1px solid #d9d9d9;position: relative;border-top: 1px solid #f1f1f1;border-radius: 5px;z-index: 2}
+.cb_menu_card:after{content: ' ';position: absolute;top:30px;right: 5%;width: 15px;height: 15px;border: #e1e1e1 solid;border-width: 1px 1px 0 0;-webkit-transform: rotate(45deg);z-index: 2}
+
+.cb_menu_bank_band{float:left;height: 100%;display:-webkit-box;-webkit-box-align:center;margin-left:0.5em;}
+.cb_menu_bank_info{float:left;padding:18px 0 0 0.5em;width:75%;}
+.cb_menu_bank_name{font-size: 1.2em;color:#222;}
+.cb_menu_bank_tip{font-size: 12px;margin-top: 5px;color:#65696a;overflow: hidden;}
+.cb_menu_bank_time{float: left;}
+.cb_menu_bank_money{float: right;margin-right: 20px;}
+
+/*村行动态--目录*/
+.cb_am_bank_info{float:left;padding-left:0.5em;width:58%;height:100%;display:-webkit-box;-webkit-box-align:center;}
+.cb_am_tip{float:left;padding-left:0.5em;height:100%;display:-webkit-box;-webkit-box-align:center;}
+.cb_am_red_tip{width:20px;height:20px;background:#df5c5c;border-radius: 50%;color:#fff;text-align:center;line-height: 20px;}
+
+/*村行动态--省份*/
+.cb_ap_btn_box{width:300px;overflow: hidden;margin:20px auto 0 auto;}
+.cb_ap_btn_over{width:310px;}
+.cb_ap_btn{width:50px;height:24px;border:1px solid #1c1c1c;line-height: 24px;text-align: center;display: block;float: left;margin:0 10px 10px 0;}
+
+/*我要存款*/
+.cb_map_btn_box{width:300px;margin:0 auto 10px auto;border:1px solid #a08053;border-radius: 5px;height:30px;overflow: hidden;}
+.cb_map_over{width:310px;overflow: hidden;}
+.cb_map_btn_box a{display:block;float: left;width:150px;border-right:1px solid #a08053;color:#a08053;text-align: center;line-height: 30px;}
+.cb_map_btn_box a.active{background:#a08053;color:#fff;}
+.cb_map_card{overflow: hidden;border-bottom: 1px solid #e4e4e4;padding:10px 0;}
+.cb_logo_box{width:45px;height:45px;border:1px solid #bcbcbc;border-radius: 50%;overflow: hidden;float: left;}
+.cb_map_card_cont{float: left;margin-left: 10px;}
+.cb_map_card_cont h3{font-size: 16px;font-weight: bold;max-width: 320px;white-space:nowrap; overflow:hidden;text-overflow:ellipsis;word-break:normal;word-wrap:normal;}
+.cb_map_card_cont p{color:#a1a0a0;font-size: 1em;margin-top:5px;}
+.cb_map_cont{display: none;}
+#allmap {width: 100%;}
+
+
+/*个人注册*/
+.cb_personal_reg{font-size: 18px;width:94%;height:44px;padding:0 3%;line-height: 44px;border: none;color:#22292c;font-size: 14px;background: rgba(255,255,255,0.7);border:1px solid #e2ddd1;margin-bottom: 15px;}
+.cb_per_reg_box{margin-top:80px;}
+
+/*企业注册*/
+.cb_com_reg_box{margin-top: 20px;}
+.cb_com_reg_tip{text-align: center;margin-bottom: 10px;color:#666;}
+
+/*政策详情*/
+.cb_policy_detail{font-size: 16px;font-weight: bold;}
+.cb_policy_info{margin:3% 0;}
+.cb_policy_info li{font-size: 0.8em;color:#b7b8b8;overflow: hidden;}
+.cb_policy_time{float: left;}
+.cb_policy_from{float: right;width:60%;}
+.cb_policy_cont img{width:100%;margin:10px 0;}
+.cb_policy_cont p{color:#666;margin-bottom: 1%;text-indent: 1em}
+
+
+/*我要贷款*/
+.cb_borrow_title{margin:15px 0 5px 0;}
+.cb_borrow_cont{width: 94%;height: 44px;line-height: 44px;border: none;color: #b6b9b9;background: #fff;font-size: 14px;padding: 0 3% 0 3%;}
+.cb_borrow_two .cb_borrow_title,.cb_borrow_two select.cb_borrow_cont{width:45%;}
+select.cb_borrow_cont{width:100%;}
+.cb_borrow_two{overflow: hidden;}
+.cb_textarea{padding:3%;width:94%;height:105px;color:#b6b9b9;margin-top:5px;border:none;resize:none;}
+.cb_bapply{display: inline-block;width:100%;height:44px;line-height: 44px;color:#fff;text-align: center;background:#a08054;margin-top:20px;border:none;}
+.cb_bapply:active{background:#806034;}
+
+/*我要存款2*/
+.cb_borrow_two input.cb_borrow_cont{width:39%;}
+.cb_borrow_two b{width:3%;text-align: center;}
+.cb_putin_box{width:45%;}
+.cb_borrow_two .cb_putin_box .cb_borrow_cont{width:74%;}
+.cb_borrow_two .cb_putin_box select.cb_borrow_cont{width:80%;}
+.cb_putin_cont{width: 85%;height: 44px;line-height: 44px;border: none;color: #b6b9b9;background: #fff;font-size: 14px;padding: 0 3% 0 3%;}
+
+.test:after{content:"错误";color:#f00;}
+
+/*表单验证样式*/
+.cb_input_tip{margin-bottom: 15px;color: #f00;display: none;}
+
+/*我要存款页面百度地图样式*/
+.cb_map_container{position:relative;width:100%;height:175px;}
+.cb_map_title{width:100%;height:25px;border-bottom:1px solid #ccc;background:#fff;text-align:center;line-height:25px;}
+#allmap{width:100%;height:85%;}
+#cb_map_full_btn{display:block;position:absolute;right:5px;bottom:5px;width:70px;height:25px;line-height:25px;text-align:center;color:#fff;background:rgba(0,0,0,0.5);border-radius:15px;font-size:12px;}
+
+/*村行政策样式修改*/
+.cb_infocard_img{width:80px;height:80px;float: left;margin-right:10px;}
+

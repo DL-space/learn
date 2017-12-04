@@ -1,0 +1,82 @@
+<HTML>
+<HEAD>
+<TITLE>Form</TITLE>
+<SCRIPT LANGUAGE="javascript">
+function initUI() {
+  document.forms[0].txtAction.focus();
+}
+function objectTag() {
+  var result = '<form';
+
+	var action = document.forms[0].txtAction.value;
+	if (action) result += ' action="' + action + '"';
+
+  var method = document.forms[0].txtMethod.value;
+	if (method) result += ' method="' + method + '"';
+
+  var encoding = document.forms[0].txtEncoding.value;
+	if (encoding) result += ' enctype="' + encoding + '"';
+
+  var name = document.forms[0].txtName.value;
+	if (name) {
+	  result += ' name="' + name + '"';
+    if (ts.isXHTML())
+      result += ' id="' + name + '"';
+	}
+
+	var target = document.forms[0].txtTarget.value;
+	if (target) result += ' target="' + target + '"';
+
+	return result + '>' + ts.getSelection(true) + '</form>';
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<form>
+  <table border="0">
+    <tr>
+      <td class="ui" align="right">Action:</td>
+      <td>
+			  <input type="text" name="txtAction" style="width:200px" class="ui">
+			</td>
+			<td>
+				<img src="../Shared/Images/folder.gif" style="cursor: hand" onClick="document.forms[0].txtAction.value = ts.browseForFileURL(document.forms[0].txtAction.value)">
+      </td>
+    </tr>
+    <tr>
+      <td class="ui" align="right">Method:</td>
+      <td>
+			  <select name="txtMethod" class="ui" style="width:50px">
+				  <option value="get">get</option>
+					<option value="post">post</option>
+			  </select>
+			</td>
+    </tr>
+    <tr>
+      <td class="ui" align="right">Encoding:</td>
+      <td>
+			  <input type="text" name="txtEncoding" style="width:200px" class="ui">
+			</td>
+			<td align="left" valign="bottom" height="28">
+				<img src="../Shared/Images/btnDown.gif" onClick="document.forms[0].txtEncoding.value = ts.showPopupMenu(document.forms[0].txtEncoding.value, 'multipart/form-data,application/x-www-form-urlencoded')">
+			</td>
+    </tr>
+    <tr>
+      <td class="ui" align="right">Name:</td>
+      <td>
+			  <input type="text" name="txtName" style="width:200px" class="ui">
+			</td>
+    </tr>
+    <tr>
+      <td class="ui" align="right">Target:</td>
+      <td>
+			  <input type="text" name="txtTarget" style="width:200px" class="ui">
+			</td>
+			<td align="left" valign="bottom" height="27">
+				<img src="../Shared/Images/btnDown.gif" onClick="document.forms[0].txtTarget.value = ts.showPopupMenu(document.forms[0].txtTarget.value, '_blank,_parent,_self,_top')">
+			</td>
+    </tr>
+  </table>
+</form>
+</BODY>
+</HTML>
