@@ -19,7 +19,7 @@ function deepClone(data) {
         }
     }
     return obj;
-},
+}
 function getType(obj) {
     let toString = Object.prototype.toString;
     let map = {
