@@ -1,0 +1,1194 @@
+/*订单列表*/
+
+.order_wrap {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	/*overflow: scroll;*/
+}
+.order_wrap .noRes{
+	display: none;
+}
+.order_wrap .addSpan{
+	width: 0.23rem;
+	height: 0.23rem;
+	border: 0.03rem solid #fff;
+	color: #fff;
+	/*border-radius: 0.115rem;*/
+	border-radius: 100%;
+	position: absolute;
+	transform: translateY(-50%);
+	top:50%;
+	left: 30%;
+	line-height: 0.16rem;
+	text-align: center;
+}
+
+.search {
+  width: 100%;
+  height: 0.7rem;
+  padding: .15rem 4%;
+  line-height: 0.4rem;
+  background: #ebebeb;
+  position: relative;
+}
+.order_wrap .searchRes {
+	background-color: #f4f4f4;
+}
+.order_wrap .searchRes .resClass{
+	width: 100%;
+	background-color: #fff;
+	padding: 30% 0 0 30%;
+}
+.order_wrap .searchRes .resClassAgain{
+	width: 100%;
+	background-color: #fff;
+	padding: 0;
+}
+.order_wrap .searchRes .resClass .tipP{
+	color: #666;
+	font-size: 0.16rem;
+}
+.order_wrap  .resClass .tipP{
+	color: #666;
+	font-size: 0.16rem;
+	text-align: center;
+}
+.order_wrap  .searchRes .resClass .tipChoose{
+	color: #666;
+	font-size: 0.16rem;
+	margin-left: 28%;
+}
+.order_wrap  .searchRes .tipChoose{
+	color: #666;
+	font-size: 0.16rem;
+	margin-left: 28%;
+}
+.order_wrap .resClass{
+	background-color: #fff;
+	padding: 1.2rem 0 0 1.1rem;
+}
+.order_wrap .resClassAgain{
+	width: 100%;
+	background-color: #fff;
+	padding: 0;
+}
+.order_wrap .resClass img{
+	/*width: 70%;*/
+	width: 1.5rem;
+	height: 1.4rem;
+	margin-left: 30%;
+	margin-top: 40%;
+}
+.order_wrap .searchRes .resClass img{
+	/*width: 70%;*/
+	width: 1.5rem;
+	height: 1.4rem;
+	margin-left: 30%;
+	margin-top: 40%;
+}
+.order_wrap .searchRes .resTop {
+	width: 100%;
+	height: 0.48rem;
+	line-height: 0.48rem;
+	border-bottom: .005rem solid #EBECEF;
+	font-size: 0.15rem;
+	color: #000;
+	padding: 0.1rem 0.11rem 0.1rem 0.11rem;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.order_wrap .searchRes .resTop .topImg {
+	width: 6%;
+	height: 0.16rem;
+	float: left;
+	margin: 0.05rem 0.09rem 0.09rem 0.09rem;
+}
+.info_bar2{
+  height: auto!important;
+	line-height: normal!important;
+	width: 92%;
+	font-size: .135rem;
+	color:#666;
+	/*padding:0 .1rem;*/
+	margin: 0 auto;
+}
+.addtext{
+	color:#333;
+}
+.invoice_list .topAddr2{
+	margin-left: 0!important;
+}
+.order_wrap .searchRes .resTop .topP {
+	width: 67%;
+	line-height: 0.27rem;
+	color: #000;
+	font-size: 0.16rem;
+	float: left;
+}
+
+.order_wrap .searchRes .resTop .topBtn {
+	float: left;
+	width: 20%;
+	line-height: 0.27rem;
+	border: .005rem solid #f16977;
+	color: #f16977;
+	text-align: center;
+	height: 0.27rem;
+	border-radius: 0.03rem;
+	background-color: #fff;
+}
+.order_wrap .searchRes .resTop .newBtn {
+	background-color: #e64933;
+	color: #fff;
+}
+.order_wrap .searchRes .resTop .grayBtn {
+	background-color: #c3c3c3;
+	color: #fff;
+	border: .005rem solid #c3c3c3;
+}
+.order_wrap .serTop{
+	width: 100%;
+	background-color: #fff;
+	overflow: hidden;
+}
+.order_wrap .clientSearch {
+	float: left;
+	width: 93%;
+	margin: 0.1rem 0 0 0.1rem;
+	height: 0.4rem;
+	border: .005rem solid #ebecef;
+	border-radius: 0.03rem;
+	overflow: hidden;
+	background-color: #fff;
+}
+.order_wrap .clientSearch .clearSearch {
+	width: 19.38px;
+	height: 19.38px;
+	border: .005rem solid #C9C9C9;
+	border-radius: 50%;
+	margin-top: 0.1rem;
+	color: #fff;
+	background-color: #C9C9C9;
+	float: left;
+	font-size: 0.13rem;
+	text-align: center;
+	line-height: 19.38px;
+}
+.order_wrap .clientSearch .searchLeft{
+	float: left;
+	height: 100%;
+	width: 82%;
+}
+.order_wrap .clientSearch .inputBtn {
+	float: left;
+	width: 18%;
+	font-size: 0.15rem;
+	color: #666;
+	height: 0.38rem;
+	line-height: 0.2rem;
+	text-align: center;
+	background-color: #DFDFDF;
+}
+
+.order_wrap .clientSearch .inputOrder {
+	width: 91%;
+	height: 0.38rem;
+	line-height: 0.38rem;
+	text-indent: 0.12rem;
+	font-size: 0.13rem;
+	color: #bcbcbc;
+	float: left;
+}
+
+.order {
+	background-color: #f6f6f6;
+}
+
+.order .top {
+	background-color: #fff;
+	border: 1px solid #e3e5e9;
+  position: fixed;
+  z-index:1;
+  width: 100%;
+}
+
+.order .search {
+	width: 100%;
+	height: 0.7rem;
+	padding: .15rem 4%;
+	line-height: 0.4rem;
+	background: #ebebeb;
+	position: relative;
+}
+
+.search .holder {
+	left: 50%;
+	width: auto;
+	position: absolute;
+	z-index: 10;
+	color: #999;
+	margin-left: -10%;
+}
+
+.search .cancle {
+	right: calc(4% + 0.55rem);
+	width: auto;
+	position: absolute;
+	z-index: 10;
+	color: #999;
+	height: .4rem;
+	display: none;
+}
+
+.search .holder img,
+.search .cancle img {
+	height: 0.18rem;
+	float: left;
+	margin-top: 0.11rem
+}
+.search .holder img{
+  margin: .12rem .05rem 0 0;
+	height: .14rem;
+
+}
+.search .search-text{
+	font-size: .14rem;
+}
+.search .search_btn {
+	display: none;
+	background-color: #4392ff;
+	height: .38rem;
+	border-radius: 0 0.04rem 0.04rem 0;
+	position: absolute;
+	right: calc(4% + 0.01rem);
+	top: 0.16rem;
+	border-left: 1px solid #cbcbcb;
+	width: 0.5rem;
+	text-align: center;
+	font-size: 0.14rem;
+	color: #fff;
+}
+
+.search input {
+	border: 1px solid #cbcbcb;
+	width: 100%;
+	height: 100%;
+	padding: 0 0.1rem;
+	border-radius: 0.04rem;
+	font-size: 0.14rem;
+}
+
+.search .search-record {
+	position: absolute;
+	width: 100%;
+	top: 0.7rem;
+	left: 0;
+	display: none;
+}
+
+.search .search-record .title {
+	border-bottom: 1px solid #e6e8ec;
+	height: .4rem;
+	line-height: .4rem;
+	font-size: .16rem;
+	color: #999;
+	padding: 0 .15rem;
+}
+
+.search .search-record .list {
+	width: 92%;
+	margin: auto;
+	height: .36rem;
+	line-height: .36rem;
+	font-size: .14rem;
+	padding-left: .36rem;
+	background-image: url('../images/order/icon-leader.png');
+	background-repeat: no-repeat;
+	background-size: auto 70%;
+	background-position: .05rem .05rem;
+	border-bottom: 1px solid #e6e8ec;
+}
+
+.search .search-record .clear {
+	height: .4rem;
+	line-height: .4rem;
+	font-size: .16rem;
+	color: #999;
+	text-align: center
+}
+.order .order_list{
+  padding-top: 1.12rem;
+}
+.order .order_list .order_item {
+	background-color: #fff;
+	padding: 0.1rem 0.2rem;
+	font-size: 0.14rem;
+	margin-top: 0.1rem;
+	background-image: url('../images/order/right_arrow.png');
+	background-repeat: no-repeat;
+	background-position: 97% 0.13rem;
+	background-size: 2.5%;
+}
+
+.order .order_list .order_item:nth-child(1) {
+	margin-top: 0;
+}
+
+.order .order_list .order_item .row {
+	height: 0.28rem;
+	line-height: 0.28rem;
+}
+.order .order_list .order_item .first-row,
+.order .order_list .order_item .second-row {
+	position: relative;
+}
+
+.order .order_list .order_item .second-row .count {
+	position: absolute;
+	right: 0;
+}
+
+.order .order_list .order_item .first-row .status {
+	height: 0.28rem;
+	border-radius: 0.14rem;
+	position: absolute;
+	padding: 0 0.1rem;
+	right: 0.1rem;
+	top: 0;
+	font-size: 0.12rem;
+}
+
+.order .order_list .order_item .first-row .status.status10 {
+  background-color: grey;
+  color: #fff;
+}
+
+.order .order_list .order_item .first-row .status.status11 {
+	background-color: #ffe7cd;
+	color: #fc6f1a;
+}
+
+.order .order_list .order_item .first-row .status.status20 {
+	background-color: #dee9ff;
+	color: #798ab0;
+}
+
+.order .order_list .order_item .first-row .status.status30 {
+	background-color: #daf0ff;
+	color: #4d9fd5;
+}
+
+.order .order_list .order_item .first-row .status.status31 {
+	background-color: #d6f4ff;
+	color: #3eabd2;
+}
+
+.order .order_list .order_item .first-row .status.status32 {
+	background-color: #e3eaf3;
+	color: #798ab0;
+}
+
+.order .order_list .order_item .first-row .status.status33 {
+	background-color: #ffe4e4;
+	color: #f94e4e;
+}
+
+
+/*运单详情*/
+
+.amap-marker .marker-distance {
+	position: absolute;
+	width: 150px;
+	height: 21px;
+	color: #0091ff;
+	background: #fff;
+	border: 1px solid #00a3e9;
+	top: -21px;
+	text-align: center;
+}
+
+.amap-marker .marker-route {
+	position: absolute;
+	width: 100px;
+	height: 21px;
+	color: #0091ff;
+	background-image: url(../images/order/icon-room.png);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	cursor: pointer;
+	padding-left: 25px;
+	font-weight: bold;
+}
+
+.amap-marker .marker-red {
+	position: absolute;
+	width: 100px;
+	height: 21px;
+	color: #e90000;
+	background-image: url(../images/order/icon-red-room.png);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	cursor: pointer;
+	padding-left: 25px;
+	font-weight: bold;
+}
+
+.amap-marker .marker-red-icon {
+	position: absolute;
+	width: 100px;
+	height: 21px;
+	color: #e90000;
+	background-image: url(../images/order/icon-station-mark.png);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	cursor: pointer;
+	padding-left: 18px;
+	font-weight: bold;
+}
+
+.amap-marker .marker-driver-icon {
+	position: absolute;
+	width: 100px;
+	height: 30px;
+	color: #e90000;
+	background-image: url(../images/order/icon-driver-mark.png);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	cursor: pointer;
+	padding-left: 18px;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+.amap-marker .marker-marker {
+	top: -23px;
+	line-height: 24px;
+	position: absolute;
+	width: 72px;
+	height: 29px;
+	color: #fc6f1a;
+	background-image: url(../images/order/icon-getgoods.png);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	cursor: pointer;
+	padding-left: 22px;
+}
+
+.amap-marker .marker-marker-bus-from {}
+
+.detail {
+	background-color: #f6f6f6;
+}
+.detail .bottomClass{
+	margin-bottom: 0.1rem;
+	background-color: #fff;
+	font-size: 0.15rem;
+	color: #666;
+	font-weight: bold;
+	text-align: right;
+	padding: 0.1rem 0.2rem 0 0;
+}
+.detail .bottomClass .changeFont{
+	color: #e63535;
+}
+.detail .box {
+	font-size: 0.14rem;
+	display: none;
+}
+
+.detail .box .map-wrap {
+	width: 100%;
+	height: 200px;
+}
+
+.detail .box .main-info {
+	background-color: #fff;
+	padding: .1rem;
+}
+.detail .box .main-info .firstRow{
+	padding: 0.1rem 0.13rem 0 0.13rem;
+	width: 100%;
+	background-color: #F6F6F6;
+	font-size: 0.14rem;
+	height: 0.45rem;
+}
+.detail .box .main-info .secRow .orderCode{
+	color: #d34545;
+	width: 30%;
+}
+.detail .box .main-info .secRow .orderName{
+	color: #000;
+	letter-spacing: 0.14rem;
+	width: 18%;
+}
+.detail .box .main-info .secRow{
+	padding: 0.1rem 0.13rem 0 0.13rem;
+	width: 100%;
+	font-size: 0.14rem;
+	height: 0.45rem;
+	border-bottom:.01rem solid #ebecef;
+}
+.detail .box .secRow{
+	padding: 0.1rem 0.13rem 0 0.13rem;
+	width: 100%;
+	font-size: 0.14rem;
+	height: 0.45rem;
+	background-color: #fff;
+}
+.detail .box .main-info .firstRow .firstRowLeft{
+	float: left;
+	width: 80%;
+	height: 100%;
+}
+.detail .box .main-info .firstRow .firstRowRight{
+	float: right;
+	width: 17%;
+	height: 0.22rem;
+	background-color: #daf0ff;
+	color: #489cd3;
+	line-height: 0.22rem;
+	text-align: center;
+	font-size: 0.1rem;
+	border: 0.005rem solid #daf0ff;
+	border-radius: 0.1rem;
+	margin-top: 0.02rem;
+}
+.detail .box .row {
+	height: 0.28rem;
+	line-height: 0.28rem;
+}
+.detail .box .row .blodRight{
+	float: right;
+	font-weight: bold;
+	color: #000;
+	font-size: 0.11rem;
+}
+.detail .box .row .rowLeft{
+	float: left;
+}
+.detail .box .row .rowLeftUpdate{
+	width: 60%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.detail .box .row .rowRightUpdate{
+	width: 40%;
+	text-align: right;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.detail .box .first-row,
+.detail .box .second-row {
+	position: relative;
+}
+
+.detail .box .second-row .count {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+}
+
+.detail .box .main-info .second-row .count .phone {
+	height: 100%;
+	width: .28rem;
+	display: block;
+	background-image: url("../images/order/phone.png");
+	background-size: 100%;
+}
+
+.detail .box .main-info .first-row .status {
+	height: 0.28rem;
+	border-radius: 0.14rem;
+	position: absolute;
+	padding: 0 0.1rem;
+	right: 0;
+	top: 0;
+	font-size: 0.12rem;
+}
+.detail .box .main-info .first-row .status.status10 {
+  background-color: grey;
+  color: #fff;
+}
+
+.detail .box .main-info .first-row .status.status11 {
+	background-color: #ffe7cd;
+	color: #fc6f1a;
+}
+
+.detail .box .main-info .first-row .status.status20 {
+	background-color: #dee9ff;
+	color: #798ab0;
+}
+
+.detail .box .main-info .first-row .status.status30 {
+	background-color: #daf0ff;
+	color: #4d9fd5;
+}
+
+.detail .box .main-info .first-row .status.status31 {
+	background-color: #d6f4ff;
+	color: #3eabd2;
+}
+
+.detail .box .main-info .first-row .status.status32 {
+	background-color: #e3eaf3;
+	color: #798ab0;
+}
+
+.detail .box .main-info .first-row .status.status33 {
+	background-color: #ffe4e4;
+	color: #f94e4e;
+}
+
+.detail .box .person-info {
+	background-color: #fff;
+	padding: .1rem .1rem .1rem .35rem;
+	font-size: .14rem;
+	/*margin-top: 0.1rem;*/
+	position: relative;
+}
+
+.detail .box .person-info .directive {
+	width: .3rem;
+	position: absolute;
+	top: .15rem;
+	left: 0;
+	border-radius: 0 .14rem .14rem 0;
+	color: #fff;
+	line-height: .28rem;
+	text-align: center;
+}
+
+.detail .box .person-info .directive.from {
+	background-color: #ff6b6b;
+}
+
+.detail .box .person-info .directive.to {
+	background-color: #ff9c3d;
+}
+
+.detail .box .person-info .second-row .count .phone {
+	height: 100%;
+	width: .28rem;
+	display: block;
+	background-image: url("../images/order/phone.png");
+	background-size: 100%;
+}
+
+.detail .box .goods-info,
+.detail .box .account-info {
+	font-size: .14rem;
+	/*margin-top: 0.1rem;*/
+	position: relative;
+	background-color: #fff;
+}
+
+.detail .box .goods-info .title,
+.detail .box .account-info .title {
+	font-size: .18rem;
+	padding: .1rem;
+}
+
+.detail .box .goods-info .table,
+.detail .box .account-info .table {
+	padding: .1rem;
+}
+
+.detail .box .goods-info th,
+.detail .box .goods-info td {
+	font-size: .14rem;
+	height: .28rem;
+	line-height: .28rem;
+	text-align: center;
+}
+
+.detail .box .account-info .money {
+	padding: .1rem;
+	background-color: #fff;
+	font-size: .16rem;
+}
+
+.detail .box .station-info {
+	font-size: .14rem;
+	background-color: #fff;
+	padding: .1rem
+}
+
+.detail .box .log-wrap {
+	background-color: #fff;
+}
+
+.detail .box .log-title {
+	height: .4rem;
+	line-height: .4rem;
+	border-top: .01rem solid #ebecef;
+	border-bottom: .01rem solid #ebecef;
+	text-align: center;
+}
+
+.detail .box .log-list-wrap {
+	padding: .2rem 0 .2rem .3rem;
+}
+
+.detail .box .log-list-wrap .log-list {
+	border-left: .01rem solid #ddd;
+	padding-left: .3rem;
+}
+
+.detail .box .log-list-wrap .log-list .item {
+	line-height: .28rem;
+	border-top: .01rem solid #ddd;
+	position: relative;
+}
+
+.detail .box .log-list-wrap .log-list .item .mark {
+	border-radius: 100%;
+	width: .08rem;
+	height: .08rem;
+	background-color: #ddd;
+	position: absolute;
+	left: -0.34rem;
+	top: .1rem;
+}
+
+.detail .box .log-list-wrap .log-list .item .mark.focus {
+	height: .16rem;
+	width: .16rem;
+	background-color: #6fabff;
+	border: .02rem solid #c5ddff;
+	left: -0.38rem;
+}
+
+
+/*新建发货单*/
+
+.order .recivePartner {
+	background-color: #fff;
+}
+
+
+/*收货方信息*/
+
+.order .recivePartner .topTip {
+	height: 0.43rem;
+	background-color: #F6F6F6;
+	border: none;
+	font-size: 0.15rem;
+	line-height: 0.43rem;
+	text-indent: 0.15rem;
+	color: #000;
+}
+
+.order .recivePartner .topTipInfoCus {
+	height: 0.49rem;
+	border-bottom: .005rem solid #ebecef;
+}
+
+.order .recivePartner .topTipInfoCus .customer {
+	width: 3.5rem;
+	float: left;
+	font-size: 0.14rem;
+	color: #666;
+	line-height: 0.49rem;
+	text-indent: 0.15rem;
+}
+
+.order .recivePartner .topTipInfoCus .customer span {
+	float: left;
+	letter-spacing: 0.1rem;
+}
+
+.order .recivePartner .topTipInfoCus .letterCus span {
+	letter-spacing: 0.087557rem;
+	width: 30%;
+}
+.order .recivePartner .topTipInfoCus .letter span {
+	letter-spacing: 0.04rem;
+	width: 30%;
+}
+.order .recivePartner .topTipInfoCus .changeLetter span{
+	width: 36%;
+}
+.order .recivePartner .topTipInfoCus .changeLength{
+	width: 70%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.order .recivePartner .invoiceSub {
+	width: 88%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	text-align: center;
+	background-color: #4392FF;
+	font-size: 0.18rem;
+	color: #fff;
+	margin: 0.2rem 0 0.2rem 0.22rem;
+	border-radius: 0.033rem;
+}
+
+.order .recivePartner .topTipInfoCus .letter .recieveInfo {
+	float: left;
+	border: .005rem solid #999;
+	width: 62%;
+	border-radius: 0.03rem;
+	margin: 0.1rem 0 0 0.1rem;
+	height: .3rem;
+	font-size: .15rem;
+	padding:0 .05rem;
+}
+.order .recivePartner .topTipInfoCus .letter .recieveInfoName {
+	/*width: 25%;
+	float: left;*/
+}
+.order .recivePartner .topTipInfoCus .customer{
+	width: 100%;
+}
+.order .recivePartner .topTipInfoCus .customer .cusName {
+	float: left;
+	color: #000;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.order .recivePartner .topTipInfoCus .customer .cusBtn {
+	width: 63%;
+}
+.order .recivePartner .topTipInfoCus .customer .addCusImg {
+	float: right;
+	margin-right: 0.15rem;
+	width: 0.26rem;
+	height: 0.26rem;
+	margin-top: 0.11rem;
+}
+
+.order .recivePartner .topTipInfoCus .customer .tips {
+	letter-spacing: 0.15rem;
+}
+
+.order .recivePartner .topTipInfoCus .customer .freight {
+	color: #666;
+}
+
+.order .recivePartner .topTipInfoCus .customer .cusName span {
+	float: left;
+	overflow: hidden;
+	width: 35%;
+	height: 0.35rem;
+	margin-top: 0.05rem;
+	border-radius: 0.02rem;
+	line-height: 0.35rem;
+	background-color: #efefef;
+	border: none;
+}
+.order .recivePartner .topTipInfoCus .customer .pCusName{
+	width: 60%;
+}
+.order .recivePartner .topTipInfoCus .customer .cusName .changeFirSpan{
+	color: #eb4141;
+	border-color: #eb4141;
+	background-color: #fff;
+	border: .005rem solid #eb4141;
+	text-align: center;
+	text-indent: 0;
+	letter-spacing: normal;
+	width: 40%;
+}
+.order .recivePartner .topTipInfoCus .customer .cusName .changeSecSpan{
+	border: none;
+	background-color: #efefef;
+	color: #000;
+	text-align: center;
+	text-indent: 0;
+	letter-spacing: normal;
+	width: 40%;
+}
+
+
+.recieveChangeColorRed {
+	color: #eb4141;
+	background-color: #fff;
+	border: .005rem solid #eb4141;
+}
+
+.recieveChangeColorBlack {
+	color: #000;
+	background-color: #efefef;
+	border: none;
+}
+
+.order .recivePartner .topTipInfoCus .customer img {
+	float: right;
+}
+
+.order .recivePartner .goodsTable {
+	padding: 0 0.15rem 0.1rem 0.15rem;
+}
+
+.order .recivePartner .goodsTable .tableTh {
+	width: 100%;
+	height: 0.41rem;
+	line-height: 0.41rem;
+	font-size: 0.14rem;
+	color: #666;
+	text-align: center;
+}
+
+.order .recivePartner .goodsTable .tableTh .spanName {
+	/*width: 2.2rem;*/
+	width: 60%;
+	float: left;
+	margin-right: 8%;
+}
+
+.order .recivePartner .goodsTable .tableTh .spanNum {
+	/*width: 1.1rem;*/
+	width: 30%;
+	float: left;
+}
+
+.order .recivePartner .goodsTable .tableTh .spanTdName {
+	/*width: 2.2rem;*/
+	width: 60%;
+	float: left;
+	margin-right: 8%;
+}
+
+.order .recivePartner .goodsTable .tableTh .spanTdNum {
+	/*width: 1.1rem;*/
+	width: 30%;
+	float: left;
+}
+
+.order .recivePartner .goodsTable .tableTh .spanTdName input {
+	width: 100%;
+	border: .005rem solid #999;
+	text-align: center;
+	border-radius: 0.03rem;
+	height: .3rem;
+	font-size: .14rem;
+}
+
+.order .recivePartner .goodsTable .tableTh .spanTdNum input {
+	width: 100%;
+	border: .005rem solid #999;
+	text-align: center;
+	border-radius: 0.03rem;
+	height: .3rem;
+	font-size: .14rem;
+}
+
+
+/*关于发货单的各项明细---公用*/
+
+.invoice_list {
+	font-family: PingFangSC-Regular, Helvetica, "Droid Sans", Arial, sans-serif;
+	width: 100%;
+	padding: 10px 0;
+	background-color: #fff;
+	margin-bottom: 0.1rem;
+	position: relative;
+}
+.invoice_list_Update:last-of-type{
+	margin-bottom: 0;
+}
+
+.invoice_list .info_bar {
+	width: 92%;
+	height: 25px;
+	line-height: 25px;
+	margin: 0 auto;
+}
+
+.invoice_list .info_bar .leftFloat{
+	width: 80%;
+	float: left;
+}
+.invoice_list .info_bar .leftFloat{
+
+}
+.invoice_list .info_bar .leftFloat .topAddr{
+	width: 80%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.invoice_list .info_bar .deleBtn{
+	float: right;
+	width: 0.5rem;
+	height: 0.2rem;
+	background-color: #EFEFEF;
+	line-height: 0.2rem;
+	text-align: center;
+	border: .005rem solid #EFEFEF;
+	border-radius: 0.002rem;
+	font-size: 0.135rem;
+	color: #999;
+
+}
+
+.invoice_list .info_bar2 .deleBtn{
+	/*float: right;*/
+	width: 0.5rem;
+	/*height: 0.2rem;*/
+	background-color: #EFEFEF;
+	/*line-height: 0.2rem;*/
+	text-align: center;
+	border: .005rem solid #EFEFEF;
+	border-radius: 0.002rem;
+	font-size: 0.135rem;
+	color: #999;
+
+}
+.invoice_list .info_bar2 .deleBtn-box{
+	text-align: right;
+}
+.invoice_list .info_bar span {
+	float: left;
+	font-size: 0.135rem;
+	color: #666;
+}
+
+.invoice_list .info_bar p {
+	float: left;
+	display: inline-block;
+	font-size: 0.135rem;
+	color: #282828;
+	margin-left: 0.100rem;
+}
+
+.invoice_list .info_bar .curr_state {
+	float: right;
+	width: 0.6rem;
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+	font-weight: 400;
+	;
+	font-size: 0.125rem;
+	border-radius: 15px;
+}
+.invoice_list .info_bar .resImg{
+	position: absolute;
+	top:0.2rem;
+	right: 0.2rem;
+	height: 0.3rem;
+	width: 0.3rem;
+}
+.invoice_list .info_bar .juqian {
+	background-color: #ffe4e4;
+	color: #f94e4e;
+}
+
+.invoice_list .info_bar i {
+	color: #4392ff;
+}
+
+/*统计----运费月结*/
+.order .top .topBtns{
+	height: 0.65rem;
+	background-color: #fff;
+	padding: 0.15rem 0 0 0.15rem;
+}
+.order .top .topBtns .btnTop{
+	width: 0.89rem;
+	height: 0.35rem;
+	line-height: 0.35rem;
+	text-align: center;
+	font-size: 0.14rem;
+	color: #000;
+	background-color: #EFEFEF;
+	border: .005rem solid #EFEFEF;
+	border-radius: 0.02rem;
+}
+.order .top .topBtns .btnTop:first-of-type{
+	margin-right: 0.2rem;
+	color: #e50f0f;
+	border: .005rem solid #e50f0f;
+	background-color: #fff;
+}
+.order .top .topInfos{
+	height: 0.65rem;
+	background-color: #F6F6F6;
+	padding: 0.13rem 0 0 0.15rem;
+}
+.order .top .topInfos .cycle{
+	font-size: 0.14rem;
+	color: #6d6d6d;
+}
+.order .top .topInfos .cycle .cycleInfo{
+	color: #000;
+}
+.order .freight{
+
+}
+.client{
+  height:100%;
+  width: 100%;
+	color: #333;
+}
+.client .banner{
+  height: .84rem;
+  background-image: url('../images/client/banner.png');
+  display: table;
+  color:#fff;
+  width: 100%;
+}
+.client .banner .col-1{
+  display: table-cell;
+  width: 20%;
+  vertical-align: middle;
+}
+.client .banner .col-2{
+  display: table-cell;
+  width: 35%;
+  vertical-align: middle;
+  font-size: .16rem;
+}
+.client .banner .col-3{
+  display: table-cell;
+  width: 45%;
+  vertical-align: middle;
+  font-size: .12rem;
+}
+.client .banner .col-1.logo{
+  background-image: url('../images/client/logo.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:auto 60%;
+}
+.client .show_order_msg{
+  background-color: #f9f9f9;
+}
+.client .show_order_msg .title{
+  padding:0 .12rem;
+  height: .53rem;
+  line-height: .53rem;
+	font-size: .15rem;
+  /*border-bottom:.01rem solid #e6e6e6*/
+}
+.client .show_order_msg .title::before{
+	border-bottom:1px solid #e6e6e6
+
+}
+.client .tab_bar{
+
+}
+.client .tab_bar .tab-item{
+  height: .5rem;
+  padding:0 .12rem;
+  line-height:.5rem;
+  background-image: url('../images/client/icon-right-jump.png');
+  background-repeat: no-repeat;
+  background-position:95% center;
+  background-size:.2rem;
+}
+.client .tab_bar .tab-item::before{
+	border-bottom:1px solid #ebebeb;
+
+}

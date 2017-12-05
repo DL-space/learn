@@ -1,0 +1,298 @@
+.clerk{
+    width:100%;
+    min-height: 100%;
+    background-color: #f5f5f5;
+    color:#333;
+}
+.clerk .banner{
+    position: relative;
+}
+
+.clerk .banner .name{
+  position: absolute;
+  width:30%;
+  height:.24rem;
+  top:65%;
+  left:33%;
+  text-align: center;
+  color: #fff;
+  font-size: .14rem;
+}
+.clerk .banner img{width:100%;
+    display: block;}
+.clerk .title{
+    height:.4rem;
+    padding:0 3%;
+    line-height: .4rem;
+    background-color: #fff;
+}
+.clerk .title::before{
+  border-bottom:1px solid #e4e4e4;
+  
+}
+.clerk .title .left{
+    float:left;
+    height:100%;
+    font-size: .16rem;
+}
+.clerk .title.style1 .left{
+    padding-left:.4rem;
+    background-image:url("../images/clerk/icon/icon-xiuli.png");
+    background-size:auto 65%;
+    background-position:.08rem center;
+    background-repeat: no-repeat;
+
+}
+.clerk .title.style4{
+    height: .5rem;
+    line-height: .5rem;
+}
+.clerk .title .right{
+    float: right;
+    height: 100%;
+}
+.clerk .title.style2{
+    height:.5rem;
+    line-height:.5rem;
+}
+.clerk .title.style2 .right{
+    padding-right:.25rem;
+    color:#2c7cec;
+    background-image: url("../images/clerk/icon/icon-phone.png");
+    background-repeat:no-repeat;
+    background-position: right center;
+    background-size: auto 40%;
+}
+.clerk .title.style4 .right{
+    padding-top: .08rem;
+}
+.clerk .menu{
+    overflow: hidden;
+    background-color: #fff;
+}
+.clerk .menu-list{
+    width:50%;
+    float:left;
+    height:1.6rem;
+    border-bottom:1px solid #eee;
+    border-right:1px solid #eee;
+    padding:.2rem 0;
+}
+.clerk .menu-list .icon{
+    height:.9rem;
+    background-size:auto 80%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.clerk .menu-list .menu-txt{
+    height: .3rem;
+    line-height: .3rem;
+    text-align: center;
+}
+.clerk .menu-list .icon.icon-add{
+     background-image: url('../images/clerk/icon/icon-add-client.png');
+}
+.clerk .menu-list .icon.icon-my{
+    background-image: url('../images/clerk/icon/icon-my-client.png');
+}
+.clerk .menu-list .icon.icon-search-client{
+  background-image: url('../images/clerk/icon/icon-search-client.png');
+}
+.clerk .add-client{
+    padding:.05rem .1rem;
+    background-color: #fff;
+}
+.clerk .add-client .input{
+    border-bottom:1px solid #c2c2c2;
+    min-height: .5rem;
+    overflow: hidden;
+    line-height:.5rem;
+    position: relative;
+}
+.clerk .add-client .input label{
+    width:35%;
+    float: left;
+    height: 100%;
+    color: #666;
+    font-size: .18rem;
+    text-align: right;
+    padding-right:2%;
+}
+.clerk .add-client .input > input{
+    width:65%;
+    background: none;
+    border:none;
+    float:left;
+    height:.5rem;
+    font-size: .18rem;
+    color: #666;
+}
+.clerk .add-client .input .selected{
+    position: absolute;
+    width:70%;
+    height: 100%;
+    left:30%;
+    top:0;
+    background-image: url('../images/clerk/icon/icon-selected.png');
+    background-repeat:no-repeat;
+    background-position:95% center;
+    background-size:10%
+}
+.clerk .add-client .input .selected select{
+    width:100%;
+    height:100%;
+    display: block;
+    opacity: 0;
+}
+/*.clerk .search{*/
+    /*height:.46rem;*/
+    /*border-bottom:.01rem solid #cdcdcd;*/
+    /*background-color: #fff;*/
+    /*padding:.06rem 3%;*/
+/*}*/
+/*.clerk .search .back{*/
+    /*float: left;*/
+    /*width:12%;*/
+    /*height: 100%;*/
+    /*background-image:url('../images/clerk/icon/icon-back.png');*/
+    /*background-position: center center;*/
+    /*background-repeat:no-repeat;*/
+    /*background-size:40%*/
+/*}*/
+/*.clerk .search .input{*/
+    /*width: 88%;*/
+    /*float: left;*/
+    /*border-radius:.04rem;*/
+    /*border:.01px solid #acacac;*/
+    /*height: 100%;*/
+/*}*/
+/*.clerk .search .input input{*/
+    /*height: 100%;*/
+    /*line-height: .34rem;*/
+    /*width:80%;*/
+    /*float: left;*/
+    /*padding-left:.05rem;*/
+    /*border:none;*/
+/*}*/
+/*.clerk .search .input button{*/
+    /*width: 20%;*/
+    /*height: 100%;*/
+    /*float: left;*/
+    /*background-color: #3281f8;*/
+    /*border-radius:0 .04rem .04rem 0;*/
+    /*border:none;*/
+    /*color: #fff;*/
+/*}*/
+/*.clerk .client-list{
+    border-top:.01px solid #acacac;
+}*/
+.clerk .client-list .client{
+    margin-top:.15rem;
+}
+.clerk .client-list .client:nth-child(1){
+    margin:0;
+}
+.clerk .client-list .client .client-info{
+    background-color: #fff;
+    padding:.1rem 3%;
+    line-height:.32rem;
+    font-size: .15rem;
+    background-image: url('../images/clerk/icon/icon-enter.png');
+    background-repeat: no-repeat;
+    background-size:.09rem .165rem;
+    background-position:95% center;
+}
+.clerk .client-list .client .client-info .import{
+    color: #ea2034;
+}
+.clerk .client-list .client .client-info .address{
+    width: 3.2rem;
+    line-height: .2rem;
+}
+.clerk .tab-list{
+    margin-top:.15rem;
+    background-color: #fff;
+    padding:0 .1rem;
+}
+.clerk .tab-list .bar{
+    height: .48rem;
+    /*border-top:.01rem solid #e4e4e4;*/
+    line-height: .48rem;
+    background-image: url("../images/clerk/icon/icon-enter.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size:auto 30%
+}
+.clerk .tab-list .bar::before{
+   border-top:1px solid #e4e4e4;
+}
+.clerk .tab-list .bar:nth-child(1){
+    border:none;
+}
+.clerk .tab{
+   border-bottom: 1px solid #e4e4e4;
+}
+.clerk .unbind-client .unbind-list .item{
+    height: .5rem;
+    line-height: .5rem;
+    padding-left:3%;
+    border-bottom:1px solid #e4e4e4;
+    background-color: #fff;
+    font-size: .14rem;
+}
+.clerk .unbind-client .unbind-list .item button{
+    width: .6rem;
+    background-color: #ea2034;
+    border:none;
+    color: #fff;
+    display: block;
+    height:.49rem;
+}
+
+.clerk .input-control{
+  min-height: .5rem;
+  overflow: hidden;
+  line-height: .5rem;
+  position: relative;
+  font-size: 0.17rem;
+}
+.clerk .input-control::before{
+  border-bottom: 1px solid #e4e4e4;
+}
+.clerk .input-control label{
+  width: 40%;
+  float: left;
+  height: 100%;
+  color: #666;
+  text-align: left;
+  font-size: .16rem;
+  height:.5rem;
+  line-height:.5rem;
+  /*padding-right: 2%;*/
+}
+.clerk .input-control > input,.clerk .input-control > .input{
+  width:60%;
+  background: none;
+  border: none;
+  float: left;
+  font-size: .16rem;
+  color: #666;
+}
+input,.clerk .input-control > .input{
+  padding:.1rem 0;
+  line-height:.3rem;
+}
+.clerk .input-control .selected{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(../images/clerk/icon/icon-selected.png);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  background-size: auto 20%;
+}
+.picker-toolbar{
+  height: .4rem!important;
+}

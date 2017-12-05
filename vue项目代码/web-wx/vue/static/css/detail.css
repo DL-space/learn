@@ -1,0 +1,247 @@
+.amap-marker .marker-distance{
+    position: absolute;
+    width: 150px;
+    height: 21px;
+    color: #0091ff;
+    background:#fff;
+    border:1px solid #00a3e9;
+    top:-21px;text-align: center;
+}
+.amap-marker .marker-route {
+    position: absolute;
+    width: 100px;
+    height: 21px;
+    color: #0091ff;
+    background-image: url(../images/order/icon-room.png);
+    background-repeat: no-repeat;
+    background-size:auto 100%;
+    cursor: pointer;
+    padding-left:25px;
+    font-weight:bold;
+}
+.amap-marker .marker-red{
+    position: absolute;
+    width: 100px;
+    height: 21px;
+    color: #e90000;
+    background-image: url(../images/order/icon-red-room.png);
+    background-repeat: no-repeat;
+    background-size:auto 100%;
+    cursor: pointer;
+    padding-left:25px;
+    font-weight:bold;
+}
+.amap-marker .marker-red-icon{
+     position: absolute;
+     width: 100px;
+     height: 21px;
+     color: #e90000;
+     background-image: url(../images/order/icon-station-mark.png);
+     background-repeat: no-repeat;
+     background-size:auto 100%;
+     cursor: pointer;
+     padding-left:18px;
+     font-weight:bold;
+ }
+.amap-marker .marker-driver-icon{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    color: #e90000;
+    background-image: url(../images/order/icon-driver-mark.png);
+    background-repeat: no-repeat;
+    background-size:auto 100%;
+    cursor: pointer;
+    padding-left:18px;
+    font-weight:bold;
+    line-height: 30px;
+}
+.amap-marker .marker-marker{
+    top:-23px;
+    line-height:24px;
+    position: absolute;
+    width: 72px;
+    height: 29px;
+    color: #fc6f1a;
+    background-image: url(../images/order/icon-getgoods.png);
+    background-repeat: no-repeat;
+    background-size:auto 100%;
+    cursor: pointer;
+    padding-left:22px;
+}
+.amap-marker .marker-marker-bus-from {
+
+}
+
+.detail{
+    background-color: #f6f6f6;
+}
+.detail .box{
+    font-size:0.14rem;
+    display: none;
+}
+.detail .box .map-wrap{
+    width:100%;
+    height:200px;
+}
+.detail .box .main-info{
+    background-color: #fff;
+    padding:.1rem;
+}
+.detail .box  .row{
+    height: 0.28rem;
+    line-height: 0.28rem;
+}
+.detail .box  .first-row,.detail .box  .second-row{
+    position: relative;
+}
+.detail .box  .second-row .count{
+    position: absolute;
+    right:0;
+    top:0;
+    height: 100%;
+}
+.detail .box .main-info .second-row .count .phone{
+    height: 100%;
+    width:.28rem;
+    display:block;
+    background-image: url("../images/order/phone.png");
+    background-size:100%;
+}
+.detail .box .main-info .first-row .status{
+    height:0.28rem;
+    border-radius:0.14rem;
+    position: absolute;
+    padding:0 0.1rem;
+    right:0;
+    top:0;
+    font-size: 0.12rem;
+}
+.detail .box .main-info .first-row .status.status11{
+    background-color: #ffe7cd;
+    color:#fc6f1a;
+}
+.detail .box .main-info .first-row .status.status20{
+    background-color: #dee9ff;
+    color:#798ab0;
+}
+.detail .box .main-info .first-row .status.status30{
+    background-color: #daf0ff;
+    color:#4d9fd5;
+}
+.detail .box .main-info .first-row .status.status31{
+    background-color: #d6f4ff;
+    color:#3eabd2;
+}
+.detail .box .main-info .first-row .status.status32{
+    background-color: #e3eaf3;
+    color:#798ab0;
+}
+.detail .box .main-info .first-row .status.status33{
+    background-color: #ffe4e4;
+    color:#f94e4e;
+}
+
+.detail .box .person-info{
+    background-color: #fff;
+    padding:.1rem .1rem .1rem .35rem;
+    font-size:.14rem;
+    /*margin-top: 0.1rem;*/
+    position:relative;
+}
+.detail .box .person-info .directive{
+    width: .3rem;
+    position: absolute;
+    top:.15rem;
+    left:0;
+    border-radius:0 .14rem .14rem 0;
+    color:#fff;
+    line-height:.28rem;
+    text-align: center;
+}
+.detail .box .person-info .directive.from{
+    background-color: #ff6b6b;
+}
+.detail .box .person-info .directive.to{
+    background-color: #ff9c3d;
+}
+
+
+.detail .box .person-info .second-row .count .phone{
+    height: 100%;
+    width:.28rem;
+    display:block;
+    background-image: url("../images/order/phone.png");
+    background-size:100%;
+}
+
+.detail .box .goods-info,.detail .box .account-info{
+    font-size:.14rem;
+    /*margin-top: 0.1rem;*/
+    position:relative;
+    background-color: #fff;
+}
+.detail .box .goods-info .title,.detail .box .account-info .title{
+    font-size: .18rem;
+    padding:.1rem;
+}
+.detail .box .goods-info .table,.detail .box .account-info .table{
+    padding:.1rem;
+}
+.detail .box .goods-info th,.detail .box .goods-info td{
+    font-size: .14rem;
+    height: .28rem;
+    line-height: .28rem;
+    text-align: center;
+}
+
+.detail .box .account-info .money{
+    padding:.1rem;
+    background-color: #fff;
+    font-size: .16rem;
+}
+.detail .box .station-info{
+    font-size: .14rem;
+    background-color: #fff;
+    padding:.1rem
+}
+.detail .box .log-wrap{
+    background-color: #fff;
+}
+.detail .box .log-title{
+    height:.4rem;
+    line-height:.4rem;
+    border-top:.01rem solid #ebecef;
+    border-bottom:.01rem solid #ebecef;
+    text-align: center;
+}
+.detail .box .log-list-wrap{
+    padding:.2rem 0 .2rem .3rem;
+}
+
+.detail .box .log-list-wrap .log-list{
+    border-left:.01rem solid #ddd;
+    padding-left:.3rem;
+}
+.detail .box .log-list-wrap .log-list .item{
+    line-height:.28rem;
+    border-top:.01rem solid #ddd;
+    position: relative;
+}
+.detail .box .log-list-wrap .log-list .item .mark{
+    border-radius:100%;
+    width:.08rem;
+    height:.08rem;
+    background-color: #ddd;
+    position: absolute;
+    left:-0.34rem;
+    top:.1rem;
+}
+.detail .box .log-list-wrap .log-list .item .mark.focus{
+    height:.16rem;
+    width:.16rem;
+    background-color: #6fabff;
+    border:.02rem solid #c5ddff;
+    left:-0.38rem;
+}
+

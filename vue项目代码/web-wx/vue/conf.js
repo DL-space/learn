@@ -1,0 +1,1 @@
+export default {"api_url":"http://10.129.183.204:8080","api_api_url":"http://10.129.183.204:8080","map_key":"faedef5ae0a673687915b4afcabfe53f","appid":"wxb40f75a4ee5f5e51"}

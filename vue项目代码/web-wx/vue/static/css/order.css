@@ -1,0 +1,158 @@
+.order_wrap{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.order{
+    background-color: #f6f6f6;
+}
+.order .top{
+    background-color: #fff;
+    border:1px solid #e3e5e9;
+}
+.order .search{
+    width:100%;
+    height:0.7rem;
+    padding:.15rem 4%;
+    line-height: 0.4rem;
+    background: #ebebeb;
+    position:relative;
+}
+.search .holder{
+    left:50%;
+    width:auto;
+    position: absolute;
+    z-index:10;
+    color:#999;
+    margin-left:-10%;
+}
+.search .cancle{
+    right:calc(4% + 0.55rem);
+    width:auto;
+    position: absolute;
+    z-index:10;
+    color:#999;
+    height: .4rem;
+    display:none;
+}
+.search .holder img,.search .cancle img{
+    height:0.18rem;
+    float: left;
+    margin-top:0.11rem
+}
+.search .search_btn{
+    display:none;
+    background-color: #4392ff;
+    height:.38rem;
+    border-radius:0 0.04rem 0.04rem 0;
+    position: absolute;
+    right:calc(4% + 0.01rem);
+    top:0.17rem;
+    border-left:1px solid #cbcbcb;
+    width:0.5rem;
+    text-align:center;
+    font-size:0.14rem;
+    color: #fff;
+}
+.search input{
+    border:1px solid #cbcbcb;
+    width:100%;height:100%;
+    padding:0 0.1rem;
+    border-radius:0.04rem;
+    font-size: 0.14rem;
+}
+.search .search-record{
+    position: absolute;
+    width:100%;
+    top:0.7rem;
+    left:0;
+    display: none;
+}
+.search .search-record .title{
+    border-bottom:1px solid #e6e8ec;
+    height:.4rem;
+    line-height:.4rem;
+    font-size:.16rem;
+    color:#999;
+    padding:0 .15rem;
+}
+.search .search-record .list{
+    width:92%;
+    margin:auto;
+    height:.36rem;
+    line-height:.36rem;
+    font-size:.14rem;
+    padding-left:.36rem;
+    background-image: url('../images/order/icon-leader.png');
+    background-repeat:no-repeat;
+    background-size:auto 70%;
+    background-position: .05rem .05rem;
+    border-bottom:1px solid #e6e8ec;
+}
+.search .search-record .clear{
+    height:.4rem;
+    line-height:.4rem;
+    font-size:.16rem;
+    color:#999;
+    text-align:center
+}
+
+
+
+.order .order_list .order_item{
+    background-color: #fff;
+    padding:0.1rem 0.2rem;
+    font-size:0.14rem;
+    margin-top: 0.1rem;
+    background-image: url('../images/order/right_arrow.png');
+    background-repeat:no-repeat;
+    background-position: 97% 0.13rem;
+    background-size:4%;
+}
+.order .order_list .order_item:nth-child(1){
+  margin-top: 0;
+}
+.order .order_list .order_item .row{
+    height: 0.28rem;
+    line-height: 0.28rem;
+}
+.order .order_list .order_item .first-row,.order .order_list .order_item .second-row{
+    position: relative;
+}
+.order .order_list .order_item .second-row .count{
+    position: absolute;
+    right:0;
+}
+.order .order_list .order_item .first-row .status{
+    height:0.28rem;
+    border-radius:0.14rem;
+    position: absolute;
+    padding:0 0.1rem;
+    right:0.1rem;
+    top:0;
+    font-size: 0.12rem;
+}
+.order .order_list .order_item .first-row .status.status11{
+    background-color: #ffe7cd;
+    color:#fc6f1a;
+}
+.order .order_list .order_item .first-row .status.status20{
+    background-color: #dee9ff;
+    color:#798ab0;
+}
+.order .order_list .order_item .first-row .status.status30{
+    background-color: #daf0ff;
+    color:#4d9fd5;
+}
+.order .order_list .order_item .first-row .status.status31{
+    background-color: #d6f4ff;
+    color:#3eabd2;
+}
+.order .order_list .order_item .first-row .status.status32{
+    background-color: #e3eaf3;
+    color:#798ab0;
+}
+.order .order_list .order_item .first-row .status.status33{
+    background-color: #ffe4e4;
+    color:#f94e4e;
+}

@@ -1,0 +1,276 @@
+/*统计列表*/
+
+
+/*----------李雪敏-------2017-05-12--------*/
+
+.fl {
+	float: left;
+	display: inline;
+}
+
+.rg {
+	float: right;
+	display: inline;
+}
+.cb{clear: both;}
+.stat_wrap {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+}
+
+.stat {
+	background-color: #f6f6f6;
+}
+
+
+/*统计菜单页面*/
+.stat_total{float: left; width: 100%;}
+.stat_total .plate{width: 50%;position: relative;line-height:0.7;}
+.stat_total .plate img{width: 100%;}
+.stat_total .money{position: absolute;width: 100%;text-align: center; top: 0.36rem;}
+.stat_total .money span{font-size: 0.18rem;font-weight: bold;line-height:0.3rem;}
+.stat_total .money span.lfcolor{color:#19a5fd;}
+.stat_total .money span.rgcolor{color: #ff7444;}
+.stat_total .money p{font-size: 0.105rem;color:#a4a4a5;margin-top: 0.04rem;}
+.menu_list{width: 100%;background-color: #fff;}
+.menu_list li{float:left; width: 100%;padding:0.16rem 0; }
+.menu_list li::before{border-bottom: 1px solid #e4e4e4;}
+.menu_list li .fl_icon{float: left;width: 0.185rem;margin:0 0.2rem;}
+.menu_list li h4{float: left;font-size:.16rem;color:#333;}
+.menu_list li .fr_goto{float: right;width: 0.095rem;margin-right: 0.15rem;margin-top: 0.02rem;}
+.select_date{width: 100%;padding:0.15rem 0 0.05rem; background-color: #fff;}
+.select_date span{float: left;margin-left:0.15rem; height: 0.2rem; font-size: 0.15rem;color:#333;}
+.select_date .select_cur{ margin-right:0.15rem;height: 0.25rem;}
+.select_date .select_cur i{float: left; height: 0.2rem; font-size: 0.15rem;color: #666;}
+.select_date .select_cur img{margin-left:0.15rem;width: 0.220rem;}
+.amount_payment p{margin-left: 0.15rem;font-size:0.15rem;color: #666;height:0.2rem;margin-bottom: 0.05rem;}
+.amount_payment p i{color: #262626;}
+.amount_payment p b{color: #e91e32;}
+.order_ground{margin-bottom:0.06rem;}
+.total_order{width: 100%;background-color: #fff;padding: 0.15rem 0;margin-bottom:0.06rem ;}
+.total_order .ordercd_top img{float: left; width:0.155rem;margin-left:0.15rem ;margin-top: 0.03rem; margin-right: 0.10rem;}
+.total_order .ordercd_top span{float: left; font-size:0.15rem; color:#4392ff;}
+.total_order .ordercd_top .opt_icon{float: right;margin:0.1rem 0.15rem 0 0 ;
+ -webkit-transition: -webkit-transform 0.2s ease-out;-moz-transition: -moz-transform 0.2s ease-out;-o-transition: -o-transform 0.2s ease-out; -ms-transition: -ms-transform 0.2s ease-out;}
+.acition{-webkit-transform: rotateZ(180deg);-moz-transform: rotateZ(180deg);-o-transform: rotateZ(180deg);-ms-transform: rotateZ(180deg);transform: rotateZ(180deg);}
+.total_order p{margin-left: 0.15rem;font-size:0.14rem;color: #666;height:0.2rem;margin-bottom: 0.05rem;}
+.total_order p i{color: #262626;}
+.total_order p b{color: #e91e32;}
+.data_box{position: fixed;z-index: 10; bottom: 20px;left: 4%;  width: 92%;padding-bottom: 0.325rem; background-color: #fff;border-radius: 5px;}
+.data_box ul{float: left; width: 100%;}
+.data_box ul li{float: left;margin-top: 0.325rem;width:40%; height:0.4rem;line-height: 0.4rem; text-align: center;border-radius:5px;margin-left: 0.18rem;background-color: #fff; border:1px solid #999;}
+.data_box ul li.curr{background-color: #70a9ff;color:#fff}
+.openshow{transition: 1s; }
+.none{display: none;}
+
+
+/*.data_box ul li.curr{background-color: #70a9ff;color:#fff}*/
+
+/*遮盖浮动*/
+.bord { width: 100%; height: 100%; background-color: #000; position: fixed; z-index:9; filter: alpha(opacity=50); opacity: 0.5; top: 0; left: 0; display:block; }
+
+/*.order .top {overflow: hidden;}*/
+
+/*统计----运费月结*/
+
+.order .top .topBtns {
+	width: 100%;
+	height: 0.65rem;
+	background-color: #fff;
+	padding: 0.15rem 0 0 0.15rem;
+}
+
+.order .top .topBtns .btnTop {
+	width: 0.89rem;
+	height: 0.35rem;
+	line-height: 0.35rem;
+	text-align: center;
+	font-size: 0.14rem;
+	color: #000;
+	background-color: #EFEFEF;
+	border: .005rem solid #EFEFEF;
+	border-radius: 0.02rem;
+}
+.order .top .topBtns .btnGrayTop {
+	width: 25%;
+	height: 0.35rem;
+	line-height: 0.35rem;
+	text-align: center;
+	font-size: 0.14rem;
+	color: #000;
+	background-color: #EFEFEF;
+	border: .005rem solid #EFEFEF;
+	border-radius: 0.02rem;
+}
+.order .top .topBtns .btnRedTop {
+	width: 25%;
+	height: 0.35rem;
+	line-height: 0.35rem;
+	text-align: center;
+	font-size: 0.14rem;
+	color: #e50f0f;
+	background-color: #fff;
+	border: .005rem solid #e50f0f;
+	border-radius: 0.02rem;
+}
+.order .top .topBtns .btnTop:first-of-type {
+	margin-right: 0.2rem;
+}
+
+.order .top .topInfos {
+	height: 0.65rem;
+	background-color: #F6F6F6;
+	padding: 0.13rem 0 0 0.15rem;
+}
+
+.order .top .topInfos .cycle {
+	font-size: 0.14rem;
+	color: #6d6d6d;
+}
+
+.order .top .topInfos .cycle .cycleInfo {
+	color: #000;
+}
+
+.order .freightDiv .freight {
+	width: 92%;
+	background-color: #fff;
+	padding: 0.1rem 0.15rem 0.05rem 0.15rem;
+	box-sizing: content-box;
+	border-top: .005rem solid #F6F6F6;
+	font-size: 0.14rem;
+	color: #6d6d6d;
+	overflow: hidden;
+}
+
+.order .freightDiv .freight .freightLeft {
+	width: 90%;
+	float: left;
+	overflow: hidden;
+}
+
+.order .freightDiv .freight .freightRight {
+	width: 5%;
+	float: right;
+	height: 0.18rem;
+}
+
+.order .freightDiv .freight .freightLeft .leftInfo {
+	width: 100%;
+	float: left;
+	margin-bottom: 0.01rem;
+}
+
+.order .freightDiv .freight .freightLeft .infoLeft {
+	float: left;
+	width: 27%;
+}
+.order .freightDiv .freight .freightLeft .pStyle{
+	width: 100%;
+}
+.order .freightDiv .freight .freightLeft .changeLeft {
+	float: left;
+	width: 70%;
+}
+.order .freightDiv .freight .freightLeft .infoRight {
+	width: 30%;
+	float: right;
+}
+.order .freightDiv .freight .freightLeft .infoMiddle{
+	float: left;
+	width: 6%;
+}
+.order .freightDiv .freight .freightLeft .fontRed {
+	color: #f37e89;
+}
+
+.order .freightDiv .freight .freightLeft .fontChange {
+	color: #000;
+}
+.order .freightDiv .freight .freightLeft .settlementStartDate{
+	width: 30%;
+}
+.order .freightDiv .freight .freightLeft .settlementDate{
+	width: 30%;
+}
+
+/*运费月结未结算*/
+
+.order_wrap .serTop .noSettleTip {
+	float: left;
+	padding: 0.1rem 0.15rem 0.15rem 0.15rem;
+	font-size: 0.14rem;
+	width: 100%;
+}
+
+.order_wrap .serTop .noSettleTip .infoLeft {
+	float: left;
+	width: 70%;
+}
+
+.order_wrap .serTop .noSettleTip .infoRight {
+	float: right;
+	width: 30%;
+}
+
+.order_wrap .serTop .noSettleTip .fontRed {
+	color: #f37e89;
+}
+
+.order_wrap .topInfos {
+	width: 100%;
+	background-color: #F6F6F6;
+	font-size: 0.14rem;
+}
+
+.order_wrap .topInfos .cycle {
+	width: 90%;
+	font-size: 0.14rem;
+	color: #6d6d6d;
+}
+
+.order_wrap .topInfos .cycle .cycleInfo {
+	color: #000;
+}
+
+.amount_payment {
+	width: 100%;
+	padding: 0.1rem 0 0.1rem;
+}
+.amount_payment .fontColBl{
+	color: #000;
+	font-weight: normal;
+}
+
+.amount_payment .amountTop{
+	width: 100%;
+	overflow: hidden;
+	padding-right: 0.15rem;
+}
+.amount_payment .amountTop p {
+	float: left;
+}
+.amount_payment .amountTop .amountLeft{
+	width: 70%;
+}
+.amount_payment .amountTop .amountRight{
+	float: right;
+	width: 30%;
+}
+.amount_payment p {
+	margin-left: 0.15rem;
+	font-size: 0.14rem;
+	color: #666;
+	height: 0.2rem;
+	margin-bottom: 0.05rem;
+}
+
+.amount_payment p i {
+	color: #262626;
+}
+
+.amount_payment p b {
+	color: #e91e32;
+	font-weight: normal;
+}

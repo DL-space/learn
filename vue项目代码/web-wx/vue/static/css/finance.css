@@ -1,0 +1,45 @@
+.finance{
+    background-color: #f6f6f6;
+}
+.finance .news-list{
+    background-color: #fff;
+}
+.finance .news-list .title,.finance .news-detail .finance-info .title,.finance .news-detail .order-info .title{
+    padding:0 3%;
+    height: .4rem;
+    line-height: .4rem;
+}
+.finance .news-list .wrap{
+    background-color: #fff;
+}
+.finance .news-list .wrap .item,.finance .news-detail .order-info .item{
+    padding:.08rem 3%;
+    border-bottom:1px solid #ebecef
+}
+.finance .news-list .wrap .item:nth-child(1){
+    padding-top:0;
+}
+
+.finance .news-list .wrap .item .row,.finance .news-detail .finance-info .wrap .row,.finance .news-detail .order-info .row{
+    height: .32rem;
+    line-height: .32rem;
+    font-size:.15rem;
+}
+.finance .news-detail .finance-info .wrap{
+    padding:.08rem 3%;
+}
+.finance .news-detail .finance-info .wrap .row{
+    font-size:.16rem;
+}
+.finance .news-detail .order-info .title{
+    background-color: #fff;
+}
+.finance .news-detail .order-info .item{
+    background-color: #fff;
+    border:none;
+    margin-top:.06rem;
+}
+.finance .news-detail .order-info .item:nth-child(2){
+    margin-top: 0;
+    padding-top:0;
+}

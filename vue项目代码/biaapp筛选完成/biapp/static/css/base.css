@@ -1,0 +1,214 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,aside,blockquote,th,td,span,i,b{margin:0;padding:0;}
+/**{-webkit-tap-highlight-color: rgba(0, 0, 0, 0);清除按钮蒙版}*/
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0}
+html{width:100%;margin:0 auto;font-size:100px;height:100%}
+html,button,input,select,textarea {font-family:'hiraginosansgb w3','Helvetica Neue',Helvetica,'microsoft yahei',Arial,sans-serif}
+body{height:100%;font-size:0.16rem;min-width:320px; -webkit-text-size-adjust:100%;text-size-adjust:100%;/* background:#f3f3f3*/}
+button{font-size: .16rem;border: none;background: none;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
+:focus {outline:0;}
+a{color: #666;}
+a,input,select,textarea{-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+q:before,q:after{content:''}
+em,i{font-style:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+img{border:none; }
+input[type="button"], input[type="submit"], input[type="reset"], input[type="text"],input[type="number"]{
+-webkit-appearance: none;
+}
+ol,ul,li{list-style:none; vertical-align:middle;}
+input, textarea {
+    border: none;
+    resize: none;
+    outline: none;
+}
+textarea{outline:none; -webkit-appearance: none;}
+textarea{resize:none;}
+textarea::-webkit-input-placeholder,
+textarea::-moz-input-placeholder,
+textarea::-ms-input-placeholder,
+input::-webkit-input-placeholder,
+input::-moz-input-placeholder,
+input::-ms-input-placeholder{color:#bababa;}
+input:focus{outline-width:0;box-shadow:none;-webkit-box-shadow:none;-moz-box-shadow:none;-ms-box-shadow:none;box-shadow:none}
+a{text-decoration:none; outline:none; font-weight:normal; border:0; /*blr:expression(this.onFocus=this.blur());*/}
+.clearfix:after{content:'';display:block;clear:both}
+.fl{float:left;}
+.fr{float:right;}
+.tc{text-align:center;}
+.tr{text-align:right;}
+.tl{text-align:left;}
+.vm{vertical-align:middle;}
+.rel{position:relative;}
+.abs{position:absolute;}
+.f3{background:#f3f3f3 !important}
+.BgWhite{background:#ffffff !important}
+
+.none{display:none}
+
+#app,.app_wrap{width:100%;height:100%}
+.input-control{min-height:0.4rem;line-height:0.4rem}
+.input-control input[type="text"],.input-control input[type="password"]{width:100%;font-size:0.16rem}
+.btn{
+	background-color: #4392ff;
+	text-align: center;
+	color:#fff;
+	height:0.4rem;
+	line-height:0.4rem;
+	width:100%;
+	border:none;
+	border-radius:4px;
+	font-size:0.18rem;
+	cursor: pointer;
+}
+
+/*提示框*/
+.dialog{
+	position:fixed;
+	left:50%;
+	top:30%;
+	width:50%;
+	min-height:0.6rem;
+	margin:0 0 0 -25%;
+	background:rgba(0,0,0,0.8);
+	color:white;
+	font-size:.14rem;
+	padding:.2rem;
+	text-align:center;
+	line-height:0.2rem;
+	border-radius:0.04rem;
+	z-index:100
+}
+/*通用样式*/
+.bg-grey{
+	background-color: #f6f6f6;
+}
+.blue{color:#519aff}
+.red{color:#e91e32}
+.green{color:green}
+.grey{color:#666}
+/*tab组件*/
+.tab{
+	height:0.4rem;
+	padding:0 0.1rem;
+	background-color: #fff;
+}
+
+.tab li{
+	float: left;
+	height:0.4rem;
+	line-height:0.4rem;
+	text-align:center;
+	font-size:0.16rem
+}
+.tab li .cont{
+	display:inline-block;
+	color:#262626;
+	padding:0 0.05rem;
+	height:100%;
+}
+.tab li .cont.focus{
+	color:#ea2034;
+	border-bottom:0.02rem solid #ea2034;
+}
+
+/*确认弹框组件*/
+.mask{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	background:rgba(0,0,0,.3);
+	position: fixed;
+	left:0;
+	top:0;
+	z-index:99
+}
+.confirm{
+	border-radius:.04rem;
+	background-color: #fff;
+	position: absolute;
+	width: 80%;
+	height:1.2rem;
+	left:50%;
+	top:50%;
+	margin:-.6rem 0 0 -40%;
+}
+.confirm .confirm_txt{
+	text-align: center;
+	font-size: .16rem;
+	line-height: .7rem;
+	color: #999;
+	border-bottom:.01rem solid red
+}
+
+.confirm .btn_group{
+	height: .5rem;
+	line-height: .5rem;
+}
+.confirm .btn_group button{
+	float: left;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	font-size: .14rem;
+	background: none;
+	border:none
+}
+.confirm button.btn_confirm{
+	border-right:0.01rem solid red;
+}
+a,button,input,.v-modal{-webkit-tap-highlight-color:rgba(255,0,0,0);}
+.mint-toast{z-index:3000!important}
+.list-no-item{
+  text-align: center;
+  padding: .1rem;
+  font-size: .14rem;
+  color:#666;
+}
+
+.in-bk-center{
+	  font-size: 0;
+}
+.in-bk-center:after{
+	 display:inline-block;
+	 width:0;
+	 height:100%;
+	 vertical-align:middle;
+	 content:'';
+}
+.center-box{
+	 display: inline-block;
+	 vertical-align: middle;
+}
+.space{
+   height: .1rem;
+}
+
+.br1::before{
+	 width: 200%;
+	 height: 200%;
+	 transform: scale(.5);
+	 -webkit-transform: scale(.5);
+	 position: absolute;
+	 content: '';
+	 top:0;
+	 left:0;
+	 -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+	/*z-index: -1;*/
+}
+.br1,.br1_bottom{
+	 position: relative;
+}
+.br1_bottom::before{
+   height: 1px;
+   width: 200%;
+   transform: scale(.5);
+	 -webkit-transform: scale(.5);
+	 position: absolute;
+	 content: '';
+	 bottom:0;
+	 left:0;
+	 -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}

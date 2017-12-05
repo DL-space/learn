@@ -1,0 +1,60 @@
+﻿@charset "utf-8";
+
+.download {
+    height: 100%;
+}
+
+.downloadTop {
+    height: 18%;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5%;
+    padding-left: 10%;
+}
+
+.downImg {
+    height: 60%;
+    margin-top: 5%;
+}
+
+.downImg img {
+    height: 100%;
+}
+
+.downTxt {
+    margin-top: 8%;
+    margin-left: 10%;
+}
+
+
+
+.downTxt h4 {
+    color: #666;
+}
+
+.downloadCenter {
+    height: 62%;
+    width: 100%;
+}
+
+.downloadCenter img {
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+}
+
+.downloadDown {
+    height: 15%;
+    text-align: center;
+}
+
+.downloadDown a {
+    display: inline-block;
+    background-color: #3399ff;
+    height: 0.35rem;
+    border-radius: 6px;
+    width: 80%;
+    color: #fff;
+    font-size: 0.15rem;
+    line-height: 0.35rem;
+    margin-top: 6%;
+}
